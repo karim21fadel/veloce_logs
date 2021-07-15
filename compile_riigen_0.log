@@ -1,0 +1,30 @@
+/tools/med_tools/software/Veloce_v20.0.3/bin/riigmgen -compile_mode SSR -revision_num 0 -base_dir ./veloce.med 
+/bin/cp --remove-destination /tools/med_tools/software/Veloce_v20.0.3/lib/amd64.linux/libssrmodelexec.so ./veloce.med/design_level/libssrmodelexec.so
+
+
+Executing Command:
+/tools/med_tools/software/Veloce_v20.0.3/bin/riigmgen -compile_mode SSR -revision_num 0 -base_dir ./veloce.med 
+Global RII map files: /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Rii_SSRGlobalMap.vdb.0
+Local RII map file(s):
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u0_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u1_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u2_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u3_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u4_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u5_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u6_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u7_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u8_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u9_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u10_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u11_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u12_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u13_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u14_Ssr_ReconVdb.vdb.0
+/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u15_Ssr_ReconVdb.vdb.0
+ZFileRead(...vdb_DescriptorLibrary.vdb.0): incremental database in 332 chunks, strategy 2.
+
+
+Executing Command:
+/bin/cp --remove-destination /tools/med_tools/software/Veloce_v20.0.3/lib/amd64.linux/libssrmodelexec.so ./veloce.med/design_level/libssrmodelexec.so
+Task: exited with code: 0

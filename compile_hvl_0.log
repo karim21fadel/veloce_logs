@@ -1,0 +1,86 @@
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx   /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/velhvl-core            -proj_name veloce            -base_dir ./veloce.med            -proj_dir /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation            -hvlopt_file veloce.med/c_files/hvlcomp_options.list
+echo "HVL compile Done"
+
+
+Executing Command:
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx   /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/velhvl-core            -proj_name veloce            -base_dir ./veloce.med            -proj_dir /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation            -hvlopt_file veloce.med/c_files/hvlcomp_options.list
+Note!     [hvlcomp-25769]: : Neither '-cpppath' nor '-cppinstall' is provided. Using default GNU g++ version 5.3.0
+gmake  -B  -f /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/./veloce.med/c_files/tbx_hvlcomp.mk  TBX_BUILD_PLATFORM="linux64_el30_gnu53" BUILD_PLATFORM="linux64_el30_gnu53" GCC="/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++" AR="/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/ar" clean_veloce build_veloce  CP="/bin/cp" RM="/bin/rm -f" TOUCH="/bin/touch" MKDIR="/bin/mkdir" CAT="/bin/cat"
+gmake[1]: Entering directory `/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation'
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -D_TBX_PROFILE_REPORT -DLINUX -Wno-deprecated -c /tools/med_tools/software/Veloce_v20.0.3/tbx/include/tbx_main.cxx -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/linux64_el30_gnu53/tbx_main.o
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -D_TBX_PROFILE_REPORT -DLINUX -Wno-deprecated -c /tools/med_tools/software/Veloce_v20.0.3/tbx/include/scemi_pipe_hdl_centric.cxx -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/linux64_el30_gnu53/scemi_pipe_hdl_centric.o
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -D_TBX_PROFILE_REPORT -DLINUX -Wno-deprecated -c veloce.med/c_files/tbxtrampolineweakdefs.cxx -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/linux64_el30_gnu53/tbxtrampolineweakdefs.o
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -D_TBX_PROFILE_REPORT -DLINUX -Wno-deprecated -c veloce.med/c_files/genClockReport.cxx -fPIC -Wno-deprecated -I/tools/med_tools/software/Veloce_v20.0.3/runtime/include -I/tools/med_tools/software/Veloce_v20.0.3/runtime/Tcl -I/tools/med_tools/software/Veloce_v20.0.3/DiamondTAPID/V2 -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/linux64_el30_gnu53/genClockReport.o
+veloce.med/c_files/genClockReport.cxx: In function 'int PrintClockReportOrGetInfo(char*, ClockInfo**, int*, bool)':
+veloce.med/c_files/genClockReport.cxx:46:16: warning: unused variable 'temp2' [-Wunused-variable]
+  unsigned int *temp2, *temp22, temp222;
+                ^
+veloce.med/c_files/genClockReport.cxx:46:24: warning: unused variable 'temp22' [-Wunused-variable]
+  unsigned int *temp2, *temp22, temp222;
+                        ^
+veloce.med/c_files/genClockReport.cxx:46:32: warning: unused variable 'temp222' [-Wunused-variable]
+  unsigned int *temp2, *temp22, temp222;
+                                ^
+veloce.med/c_files/genClockReport.cxx:47:16: warning: unused variable 'temp3' [-Wunused-variable]
+  unsigned int *temp3, *temp33, temp333;
+                ^
+veloce.med/c_files/genClockReport.cxx:47:24: warning: unused variable 'temp33' [-Wunused-variable]
+  unsigned int *temp3, *temp33, temp333;
+                        ^
+veloce.med/c_files/genClockReport.cxx:47:32: warning: unused variable 'temp333' [-Wunused-variable]
+  unsigned int *temp3, *temp33, temp333;
+                                ^
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -D_TBX_PROFILE_REPORT -DLINUX -Wno-deprecated -c veloce.med/c_files/tbxReleaseVersion.cxx -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/linux64_el30_gnu53/tbxReleaseVersion.o
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -D_TBX_PROFILE_REPORT -DLINUX -Wno-deprecated -c veloce.med/c_files/tbxbindings_cview.cxx -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -fno-strict-aliasing -Wno-unused -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/linux64_el30_gnu53/tbxbindings_cview.o
+veloce.med/c_files/tbxbindings_cview.cxx:265:92: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ int ProcessChandleArgs(void* &arg, int BitPos, bool out, bool isArray=0, char* DPIname = "");
+                                                                                            ^
+veloce.med/c_files/tbxbindings_cview.cxx: In function 'bool IsTBXDRCCall(SceMiMessageData*)':
+veloce.med/c_files/tbxbindings_cview.cxx:7656:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (gPktIdDRCMap[transactorID] <= (pktID+1))
+                                    ^
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -D_TBX_PROFILE_REPORT -DLINUX -Wno-deprecated -c veloce.med/c_files/tbxImpCallWeakDefn.cxx -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -fPIC -DTBX_NEW_SC_COMPILE_FLOW -Wno-unused -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/linux64_el30_gnu53/tbxImpCallWeakDefn.o
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++  -Wno-deprecated -DLINUX -DBIT64  -fPIC -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -Iveloce.med/c_files -Iveloce.med/rtlc.out/TRANSACTOR_FILES   -shared  veloce.med/obj/linux64_el30_gnu53/tbxImpCallWeakDefn.o -o veloce.med/obj/linux64_el30_gnu53/tbxImpCallWeakDefn.so
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -D_TBX_PROFILE_REPORT -DLINUX -Wno-deprecated -o veloce.med/bin/linux64_el30_gnu53/testbench.veloce veloce.med/obj/linux64_el30_gnu53/tbx_main.o veloce.med/obj/linux64_el30_gnu53/scemi_pipe_hdl_centric.o veloce.med/obj/linux64_el30_gnu53/tbxtrampolineweakdefs.o veloce.med/obj/linux64_el30_gnu53/genClockReport.o veloce.med/obj/linux64_el30_gnu53/tbxReleaseVersion.o veloce.med/obj/linux64_el30_gnu53/tbxbindings_cview.o -rdynamic -Wl,--whole-archive /tools/med_tools/software/Veloce_v20.0.3/tbx/lib/linux64_el30_gnu53/libtbx-cxtor.a -Wl,--no-whole-archive veloce.med/obj/linux64_el30_gnu53/tbxImpCallWeakDefn.so -Wl,-rpath=/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/./veloce.med/obj/linux64_el30_gnu53 /tools/med_tools/software/Veloce_v20.0.3/tbx/lib/linux64_el30_gnu53/libtbxc.a /tools/med_tools/software/Veloce_v20.0.3/tbx/lib/linux64_el30_gnu53/libtbxfifo.a -L/tools/med_tools/software/Veloce_v20.0.3/tbx/lib/linux64_el30_gnu53 -lstdc++ -lm -ldl /tools/med_tools/software/Veloce_v20.0.3/tbx/lib/linux64_el30_gnu53/libtbx-veloce-safe.a -L/tools/med_tools/software/Veloce_v20.0.3/lib/i386.linux -lpthread
+gmake[1]: Leaving directory `/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation'
+gmake  -B  -f /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/./veloce.med/c_files/tbx_hvlcomp.xwave.mk  TBX_BUILD_PLATFORM="linux64_el30_gnu53" BUILD_PLATFORM="linux64_el30_gnu53" GCC="/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++" build_offline_xwave_so CP="/bin/cp" RM="/bin/rm -f" TOUCH="/bin/touch" MKDIR="/bin/mkdir" CAT="/bin/cat"
+gmake[1]: Entering directory `/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation'
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -DLINUX -Wno-deprecated -c veloce.med/c_files/tbxReleaseVersion.cxx -DENFORCE_C_COMPILE -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -fPIC -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/xwave_linux64_el30_gnu53/tbxReleaseVersion.o
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -DLINUX -Wno-deprecated -c /tools/med_tools/software/Veloce_v20.0.3/tbx/include/scemi_pipe_hdl_centric.cxx -DENFORCE_C_COMPILE -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -fPIC -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/xwave_linux64_el30_gnu53/scemi_pipe_hdl_centric.o
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -DLINUX -Wno-deprecated -c veloce.med/c_files/genClockReport.cxx -fPIC -Wno-deprecated -I/tools/med_tools/software/Veloce_v20.0.3/runtime/include -I/tools/med_tools/software/Veloce_v20.0.3/runtime/Tcl -I/tools/med_tools/software/Veloce_v20.0.3/DiamondTAPID/V2 -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/xwave_linux64_el30_gnu53/genClockReport.o
+veloce.med/c_files/genClockReport.cxx: In function 'int PrintClockReportOrGetInfo(char*, ClockInfo**, int*, bool)':
+veloce.med/c_files/genClockReport.cxx:46:16: warning: unused variable 'temp2' [-Wunused-variable]
+  unsigned int *temp2, *temp22, temp222;
+                ^
+veloce.med/c_files/genClockReport.cxx:46:24: warning: unused variable 'temp22' [-Wunused-variable]
+  unsigned int *temp2, *temp22, temp222;
+                        ^
+veloce.med/c_files/genClockReport.cxx:46:32: warning: unused variable 'temp222' [-Wunused-variable]
+  unsigned int *temp2, *temp22, temp222;
+                                ^
+veloce.med/c_files/genClockReport.cxx:47:16: warning: unused variable 'temp3' [-Wunused-variable]
+  unsigned int *temp3, *temp33, temp333;
+                ^
+veloce.med/c_files/genClockReport.cxx:47:24: warning: unused variable 'temp33' [-Wunused-variable]
+  unsigned int *temp3, *temp33, temp333;
+                        ^
+veloce.med/c_files/genClockReport.cxx:47:32: warning: unused variable 'temp333' [-Wunused-variable]
+  unsigned int *temp3, *temp33, temp333;
+                                ^
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -DLINUX -Wno-deprecated -c veloce.med/c_files/tbxbindings_cview.cxx -DENFORCE_C_COMPILE -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -fPIC -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -fno-strict-aliasing -Wno-unused -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/xwave_linux64_el30_gnu53/tbxbindings_cview.o
+veloce.med/c_files/tbxbindings_cview.cxx:265:92: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ int ProcessChandleArgs(void* &arg, int BitPos, bool out, bool isArray=0, char* DPIname = "");
+                                                                                            ^
+veloce.med/c_files/tbxbindings_cview.cxx: In function 'bool IsTBXDRCCall(SceMiMessageData*)':
+veloce.med/c_files/tbxbindings_cview.cxx:7656:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (gPktIdDRCMap[transactorID] <= (pktID+1))
+                                    ^
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -DLINUX -Wno-deprecated -c veloce.med/c_files/tbxImpCallWeakDefn.cxx -DENFORCE_C_COMPILE -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include/cxtor -O3 -fPIC -DTBX_MULTI_THREADED -rdynamic -DBIT64 -Wno-deprecated -DTBX_NEW_SC_COMPILE_FLOW -Wno-unused -I/tools/med_tools/software/Veloce_v20.0.3/tbx/include -I./veloce.med/c_files -I./veloce.med/rtlc.out/TRANSACTOR_FILES -o veloce.med/obj/xwave_linux64_el30_gnu53/tbxWeakDefnFile.o
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linuxRH6/gcc-5.3.0/bin/g++ -Wall -D_TBX_SAFE_MODE -DLINUX -Wno-deprecated -shared veloce.med/obj/xwave_linux64_el30_gnu53/tbxReleaseVersion.o veloce.med/obj/xwave_linux64_el30_gnu53/scemi_pipe_hdl_centric.o veloce.med/obj/xwave_linux64_el30_gnu53/genClockReport.o veloce.med/obj/xwave_linux64_el30_gnu53/tbxbindings_cview.o /tools/med_tools/software/Veloce_v20.0.3/tbx/lib/linux64_el30_gnu53/libtbxc.a /tools/med_tools/software/Veloce_v20.0.3/tbx/lib/linux64_el30_gnu53/libtbxfifo.a -L/tools/med_tools/software/Veloce_v20.0.3/tbx/lib/linux64_el30_gnu53 -lstdc++ -Wl,--whole-archive /tools/med_tools/software/Veloce_v20.0.3/tbx/lib//linux64_el30_gnu53/libtbx-cxtor.a -Wl,--no-whole-archive -lm -ldl /tools/med_tools/software/Veloce_v20.0.3/tbx/lib/linux64_el30_gnu53/libtbx-veloce-safe.a -L/tools/med_tools/software/Veloce_v20.0.3/lib/i386.linux -lpthread veloce.med/obj/xwave_linux64_el30_gnu53/tbxWeakDefnFile.o -o veloce.med/bin/linux64_el30_gnu53/offline_xwave.so
+gmake[1]: Leaving directory `/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation'
+
+
+Executing Command:
+echo "HVL compile Done"
+HVL compile Done
+Task: exited with code: 0

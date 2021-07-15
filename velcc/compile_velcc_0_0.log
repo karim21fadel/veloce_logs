@@ -1,0 +1,88 @@
+/tools/med_tools/software/Veloce_v20.0.3//bin/runDistributedTask.sh  -proj /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dcd_CompileParams.txt.0 -bnum 0 -cnum 0 -uncompressed 98809257 -adler 15D3A09E -velcc  
+
+
+Executing Command:
+/tools/med_tools/software/Veloce_v20.0.3//bin/runDistributedTask.sh  -proj /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dcd_CompileParams.txt.0 -bnum 0 -cnum 0 -uncompressed 98809257 -adler 15D3A09E -velcc -LicKey $LIC_KEY 
+
+
+Executing Command: 
+/tools/med_tools/software/Veloce_v20.0.3/bin/velcc2 -optim-fast -optim freq -base_dir ./veloce.med -LicKey $LIC_KEY -bin lb0/lb0_u0_Dcc_DccMacro.bin.0 -state-scan lb0/lb0_u0_Dcc_StateScan.map.0 -state-cpb lb0/lb0_u0_Dcc_StateCpb.map.0 -mutable lb0/lb0_u0_Dcc_MutaBin.txt.0 -pipeline lb0/lb0_u0_Dcc_PipeDelay.map.0 -dgs-mapping lb0/lb0_u0_Dcc_DgsMapping.map.0 -checksum 98809257+15D3A09E -ff-init lb0/lb0_u0_Dcc_ff_init.b.0 -dgs-delay lb0/lb0_u0_Dcc_DgsDelay.delay.0 -log ./velcc_logs/lb0_u0_Dcc.log lb0/lb0_u0_Dsyn_dcc.txt.0.gz
+
+                             Veloce-2 Chip Compiler
+                 Copyright 2005-2020 Mentor Graphics Corporation
+                              All Rights Reserved
+
+velcc2 20.0.3, build Sep 28 2020 17:38:06 - rd
+Warning   [velcc2-2761]: : option '-optim freq' deprecated and will be removed (use -optim-freq instead)
+Info!                  : : velcc2 20.0.3, build Sep 28 2020 17:38:06 - rd
+Info!     [velcc2-1140]: : Refer to "./veloce.med/./velcc_logs/lb0_u0_Dcc.log" for details
+Info!     [velcc2-10]: : Loading "./veloce.med/lb0/lb0_u0_Dsyn_dcc.txt.0.gz"
+Info!     [velcc2-10]: : Checking "./veloce.med/lb0/lb0_u0_Dsyn_dcc.txt.0.gz"
+Info!     [velcc2-112]: Module LB0_U100: 169273 net(s)
+Info!     [velcc2-112]: Module LB0_U100: 162559 instance(s)
+Info!     [velcc2-722]: Module LB0_U100: 162068 MFC(s) (incl. 64532 scanned MFC(s))
+Info!     [velcc2-723]: Module LB0_U100: 64532 required full featured CPB(s) (64532 scanned, 0 not scanned with enable, 0 not scanned without enable)
+Info!     [velcc2-725]: Module LB0_U100: 0 BMEM, 16 CMEM(s), 0 XMEM(s)
+Info!     [velcc2-726]: Module LB0_U100: 5874 input(s), 4182 output(s)
+Info!     [velcc2-1141]: Module LB0_U100: Computing difficulty grades ("lb0_u0_Dcc.dg.gz")
+Info!     [velcc2-10]: Module LB0_U100: I/O SVW, *MEM syntheses
+Info!     [velcc2-10]: Module LB0_U100: VW, BMEM, CMEM, XMEM_SCHED_R/W placement (use -verbose-pl1 for more info)
+Info!     [velcc2-1119]: Module LB0_U100: More of those messages will not be displayed.
+Info!     [velcc2-971]: Module LB0_U100: Mapping to Crystal-2 hierarchy
+Info!     [velcc2-10]: Module LB0_U100: Macro-Cluster (M216K/macro-cluster) mapping done
+Info!     [velcc2-10]: Module LB0_U100: Top routing
+Info!     [velcc2-10]: Module LB0_U100: Loading "/tools/med_tools/software/Veloce_v20.0.3/lib/c2m216k"
+Info!     [velcc2-1148]: Module LB0_U100: 150 MC output receiver(s) not suitable for pipelined path (0%) using 2000ps as threshold of suitability
+Info!     [velcc2-920]: Module LB0_U100: Router database creation begin
+Info!     [velcc2-921]: Module LB0_U100: Router database creation end
+Info!     [velcc2-918]: Module LB0_U100: Assignment begin
+Info!     [velcc2-919]: Module LB0_U100: Assignment end
+Info!     [velcc2-10]: Module LB0_U100: Cluster placement
+Info!     [velcc2-10]: Module LB0_U100: Macro-cluster routing
+Info!     [velcc2-10]: Module LB0_U100: Loading "/tools/med_tools/software/Veloce_v20.0.3/lib/c2m6k"
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #0 routing instrumentation done (597 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #1 routing instrumentation done (576 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #2 routing instrumentation done (572 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #3 routing instrumentation done (546 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #4 routing instrumentation done (541 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #5 routing instrumentation done (553 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #6 routing instrumentation done (569 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #7 routing instrumentation done (555 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #8 routing instrumentation done (568 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #9 routing instrumentation done (543 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #10 routing instrumentation done (556 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #11 routing instrumentation done (601 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #12 routing instrumentation done (585 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #13 routing instrumentation done (617 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #14 routing instrumentation done (612 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #15 routing instrumentation done (565 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #16 routing instrumentation done (569 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #17 routing instrumentation done (579 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #18 routing instrumentation done (602 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #19 routing instrumentation done (612 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #20 routing instrumentation done (559 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #21 routing instrumentation done (567 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #22 routing instrumentation done (527 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #23 routing instrumentation done (628 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #24 routing instrumentation done (582 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #25 routing instrumentation done (590 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #26 routing instrumentation done (629 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #27 routing instrumentation done (585 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #28 routing instrumentation done (585 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #29 routing instrumentation done (540 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #30 routing instrumentation done (574 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #31 routing instrumentation done (556 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #32 routing instrumentation done (641 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #33 routing instrumentation done (584 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #34 routing instrumentation done (537 inserted buffer(s))
+Info!     [velcc2-2084]: Module LB0_U100: Macro-cluster #35 routing instrumentation done (627 inserted buffer(s))
+Info!     [velcc2-2092]: Module LB0_U100: Macro-clusters routing instrumentation: total 20829 inserted buffer(s)
+Info!     [velcc2-10]: : Driving "./veloce.med/lb0/lb0_u0_Dcc_DgsDelay.delay.0"
+Info!     [velcc2-10]: : Driving "./veloce.med/lb0/lb0_u0_Dcc_DgsMapping.map.0"
+Info!     [velcc2-10]: : Driving "./veloce.med/lb0/lb0_u0_Dcc_DccMacro.bin.0"
+Info!     [velcc2-1880]: : Driving "./veloce.med/lb0/lb0_u0_Dcc_StateCpb.map.0"
+Info!     [velcc2-1881]: : Driving "./veloce.med/lb0/lb0_u0_Dcc_StateScan.map.0"
+Info!     [velcc2-1883]: : Driving "./veloce.med/lb0/lb0_u0_Dcc_PipeDelay.map.0"
+Info!     [velcc2-1884]: : Driving "./veloce.med/lb0/lb0_u0_Dcc_ff_init.b.0"
+Info!     [velcc2-1005]: Module LB0_U100: Compilation speed: 140.232 MFC/s (170082 MFCs compiled in 1212.86 second(s))
+Task: exited with code: 0

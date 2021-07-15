@@ -1,0 +1,19 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - XXX
+## Application Pid - 97050
+## Log produced on - Thu Jul 15 21:02:08 2021
+###############################################
+Info!      [DMS-9999]: : [2021-07-15 21:02:08:548657] NexusFDR: Valid nexus
+                       (/tools/med_tools/software/Veloce_v20.0.3/bin/i386.linux/dmsnexus)
+                       with pid 85924 on egc-med-heliopolis is found running by
+                       maali.
+Info!      [DMS-9999]: : [2021-07-15 21:02:09:551567] NexusFDR: Valid nexus
+                       (/tools/med_tools/software/Veloce_v20.0.3/bin/i386.linux/dmsnexus)
+                       with pid 85924 on egc-med-heliopolis is found running by
+                       maali.
+Info!      [DMS-9999]: : [2021-07-15 21:02:09:552399] Connecting to already
+                       running nexus
+                       (/tools/med_tools/software/Veloce_v20.0.3/bin/i386.linux/dmsnexus)
+                       with pid 85924 on egc-med-heliopolis.egc.mentorg.com by
+                       maali

@@ -1,0 +1,8 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - CS
+## Application Pid - 23141
+## Log produced on - Thu Jul 15 20:58:28 2021
+###############################################
+Error      [DMS-9021]: : [2021-07-15 20:58:28:168048] Unable to connect to 10.105.42.141:36723: Connection refused
+Warning    [DMS-9999]: : [2021-07-15 20:58:28:171902] Unable to make connection to task 16 at 10.105.42.141:36723: Success.

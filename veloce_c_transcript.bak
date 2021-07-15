@@ -1,0 +1,122 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - 
+## Application Pid - 24493
+## Log produced on - Thu Jul 15 20:55:01 2021
+###############################################
+Info!     [TCLC-5501]: : Waiting for project open from master client...
+Info!     [TCLC-5614]: : Project already open. Owner is "maali" and HostName
+                       "egc-med-cairo.egc.mentorg.com" Attached to existing
+                       session
+Info!     [TCLC-5501]: : Single User Mode. Other users will not be able to
+                       attach to this session.
+Info!     [TCLC-5654]: : Will work with the clock "top.Uclock"
+Info!     [TCLC-5654]: : Will work with the clock "top.Uclock"
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5501]: : Memory initialization done
+Info!     [TCLC-5654]: : Will work with the clock "top.Uclock"

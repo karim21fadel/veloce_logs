@@ -1,0 +1,34 @@
+
+ (Note: Unit of delay periods = 1ps 
+        For variable clocks, the initial value of the variables have been      
+        provided in bracket  )                                                 
+============================================================================== 
+                                  CLOCK REPORT                                 
+============================================================================== 
+Id  Inactive  Phase           Posedge          Negedge           (Clock speed as percentage of Uclock)
+    Edge      Delay           Delay            Delay              imprecise mode         precise
+                                                                    (auto_cfr)        (without auto_cfr)
+============================================================================== 
+1   Neg       10000           10000           0                   1.00(100.00%)            1.00(100.00%)
+                                                           
+
+
+
+===============================================================================
+Note: In above "Inactive Edge" column following is the interpertation
+
+      Pos : inactive_posedge
+      Neg : inactive_negedge
+      None: both edge active
+
+
+
+Clock Source Information
+===============================================================================
+(1) Clock Name : top.CLK 
+    Module :        top 
+    File Name : /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/top.v
+    Line No : 33
+
+
+===============================================================================

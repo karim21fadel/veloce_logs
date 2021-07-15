@@ -1,0 +1,140 @@
+Profile Report from Simulation Time 0ps to 40000ps
+WALL CLOCK TIME : EET Thu Jul 15 20:57:54 2021
+COMODEL HOST : egc-med-cairo
+TBX_HOME : /tools/med_tools/software/Veloce_v20.0.3/tbx
+VELOCE_HOME : /tools/med_tools/software/Veloce_v20.0.3
+
+TBX Version   : 20.0.3-5
+DataBase Path : /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation 
+Frequency     : 1818 KHz
+
+--------------------------------------------------------------------------------------------------------------
+NOTE(s) :
+1. All time units in this report are in second(s), unless explicitly mentioned.
+
+
+SIMULATION STATISTICS
+--------------------------------------------------------------------------
+Total number of TBX clocks: 1376197
+Total number of TBX clocks spent in HDL time advancement: 5
+Total number of TBX clocks spent in HDL due to callee execution: 0
+Percentage TBX clocks spent in HDL time advance: 0.00 %
+---------------------------------------------------------
+Total time spent:                                 172.50 seconds  (after initialization:  164.02 seconds)
+Total time Uclock was stopped:                   163.26 seconds
+----------------------------------------------------------
+
+==============================================================================================================
+  TIME STATISTICS 
+==============================================================================================================
+Time wrt TbxCManager Construction :
+1 Before :           0.00 
+2 During :           8.48 
+3 After  :         164.02 
+
+--------------------------------------------------------------------------------------------------------------
+3. Time After TbxCManager Construction :         164.02 
+   3.1 Hardware Time                   :           0.00 
+   3.2 Software Time                   :           5.62 
+   3.3 Communication Time              :         158.40 
+   3.4 Hardware Stall Time             :           0.00 
+
+--------------------------------------------------------------------------------------------------------------
+   3.2 Software Time                   :           5.62 
+      3.2.1 Associated SW Execution Time   :           5.62 (See Top Tasks wrt Associated-Software-Execution Time TABLE for more information)
+
+--------------------------------------------------------------------------------------------------------------
+   3.3 Communication Time :         158.40 
+       This may be attributed to -
+      3.3.1 TAPI Latency - (Proportional to total number of context switches)
+          * Total number of context switches               : 0
+--------------------------------------------------------------------------------------------------------------
+   3.4 Hardware Stall Time :           0.00 
+      3.4.1 Hardware stall time while waiting for return of DRC             :           0.00
+                  -> Is the accumulated stall time across all the comodel links.
+==============================================================================================================
+
+Time Distribution wrt Uclock
+--------------------------------------------------------------------------------------------------------------
+4. Time After TbxCManager Construction        :         164.02 
+   4.1 Time for which Uclock has run          :           0.76 
+   4.2 Time for which Uclock remained stopped :         163.26 
+     4.2.1  Stopped from HVL code                    :           1.33 
+            (Primarily due to dm API calls(in User HVL code/TBX generated code), which internally suspend uclock.
+
+     4.2.2  Stopped from interactive TCL(Gui) shell  :         161.93 
+            (Primarily contributes to Communication Time, and/or Time-Zero Associated-Software-Execution Time.
+==============================================================================================================
+
+
+Top One-Way Callers on the Basis of Total Time Consumed
+---------------------------------------------------------------------------------------------------------
+          name(task id)            |       total time        |   avg. time(usec)     |no. of times called
+---------------------------------------------------------------------------------------------------------
+FSDB__DummyFinalBlkCaller (   ID-0)|      0 sec       0 usec |            0 usec     | 1
+
+Top Tasks wrt Associated-Software-Execution Time 
+---------------------------------------------------------------------------------------------------------
+           Name(Task Id)                   | Associated SW-Execution Time | No. of Times Called
+---------------------------------------------------------------------------------------------------------
+
+               Time-Zero Activity* ( NA)   |          5.624553            |      NA
+ 
+(Time-Zero Activity* refers to all the activity performed by user software code 
+before the first HDL time advance.)
+
+
+=====================================================================================================
+          DETAILED SW ACTIVITY (systasks/DPI functions/tasks)
+=====================================================================================================
+
+Hdl-To-C Tasks:
+-------------------------------------------------------------------------------------------------------------------------------------------
+                Name (Task Id)     |       Scope    | No. of times called| Associated SW-Execution Time | DPI Execution Time{Total Time(sec) , Avg Time(usec)}   
+-------------------------------------------------------------------------------------------------------------------------------------------
+FSDB__DummyFinalBlkCaller (   ID-0)| top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper    |          1         |             0.000000 secs    | { 0, 0 } 
+
+C-APIs: 
+-----------------------------------------------------------------------------------------------
+                         Name      |       total time        | No. of times called|   
+-----------------------------------------------------------------------------------------------
+
+=====================================================================================================
+                             CLOCK REPORT 
+=====================================================================================================
+Total number of time advance points = 5
+----------------------------------------
+SN | NumClockCycles | ClockName
+----------------------------------------
+1                 4  top.CLK 
+
+
+
+=====================================================================================================
+                             Design Activity Summary
+=====================================================================================================
+Number of Blocking System Task calls during simulation      = 0
+Number of Non-Blocking System Task calls during simulation  = 0
+Number of Two Way Caller Task calls during simulation       = 0
+Number of Delayed Return Caller calls during simulation     = 0
+Number of Exported Task calls during simulation             = 0
+Number of Clocked Exported Task calls during simulation     = 0
+Number of One Way Caller Task calls during simulation       = 1
+Number of Inbound Stream context switches                   = 0
+Number of Two Way based $random Task calls during simulation= 0
+Number of IBS based $random context switches                = 0
+Number of Output Pipe Send calls during simulation          = 0
+Number of Output Pipe Flush calls during simulation         = 0
+Number of Input Pipe Receive calls during simulation        = 0
+Number of TBX-C API calls during simulation                 = 0
+Number of Flexmem TCL cmds during simulation                = 0
+Number of Flexmem DM APIs during simulation                 = 0
+Number of Flexmem s/w calls during simulation               = 0
+Number of Context Switches during simulation                = 0
+
+
+=====================================================================================================
+              Source Information(systasks/DPI functions/tasks)
+=====================================================================================================
+             Name        (task id)          |   FileName (Line no.)
+         FSDB__DummyFinalBlkCaller (   ID-0)|  (0) 

@@ -1,0 +1,2 @@
+[Info] :Reading MVV elab options from .gui_elab_file: -suppress TBXC-4856 -suppress RTLC-4856 -suppress TBXC-4527 -suppress RTLC-4527 -suppress TBXC-4535 -suppress RTLC-4535 -suppress TBXC-5775 -suppress RTLC-5775 -suppress RTLC-4835 -suppress TBXC-4835 -new_vhdl_generate_flow  
+[Info] :Reading MVV elab options from .gui_elab_file: -suppress TBXC-4856 -suppress RTLC-4856 -suppress TBXC-4527 -suppress RTLC-4527 -suppress TBXC-4535 -suppress RTLC-4535 -suppress TBXC-5775 -suppress RTLC-5775 -suppress RTLC-4835 -suppress TBXC-4835 -new_vhdl_generate_flow  

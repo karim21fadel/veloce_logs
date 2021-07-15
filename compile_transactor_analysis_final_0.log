@@ -1,0 +1,95 @@
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/hdl-analyze -mct -ums -cms -comodel_analyze     -hdl verilog -platform veloce     -internal_tbx_analyze     -velcomp_tbx_merge     -w work_tbx_InternaL -lib_map_file veloce.med/tbx_internal_lib.map     +incdir+veloce.med/hdl_files  +incdir+veloce.med/rtlc.out      -nodebussy -dont_write_debussy_script -internal_tbx_analyze +define+MCT +define+TAPI_FLOPIFICATION_INPUT +define+TAPI_FLOPIFICATION_OUTPUT     +define+TBX_PUT=1 +define+TBX_FLUSH=2 +define+TBX_GET=4     +define+TBX_IS_DATA_AVAILABLE=8     -out_dir ./veloce.med/rtlc.out     -sf veloce.med/hdl_files/tbx_infra.list
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/hdl-analyze -mct -ums -cms -comodel_analyze     -hdl verilog -platform veloce     -tbx_transactor_analyze -internal_tbx_analyze     -velcomp_tbx_merge     -w TransLib -lib_map_file veloce.med/tbx_transactor_lib.map     +incdir+veloce.med/hdl_files  +incdir+veloce.med/rtlc.out      -nodebussy -dont_write_debussy_script -internal_tbx_analyze +define+MCT +define+TAPI_FLOPIFICATION_INPUT +define+TAPI_FLOPIFICATION_OUTPUT     +define+TBX_PUT=1 +define+TBX_FLUSH=2 +define+TBX_GET=4     +define+TBX_IS_DATA_AVAILABLE=8     -out_dir ./veloce.med/rtlc.out     -sf veloce.med/hdl_files/tbx_transactor.list
+
+
+Executing Command:
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/hdl-analyze -mct -ums -cms -comodel_analyze     -hdl verilog -platform veloce     -internal_tbx_analyze     -velcomp_tbx_merge     -w work_tbx_InternaL -lib_map_file veloce.med/tbx_internal_lib.map     +incdir+veloce.med/hdl_files  +incdir+veloce.med/rtlc.out      -nodebussy -dont_write_debussy_script -internal_tbx_analyze +define+MCT +define+TAPI_FLOPIFICATION_INPUT +define+TAPI_FLOPIFICATION_OUTPUT     +define+TBX_PUT=1 +define+TBX_FLUSH=2 +define+TBX_GET=4     +define+TBX_IS_DATA_AVAILABLE=8     -out_dir ./veloce.med/rtlc.out     -sf veloce.med/hdl_files/tbx_infra.list
+Info!     [Analyze-2003]: : Starting analysis of files in library
+                          "work_tbx_InternaL"
+Info!     [Analyze-4857]: : Total memory taken for compilation: 155.6 MB.
+Info!     [Analyze-4835]: : Total CPU time taken for compilation: 1.0 secs.
+Status    [Analyze-4513]: : Overall running time for compilation: 1.0 secs.
+
+
+Executing Command:
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/hdl-analyze -mct -ums -cms -comodel_analyze     -hdl verilog -platform veloce     -tbx_transactor_analyze -internal_tbx_analyze     -velcomp_tbx_merge     -w TransLib -lib_map_file veloce.med/tbx_transactor_lib.map     +incdir+veloce.med/hdl_files  +incdir+veloce.med/rtlc.out      -nodebussy -dont_write_debussy_script -internal_tbx_analyze +define+MCT +define+TAPI_FLOPIFICATION_INPUT +define+TAPI_FLOPIFICATION_OUTPUT     +define+TBX_PUT=1 +define+TBX_FLUSH=2 +define+TBX_GET=4     +define+TBX_IS_DATA_AVAILABLE=8     -out_dir ./veloce.med/rtlc.out     -sf veloce.med/hdl_files/tbx_transactor.list
+Info!     [Analyze-2003]: : Starting analysis of files in library "TransLib"
+Warning   [Analyze-1029]: File Internal_tbx_transactor, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor line 1. Using package
+                          definition in Internal_tbx_transactor line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor line 1. Using package
+                          definition in Internal_tbx_transactor line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor line 1. Using package
+                          definition in Internal_tbx_transactor line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor line 1. Using package
+                          definition in Internal_tbx_transactor line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor line 1. Using package
+                          definition in Internal_tbx_transactor line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor line 1. Using package
+                          definition in Internal_tbx_transactor line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor line 1. Using package
+                          definition in Internal_tbx_transactor line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor line 1. Using package
+                          definition in Internal_tbx_transactor line 1.
+Info!     [Analyze-2003]: : Starting analysis of files in library "TransLib"
+Info!     [Analyze-2003]: : Starting analysis of files in library "TransLib"
+Warning   [Analyze-1029]: File Internal_tbx_transactor2, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor2_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor2 line 1. Using package
+                          definition in Internal_tbx_transactor2 line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor2, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor2_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor2 line 1. Using package
+                          definition in Internal_tbx_transactor2 line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor2, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor2_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor2 line 1. Using package
+                          definition in Internal_tbx_transactor2 line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor2, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor2_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor2 line 1. Using package
+                          definition in Internal_tbx_transactor2 line 1.
+Warning   [Analyze-1029]: File Internal_tbx_transactor2, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor2_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor2 line 1. Using package
+                          definition in Internal_tbx_transactor2 line 1.
+Info!     [Analyze-2003]: : Starting analysis of files in library "TransLib"
+Info!     [Analyze-2003]: : Starting analysis of files in library "TransLib"
+Warning   [Analyze-1029]: File Internal_tbx_transactor4, Line 1: Redefinition of
+                          package ( \_TransLib_Internal_tbx_transactor4_unit ),
+                          previous definition is package in
+                          Internal_tbx_transactor4 line 1. Using package
+                          definition in Internal_tbx_transactor4 line 1.
+Info!     [Analyze-2003]: : Starting analysis of files in library "TransLib"
+Info!     [Analyze-4857]: : Total memory taken for compilation: 168.1 MB.
+Info!     [Analyze-4835]: : Total CPU time taken for compilation: 1.0 secs.
+Status    [Analyze-4513]: : Overall running time for compilation: 1.0 secs.
+Task: exited with code: 0

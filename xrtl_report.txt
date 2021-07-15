@@ -1,0 +1,30 @@
+==========================================================================================================================================================
+                                        SUMMARY OF XRTL TASKS
+==========================================================================================================================================================
+1) Statistics of HDL-to-HVL Communication Constructs
+  1.1) Input Pipe Calls           : 0
+  1.2) Output Pipe Calls          : 0
+  1.3) Inbound Stream             : 0
+  1.4) Delayed Return Callers     : 0
+  1.5) PlusArgs Tasks             : 0
+  1.4) Zero-Delay-Loops           : 0
+  1.6) Aggressive One-Way Callers : 0
+  1.7) One-Way Callers            : 0
+  1.8) Two-Way Callers            : 0
+  1.9) Reactive Monitor DPI's     : 0 
+  1.10) Streaming Monitor DPI's   : 0 
+  1.11) Internal Flexmem Callers  : 0
+  1.12) Internal Flexmem Callers   : 0
+       - HDL-to-C Flexmem Callers : 0
+
+2) Statistics of HVL-to-HDL Communication Constructs
+  2.1) Out-Of-The-Blue Calls      : 0
+  2.2) Clocked Export Tasks       : 0
+  2.3) Zero-Time Export Tasks     : 0
+
+3) Number of SV System Tasks      : 0
+
+
+==========================================================================================================================================================
+                                        DETAILED LIST OF XRTL TASKS
+==========================================================================================================================================================

@@ -1,0 +1,44 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - NXS
+## Application Pid - 85924
+## Log produced on - Thu Jul 15 21:01:17 2021
+###############################################
+Info!      [DMS-9999]: : [2021-07-15 21:01:17:749962] DmsNexus:: StartProcess:
+                       /tools/med_tools/software/EMULATORS/sphinx/edsLaunchScript_0.sh
+                       -emul sphinx -ehsid 0 -ehsaddress 589825 -rtsaddress
+                       804323329 -rtspid 86305 -rtshostmachine
+                       egc-med-heliopolis -logdir
+                       /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.log/veloce_runtime.log
+                       on egc-med-alexandria (Dir:
+                       /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation,
+                       LogFile:null, clientData:1, aIsLiveWithoutNexus: FALSE,
+                       RSH_Prog: )
+Info!      [DMS-9999]: : [2021-07-15 21:02:21:737491] DmsNexus:: StartProcess:
+                       /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw/libCopy.sh
+                       on egc-med-heliopolis.egc.mentorg.com (Dir:
+                       /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw,
+                       LogFile:null, clientData:6, aIsLiveWithoutNexus: TRUE,
+                       RSH_Prog: )
+Info!      [DMS-9999]: : [2021-07-15 21:02:22:341095] DmsNexus:: StartProcess:
+                       velwavegen -tracedir
+                       /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw
+                       -config veloce.config -createlinksonly -rtspid 86305 on
+                       localhost (Dir:
+                       /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation,
+                       LogFile:null, clientData:0, aIsLiveWithoutNexus: FALSE,
+                       RSH_Prog: )
+Info!      [DMS-9999]: : [2021-07-15 21:02:23:199554] DmsNexus:: StartProcess:
+                       velwavegen -tracedir
+                       /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw
+                       -config veloce.config -persistentmode -rtspid 86305 on
+                       localhost (Dir:
+                       /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation,
+                       LogFile:null, clientData:0, aIsLiveWithoutNexus: TRUE,
+                       RSH_Prog: )
+Info!      [DMS-9999]: : [2021-07-15 21:09:08:790793] HeartBeat not received for
+                       TclClient_GUI (TaskId: 2, PortId: 1) since 2021-07-15
+                       21:04 (5 mins).
+Info!      [DMS-9999]: : [2021-07-15 21:09:08:791166] HeartBeat not received for
+                       TclGUI (TaskId: 8, PortId: 1) since 2021-07-15 21:04 (5
+                       mins).

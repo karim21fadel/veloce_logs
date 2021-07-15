@@ -1,0 +1,13 @@
+# **************************************************
+#         VeloceGUI Version : Veloce 20.0.2_v0         
+#  
+# 
+#         Software Version  : 20.0.3      
+# **************************************************
+# Design visibility db loaded for tbx.
+# Warning   [TCLC-5501]: : Non-fatal message during creation of global MGLS
+#                        (licensing) object : Environment variable
+#                        MGLS_PKGINFO_FILE is set, if it points an old file, new
+#                        license features may not work.
+wave add -d tbx top.*
+# Dataset 'tbx' closed successfully

@@ -1,0 +1,14 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - XXX
+## Application Pid - 84281
+## Log produced on - Thu Jul 15 21:01:16 2021
+###############################################
+Info!      [DMS-9031]: : [2021-07-15 21:01:16:496408] Client with version 20.0.3
+                       connecting to nexus of version 20.0.3
+Warning    [Cms-FWAO]: File
+                       "/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.log/dmslogdir/EnterpriseClient.log"
+                       was already opened.
+                      
+Info!      [DMS-9031]: : [2021-07-15 21:01:16:673134] Client with version 20.0.3
+                       connecting to nexus of version 20.0.3

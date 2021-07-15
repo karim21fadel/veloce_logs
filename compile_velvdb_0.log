@@ -1,0 +1,358 @@
+/tools/med_tools/software/Veloce_v20.0.3/bin/velvdb -vs          ./veloce.med/hdl_files/mcttop.v -enc ./veloce.med/hdl_files/enc_crypt.ev         -Lutlib ./veloce.med/rtlc.out/out.lut.v -Root "top" -Ao med -target D2-200    -Dump c1 c1.dump -Dump c0 c0.dump -Dump e0 e0.dump -Dump e50 long_paths.dump -Mm 10.0 -disableSoftVw -SrND -NFBidi -RegTieUndrivenNets -KeepAlive veloce.med//rtlc.out/MOD_ANNOTATION/veloce.kal   -RTL -OPKC +define+MCT -TBX -Mem ./veloce.med/rtlc.out/vmw.mem -Com ./veloce.med/ilwork/vmw.com -SFF -SWOM -dumpDir veloce.log//velsyn/ -IVVN 20.0.3  -TBX  -KeepAlive veloce.med/rtlc.out/rtlcKeepAlive.txt -KeepAlive  veloce.med/tbxInternalKeepAlive.txt  -TBXnpw -TBXnpe    -force ./veloce.med/rtlc.out//iceforcesetstate.list -TNfi ./veloce.med/rtlc.out//iceforcesettie.list     -base_dir ./veloce.med    +define+VELOCE_PRESERVE
+
+
+Executing Command:
+/tools/med_tools/software/Veloce_v20.0.3/bin/velvdb -vs          ./veloce.med/hdl_files/mcttop.v -enc ./veloce.med/hdl_files/enc_crypt.ev         -Lutlib ./veloce.med/rtlc.out/out.lut.v -Root "top" -Ao med -target D2-200    -Dump c1 c1.dump -Dump c0 c0.dump -Dump e0 e0.dump -Dump e50 long_paths.dump -Mm 10.0 -disableSoftVw -SrND -NFBidi -RegTieUndrivenNets -KeepAlive veloce.med//rtlc.out/MOD_ANNOTATION/veloce.kal   -RTL -OPKC +define+MCT -TBX -Mem ./veloce.med/rtlc.out/vmw.mem -Com ./veloce.med/ilwork/vmw.com -SFF -SWOM -dumpDir veloce.log//velsyn/ -IVVN 20.0.3  -TBX  -KeepAlive veloce.med/rtlc.out/rtlcKeepAlive.txt -KeepAlive  veloce.med/tbxInternalKeepAlive.txt  -TBXnpw -TBXnpe    -force ./veloce.med/rtlc.out//iceforcesetstate.list -TNfi ./veloce.med/rtlc.out//iceforcesettie.list     -base_dir ./veloce.med  -LicKey $LIC_KEY                           +define+VELOCE_PRESERVE
+HostInfo: Linux egc-med-cairo 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux
+HostInfo: NumCpu 32 ApproxMIPS 9899.5 RealMem 257661MB PageSize 4096 AddrSize 64bit
+HostInfo: Free Ram: 8565MB  Shared Ram: 0MB  Buffered Ram: 4MB
+HostInfo: Load Averages: 1min(10.16) 5min(10.23) 15min(9.64)
+HostInfo: Total Swap: 51199MB	Free: 50256MB
+HostInfo: Number of processes: 17362
+BuildInfo: GIT_BRANCH  RELBR-v20_0_3 
+           SHA_TAG     521e4764153605fd8e996e3b81c9cbe7929d4483 
+
+                       Veloce Design Compiler
+             Copyright Mentor Graphics Corporation 2003 - 2020
+                           All Rights Reserved
+                          8005 SW Boeckman Road
+                       Wilsonville, OR, 97070, USA
+
+                            Version 20.0.3
+
+
+
+Velvdb Process ID 21491
+
+..
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/vmw_defines.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/med_rtl_reference.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/med_rtl_lut_reference.v
+Reading Verilog file: ./veloce.med/rtlc.out/out.lut.v
+Resolving References
+Resolving References
+.
+Reading Design Files ...
+Reading Verilog file: ./veloce.med/hdl_files/mcttop.v
+Reading include file veloce.med/hdl_files/ChannelParameters.v
+Reading include file veloce.med/rtlc.out/out.synth.vmw.v
+Reading include file veloce.med/rtlc.out/NET/DSIMU_FDPC_INIT0.v
+Reading include file veloce.med/rtlc.out/NET/DSIMU_FDPC_INIT1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_ADD_CLA_18.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_ADD_CLA_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_ADD_CLA_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_AND_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_AND_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_AND_4.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_CLK_PRIM0_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_12.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_16.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_24.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DEC_2_30.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DEC_2_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DEC_7_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DataOut_For_Caller_0.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_10.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_106.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_16.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_1680.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_20.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_22.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_220.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_30.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_32.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_34.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_35.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_36.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_38.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_40.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_42.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_45.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_48.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_50.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_540.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_560.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_8.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_11.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_12.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_13.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_16.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_32.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_LT_CLA_16.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_LT_CLA_17.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_LT_CLA_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Latcher_EN_Size_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Latcher_EN_Size_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Latcher_Size_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_2_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_4_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_57_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_9_4.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUX_3_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_NOR_29.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_NOR_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_NOR_8.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_10.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_11.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_12.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_13.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_18.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_21.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_32.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_4.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_5.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_56.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_65.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_7.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_8.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_XOR_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_And_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_And_7.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Mem_din_128_56.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_25.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_28.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_4.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_5.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_PosedgeEnable_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_PriEncoder_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_PriEncoder_56.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_buffer_128.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_buffer_32.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_encoder_56_6.v
+Reading include file veloce.med/rtlc.out/NET/TBX_BreakLongPath.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc0_3_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc10_15_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc11_11_1024_3_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc12_11_1_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc13_11_1152_5_0_0_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc1_10_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc2_8_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc3_10_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc4_10_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc5_8_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc6_7_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc7_5_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc8_7_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc9_7_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/incoMemDrive.v
+Reading include file veloce.med/rtlc.out/NET/rtlc_1.v
+Reading include file veloce.med/rtlc.out/NET/rtlc_2.v
+Reading include file veloce.med/rtlc.out/NET/rtlc_3.v
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 1: Module M_RTLSIM_MUXN_4_2 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_4_2.v, Line 1: Previous definition of module M_RTLSIM_MUXN_4_2
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 6159: Module M_RTLSIM_MUXN_2_1 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_2_1.v, Line 1: Previous definition of module M_RTLSIM_MUXN_2_1
+Reading include file veloce.med/rtlc.out/NET/rtlc_4.v
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 1: Module M_RTLSIM_MUXN_4_2 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 1: Previous definition of module M_RTLSIM_MUXN_4_2
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 21: Module M_RTLSIM_MUXN_2_1 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 6159: Previous definition of module M_RTLSIM_MUXN_2_1
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 33: Module M_RTLSIM_INCR_3 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 137: Previous definition of module M_RTLSIM_INCR_3
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 56: Module M_RTLSIM_INCR_8 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 85: Previous definition of module M_RTLSIM_INCR_8
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 108: Module M_RTLSIM_INCR_10 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 21: Previous definition of module M_RTLSIM_INCR_10
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 172: Module M_RTLSIM_INCR_4 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 160: Previous definition of module M_RTLSIM_INCR_4
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 242: Module M_RTLSIM_INCR_2 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 225: Previous definition of module M_RTLSIM_INCR_2
+Reading include file veloce.med/rtlc.out/NET/rtlc_5.v
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 390: Module M_RTLSIM_MUXN_2_1 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 21: Previous definition of module M_RTLSIM_MUXN_2_1
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 577: Module M_RTLSIM_MUXN_4_2 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 1: Previous definition of module M_RTLSIM_MUXN_4_2
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 597: Module M_RTLSIM_INCR_5 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 190: Previous definition of module M_RTLSIM_INCR_5
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 632: Module M_RTLSIM_INCR_8 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 56: Previous definition of module M_RTLSIM_INCR_8
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 684: Module M_RTLSIM_INCR_10 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 108: Previous definition of module M_RTLSIM_INCR_10
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 3899: Module M_RTLSIM_INCR_3 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 33: Previous definition of module M_RTLSIM_INCR_3
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 3922: Module M_RTLSIM_INCR_4 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 172: Previous definition of module M_RTLSIM_INCR_4
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 3952: Module M_RTLSIM_INCR_7 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 260: Previous definition of module M_RTLSIM_INCR_7
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 3999: Module M_RTLSIM_INCR_6 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 202: Previous definition of module M_RTLSIM_INCR_6
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 6460: Module M_RTLSIM_INCR_2 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 242: Previous definition of module M_RTLSIM_INCR_2
+.Reading include file veloce.med/rtlc.out/NET/rtlc_6.v
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_6.v, Line 126: Module M_RTLSIM_EQ_16 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/M_RTLSIM_EQ_16.v, Line 1: Previous definition of module M_RTLSIM_EQ_16
+Warning   [Velvdb-12514]: : File veloce.med/rtlc.out/NET/rtlc_6.v, Line 595: Module M_RTLSIM_MUXN_2_1 is already defined, replacing the previous definition.
+Warning   [Velvdb-12518]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 390: Previous definition of module M_RTLSIM_MUXN_2_1
+Reading include file veloce.med/rtlc.out/NET/rtlc_top_GLOBAL_SIGNAL.v
+Reading include file veloce.med/ilwork/tipComodelMacros.v
+Reading include file veloce.med/hdl_files/MctGlobalAssignBlock_gate.v
+Reading include file veloce.med/hdl_files/from_install/MctPublicUclockGen.v
+Reading include file veloce.med/hdl_files/from_install/TbxClockGenFD-veloce.v
+Reading include file veloce.med/hdl_files/veloce.uclockgen.v
+Reading include file veloce.med/hdl_files/from_install/tipComodelMacrosWrapper.v
+Reading include file veloce.med/hdl_files/from_install/VeloceGuiBreakSeqMacro.v
+Reading include file veloce.med/hdl_files/from_install/forceSetLib.v
+Reading include file veloce.med/hdl_files/from_install/ipLib.v
+
+Reading Verilog file: ./veloce.med/hdl_files/enc_crypt.ev
+Reading include file veloce.med/rtlc.out/NET/ChannelController.e
+..Reading include file veloce.med/rtlc.out/NET/IntervalProfileReortLogic.e
+Reading include file veloce.med/rtlc.out/NET/M_IDFAULT_MUX.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_BackupReplay_Transactor.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_CRC_PH_II.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_CallerDataOut_mux_1.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Dummy_Clock_Report_Module.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Dummy_transactor_Top.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_FSDBChannelController2.e
+.........Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_FSDBEnableSelector.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_FSDB_Vhdl_Scope_2.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Final_Logic.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_GLOB_CONN.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUX_9_4_128_Wrapper.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUX_9_4_64_Wrapper.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Otc_Dynamic_Slot_56_6.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Output_Port_Mux_Controller_Core_5.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_PRInfo_mux.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TBX_INTERNAL_CLOCKGEN.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TBX_MULTI_CLK_PRIM.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TBX_TCAM_CLOCK_MACRO.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TBX_TCAM_CLOCK_MACRO_inner.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TIMER_PRIM.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TriggerTraceOff_Transactor.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Xrtl_ForceRelease_Connector.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_storecookie.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_0.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_1.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_2.e
+....Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_3.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_wrapper.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Mem_RdData_ReOrdr_1024_725_2.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Mem_din_ReOrdr_1024_725_2.e
+Reading include file veloce.med/rtlc.out/NET/M_TBXSIM_DirXtorConnWrapper.e
+Reading include file veloce.med/rtlc.out/NET/M_TBX_DIR_AND_ENABLE_XTOR__WRAPPER.e
+Reading include file veloce.med/rtlc.out/NET/MctCore.e
+Reading include file veloce.med/rtlc.out/NET/RunTimeInterconnector.e
+Reading include file veloce.med/rtlc.out/NET/SceMiRunControl.e
+Reading include file veloce.med/rtlc.out/NET/SimTimeInPs.e
+Reading include file veloce.med/rtlc.out/NET/WaveOnTimeXGen.e
+Reading include file veloce.med/rtlc.out/NET/reset_tbx_bhvc__modified.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_6.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_M_RTLSIM_Output_Port_Mux_Controller_NUM_OUT_PORTS_5.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_M_RTLSIM_SanitySignalGenerator_TIP_SIGNAL_SIZE_1152.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_M_RTLSIM_SanitySignalGenerator_TIP_SIGNAL_SIZE_192.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_MctSwControl_ClockNum_0.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiClockControl_ClockNum_0.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageInPort_PortWidth_32.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageInPort_PortWidth_68.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_1056.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_32.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_480.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_512.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_544.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_tipComodelWrapper_PathBreaker_TIP_SIZE_1152.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_tipComodelWrapper_PathBreaker_TIP_SIZE_192.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_transactorSch_XACTOR_CNT_1_XSCHEDULING_MEM_DEPTH_2048_MEM_WR_RD_ADDR_12.e
+.
+End of phase: ReadInputFiles
+TimeStamp: 4.3 user + 0.3 sys = 0.08 mins. Elapsed time: user+sys = 0.05 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.06 mins, Elapsed time = 0.06 mins
+MemoryStats: busy   155M + empty   5M + bigblks   6M + other   2M =   168M
+
+....
+End of phase: CreateRoot
+TimeStamp: 4.8 user + 0.4 sys = 0.09 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.06 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   166M + empty  10M + bigblks   8M + other   1M =   184M
+
+Reading library primitives
+
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/med_rtl_synthprim.v
+Resolving References
+Reading board topology
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond2_array_proto.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond_protos.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond2_logic_board.v
+.
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond2_switch_board.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond2_mid_plane.v
+.......
+Resolving References
+.
+End of phase: CreateTechSpec
+TimeStamp: 5.8 user + 0.5 sys = 0.11 mins. Elapsed time: user+sys = 0.02 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.08 mins, Elapsed time = 0.02 mins
+MemoryStats: busy   270M + empty  18M + bigblks  11M + other   0M =   299M
+
+
+Resolving Libraries ...
+Resolving References
+.
+End of phase: ResolveLibraries
+TimeStamp: 5.8 user + 0.5 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.08 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   270M + empty  18M + bigblks  11M + other   0M =   299M
+
+.
+End of phase: ExposeBondedCores
+TimeStamp: 5.9 user + 0.5 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.09 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   271M + empty  17M + bigblks  11M + other   0M =   299M
+
+.
+End of phase: ClockRead
+TimeStamp: 5.9 user + 0.5 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.09 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   271M + empty  17M + bigblks  11M + other   0M =   299M
+
+...
+Writing incremental Veloce Database recon.vdb.
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Velvdb_DescriptorLibrary.vdb.0.tmp' using lazy-SymbolTable-write
+ZFileWrite(...DescriptorLibrary.vdb.0.tmp): 0M
+ZFileWrite(...DescriptorLibrary.vdb.0.tmp): wrote 331 chunks.
+.
+End of phase: WriteDatabase
+TimeStamp: 7.0 user + 0.6 sys = 0.13 mins. Elapsed time: user+sys = 0.02 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.11 mins, Elapsed time = 0.02 mins
+MemoryStats: busy   286M + empty   2M + bigblks  11M + other   1M =   300M
+
+
+Expanding ...
+.
+End of phase: Expand
+TimeStamp: 8.5 user + 0.8 sys = 0.15 mins. Elapsed time: user+sys = 0.03 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.13 mins, Elapsed time = 0.03 mins
+MemoryStats: busy   408M + empty   8M + bigblks  11M + other   1M =   428M
+
+
+Assigning Global IDs ...
+NameTable stats:
+  Last UID: 2824644
+  Total Number of Nodes: 2824143
+..
+End of phase: ComputeAndAssignUID
+TimeStamp: 9.6 user + 0.9 sys = 0.17 mins. Elapsed time: user+sys = 0.02 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.16 mins, Elapsed time = 0.02 mins
+MemoryStats: busy   402M + empty  30M + bigblks  11M + other   1M =   444M
+
+
+Total Warnings: 42, total Errors: 0
+MemoryStats: busy   402M + empty  30M + bigblks  11M + other   1M =   444M
+Task: exited with code: 0

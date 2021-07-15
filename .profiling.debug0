@@ -1,0 +1,83 @@
+1) lastSec = 5973768
+2) lastUSec = 810607
+3) pTimeBeforeTbxManagerConstruction = 0.000119
+4) pTimeInTbxManagerConstruction = 8.479292
+5) twcllr = : 0.000000
+5.1) randomTwCaller = : 0.000000
+6) tclle = : 0.000000
+7) tsystk = : 0.000000
+8) tOutputPipe = : 0.000000
+9) tInputPipe = : 0.000000
+10) ibStream = : 0.000000
+10.1) randomIbStream = : 0.000000
+11) ibStreamExecTime = : 0.000000
+11.1) randomIbStreamExecTime = : 0.000000
+12) fsdbTaskTime = : 0.000000
+13) otcIpReplayTaskTime = : 0.000000
+14) drcCallerTime = : 0.000000
+15) pTotalOneWayClrExecTime = : 0.000000
+16) xsmCallerExecTime = : 0.000000
+18) Before Adding last time avgg1 + avgg2
+19) 5.624553 + 0.000008
+18) Before Adjustment pTotalTimeAfterTbxManager = avgg1 + avgg2
+19) 164.157073 = 164.157065 + 0.000008
+18) pTotalTimeAfterTbxManager = avgg1 + avgg2
+19) 164.020000 = 164.019992 + 0.000008
+
+17.1) Number of extra loop-backs : 100
+17.2) Time Per Round-Trip (extra loop-backs) : 0.000000
+17.3) mXtraLoopBackTotalTime : 0.000000
+17.4) Number of context switches in design : 0
+17.5) Approx. number of Uclks per context switch : 0.000000
+20) avgg2 = avgg2 - tclle
+21) 0.000008 = 0.000008 - 0.000000
+
+22) avgg1 = avgg1-(twcllr + randomTwCaller + tsystk + tOutputPipe + tInputPipe)
+23) 164.019992 = 164.019992 - (0.000000 + 0.000000 + 0.000000 + 0.000000 + 0.000000)
+
+25) mTotalSoftwareExTime = : 0.000000
+25.1) bSwExecTimeConsumedAtZeroTimeSet = : 1
+26) mSwExecTimeConsumedAtZeroTime = : 5.624553
+27) mTotalSoftwareExTime = : 5.624553
+28) extraCommunicationTime = : 158.395439
+29) endClockTime.tv_sec = 5973927
+30) endClockTime.tv_usec = 343119
+31) constructorClockTime.tv_sec = 5973763
+32) constructorClockTime.tv_usec = 186046
+33) initialClockTime->tv_sec = 5973754
+34) initialClockTime->tv_usec = 706635
+35) gTbxManagerConstructorStartTime.tv_sec = 5973754
+36) gTbxManagerConstructorStartTime.tv_usec = 706754
+37) sec = : 158
+38) usec = : 532512
+39.1) dNumUclocks = : 1376197
+39.2) freq_top_uclock = : 1818.181000
+39.3) dNumChannelIdleClocks = : 0
+39.4) dNumUclocksDRC = : 45
+39.1) pChannelIdleTime = : 0.000000
+39.2) pDrcWaitingTime = : 0.000025
+39.3) pAowcWaitingTime = : 0.000000
+40) dNumTimeAdvancePoints = 5
+41) avgg2 = avgg2 - pHardWareAdvance - ibStream - randomIbStream
+42) 0.000005 = 0.000008 - 0.000003 - 0.000000 - 0.000000
+
+43) pCommunicationTime = : 158.395419
+
+44) pTotalSoftWareTime = : 5.624553
+45) pTimedSysCExecTime = : 0.000000
+
+46) pClocksStoppedInternalTime =  : 1.331641
+47) pClocksStoppedExternalTime =  : 0.000000
+48) Clock Suspend Calls (Internal) = : 4
+49) Clock Resume Calls  (Internal) = : 4
+
+50) Clock Suspend Calls (External) = : 0
+51) Clock Resume Calls  (External) = : 0
+
+52) Total Time for which uclocks have run =         : 0.756909
+53) Total Time for which uclocks were stopped =     : 163.263091
+54) Total Time consumed in Hw-Sw sync =     : 0.000000
+55) Number of Hw-Sw sync calls       =     : 0
+56) Time for which uclocks were stopped in TCL      : 161.931450
+57) Time for which uclocks were stopped in TCL(flex): 0.000000
+58) Sampling based profiling: Upper Bound of all AOWC calls : 158.395447 sec

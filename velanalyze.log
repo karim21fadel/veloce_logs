@@ -1,0 +1,31 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - XXX
+## Application Pid - 8730
+## Log produced on - Thu Jul 15 14:16:07 2021
+###############################################
+Info!     [velanalyze-25466]: : velanalyze Version 20.0.3
+                             
+Info!     [velanalyze-25228]: : BuildInfo : GIT_BRANCH: RELBR-v20_0_3
+                              SHA_TAG : 521e4764153605fd8e996e3b81c9cbe7929d4483
+                             
+Info!     [velanalyze-25225]: : Command Line for tool : velanalyze is :
+                              -hdl verilog -vef vefilelist
+Info!     [velanalyze-18201]: : Started task: compile_analyze_0 (egc-med-cairo) 2021-07-15 14:16:08.163177
+Status    [Analyze-4513]: : Overall running time for compilation: 0.0 secs.
+Warning   [Analyze-1006]: File /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/top.v, Line 2: Null port declaration.
+Status    [Analyze-4513]: : Overall running time for compilation: 1.0 secs.
+Info!     [velanalyze-18231]: : Completed task: compile_analyze_0 (egc-med-cairo) 0 minutes 2021-07-15 14:16:10.331276
+Info!     [velanalyze-25218]: : Dtask compile report is saved in /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/veloce.out/veloce.report
+                              Each detailed task information is saved in /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/veloce.out/veloce.stat
+                             
+Info!     [velanalyze-25220]: : Overall Running time: (Thu Jul 15 14:16:10 2021)
+                              0 minutes.
+                             
+                             
+Info!     [velanalyze-25219]: : Bad Machines:
+                              None.
+                             
+                             
+Info!     [velanalyze-25214]: : Dtask exiting ...
+Info!     [velanalyze-25215]: : Compilation finished successfully.

@@ -1,0 +1,50 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - RTS
+## Application Pid - 86305
+## Log produced on - Thu Jul 15 21:01:16 2021
+###############################################
+Info!      [DMS-9031]: : [2021-07-15 21:01:16:945019] Client with version 20.0.3
+                       connecting to nexus of version 20.0.3
+Info!      [DMS-9999]: : [2021-07-15 21:01:17:716699]
+                       DMS_OVERFLOW_READ_WRITE_LEFTSHIFT_VAL = 0.
+Error      [DMS-9029]: : [2021-07-15 21:02:22:68190] Message
+                       RS_TR_SETSIMTIMEVALUE is not handled by
+                      
+                       RuntimeTaskBase::Handler::Despatch
+Error      [DMS-9025]: : [2021-07-15 21:02:22:89432] Problem despatching msg
+                      
+                       Dms Error Report : Error in stream.
+                      
+Error      [DMS-9029]: : [2021-07-15 21:02:26:390783] Message
+                       RS_TR_SETSIMTIMEVALUE is not handled by
+                      
+                       RuntimeTaskBase::Handler::Despatch
+Error      [DMS-9025]: : [2021-07-15 21:02:26:391166] Problem despatching msg
+                      
+                       Dms Error Report : Error in stream.
+                      
+Error      [DMS-9029]: : [2021-07-15 21:03:07:432308] Message
+                       RS_TR_SETSIMTIMEVALUE is not handled by
+                      
+                       RuntimeTaskBase::Handler::Despatch
+Error      [DMS-9025]: : [2021-07-15 21:03:07:433362] Problem despatching msg
+                      
+                       Dms Error Report : Error in stream.
+                      
+Error      [DMS-9029]: : [2021-07-15 21:03:11:537560] Message
+                       RS_TR_SETSIMTIMEVALUE is not handled by
+                      
+                       RuntimeTaskBase::Handler::Despatch
+Error      [DMS-9025]: : [2021-07-15 21:03:11:538173] Problem despatching msg
+                      
+                       Dms Error Report : Error in stream.
+                      
+Error      [DMS-9029]: : [2021-07-15 21:03:12:179869] Message
+                       RS_TR_SETSIMTIMEVALUE is not handled by
+                      
+                       RuntimeTaskBase::Handler::Despatch
+Error      [DMS-9025]: : [2021-07-15 21:03:12:180301] Problem despatching msg
+                      
+                       Dms Error Report : Error in stream.
+                      

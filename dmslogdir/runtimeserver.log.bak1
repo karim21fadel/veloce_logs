@@ -1,0 +1,46 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - RTS
+## Application Pid - 23451
+## Log produced on - Thu Jul 15 20:54:47 2021
+###############################################
+Info!      [DMS-9031]: : [2021-07-15 20:54:47:702257] Client with version 20.0.3
+                       connecting to nexus of version 20.0.3
+Info!      [DMS-9999]: : [2021-07-15 20:54:48:161821]
+                       DMS_OVERFLOW_READ_WRITE_LEFTSHIFT_VAL = 0.
+Error      [DMS-9029]: : [2021-07-15 20:55:16:417673] Message
+                       RS_TR_SETSIMTIMEVALUE is not handled by
+                      
+                       RuntimeTaskBase::Handler::Despatch
+Error      [DMS-9025]: : [2021-07-15 20:55:16:428013] Problem despatching msg
+                      
+                       Dms Error Report : Error in stream.
+                      
+Error      [DMS-9029]: : [2021-07-15 20:55:21:412235] Message
+                       RS_TR_SETSIMTIMEVALUE is not handled by
+                      
+                       RuntimeTaskBase::Handler::Despatch
+Error      [DMS-9025]: : [2021-07-15 20:55:21:422272] Problem despatching msg
+                      
+                       Dms Error Report : Error in stream.
+                      
+Error      [DMS-9029]: : [2021-07-15 20:57:13:363677] Message
+                       RS_TR_SETSIMTIMEVALUE is not handled by
+                      
+                       RuntimeTaskBase::Handler::Despatch
+Error      [DMS-9025]: : [2021-07-15 20:57:13:439411] Problem despatching msg
+                      
+                       Dms Error Report : Error in stream.
+                      
+Error      [DMS-9029]: : [2021-07-15 20:57:17:647305] Message
+                       RS_TR_SETSIMTIMEVALUE is not handled by
+                      
+                       RuntimeTaskBase::Handler::Despatch
+Error      [DMS-9025]: : [2021-07-15 20:57:17:672993] Problem despatching msg
+                      
+                       Dms Error Report : Error in stream.
+                      
+Error      [DMS-9021]: : [2021-07-15 20:58:28:167861] Unable to connect to
+                       10.105.42.141:36723: Connection refused
+Warning    [DMS-9999]: : [2021-07-15 20:58:28:168405] Unable to make connection
+                       to task 16 at 10.105.42.141:36723: Connection refused.

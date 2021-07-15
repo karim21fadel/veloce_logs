@@ -1,0 +1,25 @@
+XWAVE_DEBUG: EET Thu Jul 15 21:02:21 2021
+
+
+dm_Open_Waveform_File_v5(outputFsdb = "tbx", xwaveFormat = 1/*CRD=1*/, XwaveIsLDSWritingEnabled = 0, bIsXwavePreserveFileNFS = 1, LDSWriterInterface = 0, aNoWaveGen = 0) : SUCCESSFUL
+[2021-07-15 21:02:21:769580]  Opening : File 0
+[2021-07-15 21:02:21:770348]  Writing : File 0
+[2021-07-15 21:02:21:770538]  Closing active raw files.
+[2021-07-15 21:02:21:770866]  Closed active raw files.
+[2021-07-15 21:02:21:771722]  Opening : File 1
+[2021-07-15 21:02:21:772370]  Writing : File(F) 1
+XWAVE : PrintCompressedRawFsdbXactions called for xWaveFlushMarking.
+[2021-07-15 21:02:26:390361]  Closing active raw files.
+[2021-07-15 21:02:26:390904]  Closed active raw files.
+[2021-07-15 21:02:26:403881]  Opening : File 2
+[2021-07-15 21:02:26:404376]  Writing : File(F) 2
+XWAVE : PrintCompressedRawFsdbXactions called for xWaveFlushMarking.
+[2021-07-15 21:03:07:432115]  Closing active raw files.
+[2021-07-15 21:03:07:432523]  Closed active raw files.
+[2021-07-15 21:03:07:433399]  Opening : File 3
+[2021-07-15 21:03:07:434108]  Writing : File(F) 3
+XWAVE : PrintCompressedRawFsdbXactions called for xWaveFlushMarking.
+[2021-07-15 21:03:11:852397]  Closing active raw files.
+[2021-07-15 21:03:11:852956]  Closed active raw files.
+[2021-07-15 21:03:11:867946]  Opening : File 4
+[2021-07-15 21:03:11:868589]  Writing : File(F) 4

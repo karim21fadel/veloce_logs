@@ -1,0 +1,1522 @@
+[2021-07-15 20:55:01:786645][3717953344] Overide/Restore signal-handler for tstp/cont = 0
+[2021-07-15 20:55:01:873861][3717953344] Overide/Restore signal-handler for tstp/cont = 1
+
+[2021-07-15 20:55:01:873892][3717953344] TBX_TRACE :static void Tmct::RegisterSignalHandlers() tmct.cxx:4591
+[2021-07-15 20:55:03:940472][3717953344] Overide/Restore signal-handler for tstp/cont = 0
+[2021-07-15 20:55:04:257959][3717953344] PTHREAD Stack size = 8404992
+
+[2021-07-15 20:55:04:258008][3717953344] TBX_TRACE :static void Tmct::StartPollingThread() tmct.cxx:7745
+[2021-07-15 20:55:04:258090][3717953344] Started polling Thread id 3528193792 from 3717953344
+
+[2021-07-15 20:55:04:258104][3717953344] TBX_TRACE :int Tmct::invokeVelecForESStatus() tmct.cxx:8177
+
+[2021-07-15 20:55:04:258121][3528193792] TBX_TRACE :static void* Tmct::PollingThread(void*) tmct.cxx:8010
+[2021-07-15 20:55:05:47176][3717953344] Invoked velec executable returned status = 42
+
+[2021-07-15 20:55:05:47224][3717953344] TBX_TRACE :static void Tmct::CreateRunLockForMultipleComodelApp() tmct.cxx:8097
+
+[2021-07-15 20:55:05:50031][3717953344] TBX_TRACE :int WaitForDesignToBeDownloaded(bool) tmct.cxx:13511
+[2021-07-15 20:55:05:50193][3717953344] Calling dm_IsDesignDownloaded:1:1 ....[2021-07-15 20:55:05:50252][3717953344] Finished:1:1. 
+[2021-07-15 20:55:05:50259][3717953344] Design successfully downloaded
+
+[2021-07-15 20:55:05:50267][3717953344] TBX_TRACE :static char* Tmct::PopulateUsedComodHostInfo(unsigned int&, bool, int) tmct.cxx:8340
+[2021-07-15 20:55:05:50272][3717953344] Calling dm_clock_suspend:1:1 ....[2021-07-15 20:55:05:50910][3717953344] Finished:1:1. 
+[2021-07-15 20:55:05:50922][3717953344] Calling dm_GetUsedComodList_v2:1:1 ....[2021-07-15 20:55:05:51139][3717953344] Finished:1:1. 
+[2021-07-15 20:55:05:51149][3717953344] Calling dm_clock_resume:1:1 ....[2021-07-15 20:55:05:91540][3717953344] Finished:1:1. 
+[2021-07-15 20:55:05:112463][3717953344] Calling dm_clock_suspend:1:1 ....[2021-07-15 20:55:05:152520][3717953344] Finished:1:1. 
+[2021-07-15 20:55:05:152925][3717953344] Calling dm_reg_setvalue_wStr:1:1 ....[2021-07-15 20:55:05:311047][3717953344] Finished:1:1. 
+[2021-07-15 20:55:05:311269][3717953344] Calling dm_clock_resume:1:1 ....[2021-07-15 20:55:06:13514][3717953344] Finished:1:1. 
+[2021-07-15 20:55:06:13572][3717953344] Calling dm_clock_info:1:1 ....[2021-07-15 20:55:06:14185][3717953344] Finished:1:1. 
+[2021-07-15 20:55:07:25707][3717953344] Calling dm_clock_suspend:1:1 ....[2021-07-15 20:55:07:26177][3717953344] Finished:1:1. 
+[2021-07-15 20:55:07:26220][3717953344] Calling dm_comodReset:1:1 ....[2021-07-15 20:55:07:424799][3717953344] Finished:1:0. 
+[2021-07-15 20:55:07:424832][3717953344] Calling dm_clock_resume:1:1 ....[2021-07-15 20:55:07:464545][3717953344] Finished:1:1. 
+[2021-07-15 20:55:07:464576][3717953344] Calling dm_clock_run_name:1:1 ....[2021-07-15 20:55:09:402093][3717953344] Finished:1:1. 
+[2021-07-15 20:55:09:402127][3717953344] Calling dm_clock_suspend:1:1 ....
+[2021-07-15 20:55:09:444526][3717953344] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:09:444554][3717953344] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^828314215'
+[2021-07-15 20:55:09:444576][3717953344] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:09:444588][3717953344] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:09:444909][3717953344] Finished:1:1. 
+[2021-07-15 20:55:09:444948][3717953344] Finished:1:1. 
+[2021-07-15 20:55:09:444958][3717953344] Calling dm_comodReset:1:1 ....[2021-07-15 20:55:09:661035][3717953344] Finished:1:1. 
+[2021-07-15 20:55:09:661064][3717953344] Calling dm_clock_resume:1:1 ....[2021-07-15 20:55:09:701534][3717953344] Finished:1:1. 
+[2021-07-15 20:55:09:710698][3717953344] Calling dm_getuseroption:1:1 ....[2021-07-15 20:55:09:711548][3717953344] Finished:1:1. 
+[2021-07-15 20:55:09:744263][3717953344] Calling dm_RegisterRunCompleteCallBack:1:1 ....[2021-07-15 20:55:09:772141][3717953344] Finished:1:1. 
+[2021-07-15 20:55:09:934154][3717953344] Calling dm_clock_run_name:1:1 ....[2021-07-15 20:55:11:401712][3717953344] Finished:1:1. 
+[2021-07-15 20:55:11:423255][3717953344] bool bIsFirstHwTransaction = 1, timeStampInt = 144294912, csidetimeStamp = 144294912
+[2021-07-15 20:55:11:423327][3717953344] OPCODE_RUN_COMMAND recieved.
+[2021-07-15 20:55:11:435892][3717953344] Calling  SceMi::ClkStop()...
+[2021-07-15 20:55:11:436067][3717953344] Calling dm_RegisterRunCompleteCallBack:1:1 ....[2021-07-15 20:55:11:436609][3717953344] Finished:1:1. 
+[2021-07-15 20:55:11:436622][3717953344] Calling dm_clock_stop:1:1 ....[2021-07-15 20:55:12:90763][3717953344] Finished:1:1. 
+[2021-07-15 20:55:12:90794][3717953344] Calling dm_RegisterRunCompleteCallBack:1:1 ....
+[2021-07-15 20:55:12:93426][3717953344] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:12:93436][3717953344] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1603840932'
+[2021-07-15 20:55:12:93449][3717953344] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:12:93457][3717953344] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:12:93587][3717953344] Finished:1:1. 
+[2021-07-15 20:55:12:140550][3717953344] Finished:1:1. 
+[2021-07-15 20:55:12:140611][3717953344] Calling dm_replayDBInfo:1:1 ....[2021-07-15 20:55:12:140833][3717953344] Finished:1:1. 
+[2021-07-15 20:55:12:141026][3717953344] Calling dm_clock_suspend:1:1 ....[2021-07-15 20:55:12:180468][3717953344] Finished:1:1. 
+[2021-07-15 20:55:12:180483][3717953344] Calling dm_applyBlockRegSet:1:1 ....[2021-07-15 20:55:12:180517][3717953344] Finished:1:1. 
+[2021-07-15 20:55:12:180525][3717953344] Calling dm_clock_resume:1:1 ....[2021-07-15 20:55:12:220537][3717953344] Finished:1:1. 
+
+[2021-07-15 20:55:12:260858][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:12:260884][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2035128611'
+[2021-07-15 20:55:12:260911][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:12:260917][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:12:261085][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:13:493513][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:13:493537][3528193792] Gui callback received with queryID = 7654321, cmdCode = 45,  cmdString = 'on '
+
+[2021-07-15 20:55:13:493551][3717953344] TBX_TRACE :void ProcessTBXDmsMessage(int, int, const char*) scemi.cxx:8353
+[2021-07-15 20:55:13:493579][3717953344] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = 
+[2021-07-15 20:55:13:493596][3717953344] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:13:493785][3717953344] Finished:1:1. 
+
+[2021-07-15 20:55:13:498246][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:13:498257][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^114543697'
+[2021-07-15 20:55:13:498297][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:13:498306][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:13:498445][3528193792] Finished:1:1. 
+[2021-07-15 20:55:15:531284][3717953344] Sending Transaction to start HwInit Activity
+[2021-07-15 20:55:15:531340][3717953344] OPCODE_HW_INIT_ACT_START received
+[2021-07-15 20:55:15:531355][3717953344] HwInit Activity done received
+[2021-07-15 20:55:15:531371][3717953344] Calling-RecDM dm_getuseroption:0:1 ....[2021-07-15 20:55:15:531590][3717953344] Finished-RecDM dm_getuseroption:0:0 ....
+[2021-07-15 20:55:15:546146][3717953344] Calling-RecDM dm_Launch_FSDBServer:0:1 ....[2021-07-15 20:55:15:546217][3717953344] Finished-RecDM dm_Launch_FSDBServer:0:1 ....
+[2021-07-15 20:55:15:546319][3717953344] Calling dm_Open_Waveform_File_v5:1:1 ....[2021-07-15 20:55:15:814648][3717953344] Finished:1:0. 
+
+[2021-07-15 20:55:15:917440][3717953344] TBX_TRACE :void Tmct::SendAckForNoInbound() tmct.cxx:12910
+
+[2021-07-15 20:55:19:560007][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:19:560028][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^992565473'
+[2021-07-15 20:55:19:560049][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:19:560055][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:19:560197][3528193792] Finished:1:1. 
+[2021-07-15 20:55:19:599232][3528193792] Clkstop CB detected...10000
+[2021-07-15 20:55:19:599246][3528193792] Calling dm_StopReason_v2:1:1 ....[2021-07-15 20:55:19:599286][3528193792] Finished:1:1. 
+[2021-07-15 20:55:19:599295][3528193792] Calling dm_event_info_mature:1:1 ....[2021-07-15 20:55:19:599473][3528193792] Finished:1:1. 
+[2021-07-15 20:55:19:599482][3528193792] Calling dm_bp_list_active:1:1 ....[2021-07-15 20:55:19:599662][3528193792] Finished:1:1. 
+[2021-07-15 20:55:19:599672][3528193792] Calling dm_sendrundoneforccallbackexec:1:1 ....[2021-07-15 20:55:19:599757][3528193792] Finished:1:1. 
+[2021-07-15 20:55:19:599765][3528193792] Immediate Clkstop response sent due to internal BP.
+
+[2021-07-15 20:55:19:622036][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:19:622047][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1133379558'
+[2021-07-15 20:55:19:622060][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:19:622066][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:19:622185][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:21:465458][3717953344] TBX_TRACE :void Tmct::SendAckForNoInbound() tmct.cxx:12910
+
+[2021-07-15 20:55:23:485994][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:23:486017][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1745483272'
+[2021-07-15 20:55:23:486064][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:23:486079][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:23:486242][3528193792] Finished:1:1. 
+[2021-07-15 20:55:23:571098][3528193792] Clkstop CB detected...20000
+[2021-07-15 20:55:23:571117][3528193792] Calling dm_StopReason_v2:1:1 ....[2021-07-15 20:55:23:571144][3528193792] Finished:1:1. 
+[2021-07-15 20:55:23:571151][3528193792] Calling dm_event_info_mature:1:1 ....[2021-07-15 20:55:23:571328][3528193792] Finished:1:1. 
+[2021-07-15 20:55:23:571345][3528193792] Calling dm_bp_list_active:1:1 ....[2021-07-15 20:55:23:571469][3528193792] Finished:1:1. 
+[2021-07-15 20:55:23:571478][3528193792] Calling dm_sendrundoneforccallbackexec:1:1 ....[2021-07-15 20:55:23:571540][3528193792] Finished:1:1. 
+[2021-07-15 20:55:23:571547][3528193792] Immediate Clkstop response sent due to internal BP.
+
+[2021-07-15 20:55:23:600219][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:23:600232][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1947445632'
+[2021-07-15 20:55:23:600248][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:23:600256][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:23:600370][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:23:646367][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:23:646385][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvA1.DP_A1.convA1_IFM1.IFM_Memory -content_file extraction/input/image_4977_fixed.txt -format verilogBin '
+
+[2021-07-15 20:55:23:646400][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:23:646479][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:23:646491][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:23:646645][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:23:659729][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:23:659740][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2020691853'
+[2021-07-15 20:55:23:659757][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:23:659769][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:23:659901][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:24:133674][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:24:133693][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvA1.DP_A1.convA1_unit_1.WM.Memory -content_file extraction/memory/memory_fixed/layer_1_mem_0.txt -format verilogBin '
+
+[2021-07-15 20:55:24:133700][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:24:133717][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:24:133723][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:24:133855][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:24:136184][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:24:136196][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1687213490'
+[2021-07-15 20:55:24:136211][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:24:136217][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:24:136359][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:24:591302][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:24:591319][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvA1.DP_A1.bm.Memory -content_file extraction/memory/memory_fixed/layer_1_mem_bias.txt -format verilogBin '
+
+[2021-07-15 20:55:24:591325][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:24:591351][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:24:591359][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:24:591487][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:24:592175][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:24:592186][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^25316401'
+[2021-07-15 20:55:24:592204][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:24:592210][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:24:592319][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:25:159307][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:25:159330][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvB.DP_B.convB_unit_1.WM.Memory -content_file extraction/memory/memory_fixed/layer_2_mem_0.txt -format verilogBin '
+
+[2021-07-15 20:55:25:159348][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:25:159377][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:25:159388][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:25:159614][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:25:164583][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:25:164594][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^903412658'
+[2021-07-15 20:55:25:164610][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:25:164615][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:25:164736][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:25:519052][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:25:519074][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvB.DP_B.convB_unit_2.WM.Memory -content_file extraction/memory/memory_fixed/layer_2_mem_1.txt -format verilogBin '
+
+[2021-07-15 20:55:25:519081][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:25:519099][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:25:519105][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:25:519251][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:25:523246][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:25:523258][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^753288456'
+[2021-07-15 20:55:25:523273][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:25:523278][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:25:523390][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:25:727190][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:25:727208][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvB.DP_B.convB_unit_3.WM.Memory -content_file extraction/memory/memory_fixed/layer_2_mem_2.txt -format verilogBin '
+
+[2021-07-15 20:55:25:727214][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:25:727231][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:25:727237][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:25:727374][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:25:732403][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:25:732418][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1833887990'
+[2021-07-15 20:55:25:732440][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:25:732450][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:25:732605][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:26:98190][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:26:98212][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvB.DP_B.bm1.Memory -content_file extraction/memory/memory_fixed/layer_2_mem_bias_0.txt -format verilogBin '
+
+[2021-07-15 20:55:26:98219][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:26:98235][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:26:98245][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:26:98373][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:26:102904][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:26:102916][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1890845830'
+[2021-07-15 20:55:26:102930][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:26:102935][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:26:103052][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:26:556344][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:26:556364][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvB.DP_B.bm2.Memory -content_file extraction/memory/memory_fixed/layer_2_mem_bias_1.txt -format verilogBin '
+
+[2021-07-15 20:55:26:556370][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:26:556389][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:26:556400][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:26:556583][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:26:571922][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:26:571934][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^792265186'
+[2021-07-15 20:55:26:571949][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:26:571956][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:26:572078][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:26:897719][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:26:897752][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvB.DP_B.bm3.Memory -content_file extraction/memory/memory_fixed/layer_2_mem_bias_2.txt -format verilogBin '
+
+[2021-07-15 20:55:26:897759][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:26:897778][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:26:897784][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:26:897961][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:26:927003][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:26:927018][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2011190233'
+[2021-07-15 20:55:26:927037][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:26:927044][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:26:927181][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:27:177475][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:27:177499][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvA2.DP_A2.convA2_unit_1.WM.Memory -content_file extraction/memory/memory_fixed/layer_3_mem_0.txt -format verilogBin '
+
+[2021-07-15 20:55:27:177510][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:27:177534][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:27:177544][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:27:177732][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:27:180409][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:27:180421][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^40471759'
+[2021-07-15 20:55:27:180441][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:27:180449][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:27:180587][3528193792] Finished:1:1. 
+[2021-07-15 20:55:27:742943][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:55:27:742985][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:55:27:872413][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:27:872433][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvA2.DP_A2.convA2_unit_2.WM.Memory -content_file extraction/memory/memory_fixed/layer_3_mem_1.txt -format verilogBin '
+
+[2021-07-15 20:55:27:872439][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:27:872460][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:27:872468][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:27:872598][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:27:875176][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:27:875187][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1856988800'
+[2021-07-15 20:55:27:875200][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:27:875206][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:27:875317][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:28:736643][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:28:736662][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvA2.DP_A2.convA2_unit_3.WM.Memory -content_file extraction/memory/memory_fixed/layer_3_mem_2.txt -format verilogBin '
+
+[2021-07-15 20:55:28:736668][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:28:736688][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:28:736696][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:28:736818][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:28:763254][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:28:763268][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^768239386'
+[2021-07-15 20:55:28:763282][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:28:763287][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:28:763408][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:29:885777][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:29:885800][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.ConvA2.DP_A2.bm.Memory -content_file extraction/memory/memory_fixed/layer_3_mem_bias.txt -format verilogBin '
+
+[2021-07-15 20:55:29:885808][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:29:885825][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:29:885832][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:29:885971][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:29:903272][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:29:903286][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1518780726'
+[2021-07-15 20:55:29:903300][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:29:903306][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:29:903423][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:30:417691][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:30:417713][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W1.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_0.txt -format verilogBin '
+
+[2021-07-15 20:55:30:417719][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:30:417738][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:30:417746][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:30:417964][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:30:446151][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:30:446175][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1771782553'
+[2021-07-15 20:55:30:446193][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:30:446199][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:30:446326][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:31:143196][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:31:143217][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W2.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_1.txt -format verilogBin '
+
+[2021-07-15 20:55:31:143226][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:31:143244][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:31:143251][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:31:143380][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:31:163681][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:31:163691][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^910418504'
+[2021-07-15 20:55:31:163706][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:31:163711][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:31:163825][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:31:928886][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:31:928908][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W3.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_2.txt -format verilogBin '
+
+[2021-07-15 20:55:31:928916][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:31:928934][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:31:928941][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:31:929134][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:31:949584][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:31:949602][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1363335790'
+[2021-07-15 20:55:31:949629][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:31:949637][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:31:949812][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:32:604685][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:32:604703][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W4.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_3.txt -format verilogBin '
+
+[2021-07-15 20:55:32:604709][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:32:604726][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:32:604736][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:32:604915][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:32:626638][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:32:626648][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^238367694'
+[2021-07-15 20:55:32:626663][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:32:626669][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:32:626787][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:33:898479][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:33:898496][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W5.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_4.txt -format verilogBin '
+
+[2021-07-15 20:55:33:898502][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:33:898525][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:33:898535][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:33:898673][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:33:919607][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:33:919619][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1120229606'
+[2021-07-15 20:55:33:919633][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:33:919638][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:33:919747][3528193792] Finished:1:1. 
+[2021-07-15 20:55:34:72609][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:55:34:72642][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:55:34:570631][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:34:570650][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W6.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_5.txt -format verilogBin '
+
+[2021-07-15 20:55:34:570657][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:34:570674][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:34:570682][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:34:570821][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:34:593304][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:34:593317][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1532745401'
+[2021-07-15 20:55:34:593343][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:34:593352][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:34:593470][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:35:488601][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:35:488622][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W7.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_6.txt -format verilogBin '
+
+[2021-07-15 20:55:35:488631][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:35:488651][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:35:488658][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:35:488807][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:35:508632][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:35:508642][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^756806675'
+[2021-07-15 20:55:35:508657][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:35:508663][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:35:508785][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:36:467463][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:36:467482][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W8.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_7.txt -format verilogBin '
+
+[2021-07-15 20:55:36:467488][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:36:467506][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:36:467515][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:36:467644][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:36:489135][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:36:489148][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^736524295'
+[2021-07-15 20:55:36:489163][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:36:489169][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:36:489307][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:37:448472][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:37:448500][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W9.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_8.txt -format verilogBin '
+
+[2021-07-15 20:55:37:448507][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:37:448526][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:37:448534][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:37:448724][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:37:475195][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:37:475206][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2038281539'
+[2021-07-15 20:55:37:475222][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:37:475228][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:37:475378][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:38:116940][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:38:116960][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W10.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_9.txt -format verilogBin '
+
+[2021-07-15 20:55:38:116968][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:38:116989][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:38:116996][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:38:117125][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:38:138313][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:38:138331][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1585120890'
+[2021-07-15 20:55:38:138354][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:38:138361][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:38:138482][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:39:80641][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:39:80662][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W11.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_10.txt -format verilogBin '
+
+[2021-07-15 20:55:39:80673][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:39:80699][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:39:80709][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:39:80894][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:39:81143][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:39:81155][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^192881579'
+[2021-07-15 20:55:39:81169][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:39:81175][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:39:81287][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:40:82381][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:40:82403][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W12.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_11.txt -format verilogBin '
+
+[2021-07-15 20:55:40:82411][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:40:82429][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:40:82436][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:40:82584][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:40:113047][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:40:113065][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1925926502'
+[2021-07-15 20:55:40:113085][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:40:113092][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:40:113228][3528193792] Finished:1:1. 
+[2021-07-15 20:55:40:401088][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:55:40:401147][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:55:41:127791][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:41:127815][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W13.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_12.txt -format verilogBin '
+
+[2021-07-15 20:55:41:127822][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:41:127841][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:41:127847][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:41:127982][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:41:150604][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:41:150625][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^656486605'
+[2021-07-15 20:55:41:150642][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:41:150649][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:41:150789][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:42:101404][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:42:101429][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W14.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_13.txt -format verilogBin '
+
+[2021-07-15 20:55:42:101436][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:42:101458][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:42:101466][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:42:101582][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:42:129356][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:42:129373][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^307425277'
+[2021-07-15 20:55:42:129389][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:42:129397][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:42:129588][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:43:154426][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:43:154447][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W15.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_14.txt -format verilogBin '
+
+[2021-07-15 20:55:43:154456][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:43:154476][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:43:154483][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:43:154708][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:43:189024][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:43:189039][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^771008327'
+[2021-07-15 20:55:43:189054][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:43:189060][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:43:189188][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:43:965585][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:43:965608][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W16.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_15.txt -format verilogBin '
+
+[2021-07-15 20:55:43:965615][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:43:965637][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:43:965644][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:43:965772][3528193792] Finished:1:1. 
+
+[  2021-07-15 20:55:44:770][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[  2021-07-15 20:55:44:791][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1789866163'
+[  2021-07-15 20:55:44:812][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[  2021-07-15 20:55:44:819][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[  2021-07-15 20:55:44:944][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:45:44644][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:45:44665][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W17.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_16.txt -format verilogBin '
+
+[2021-07-15 20:55:45:44671][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:45:44692][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:45:44700][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:45:44828][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:45:74730][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:45:74743][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2052908549'
+[2021-07-15 20:55:45:74757][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:45:74763][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:45:74889][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:45:789146][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:45:789167][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W18.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_17.txt -format verilogBin '
+
+[2021-07-15 20:55:45:789174][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:45:789195][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:45:789204][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:45:789330][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:45:820899][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:45:820917][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^570970312'
+[2021-07-15 20:55:45:820940][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:45:820952][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:45:821117][3528193792] Finished:1:1. 
+[2021-07-15 20:55:46:637470][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:55:46:637510][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:55:46:702325][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:46:702352][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W19.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_18.txt -format verilogBin '
+
+[2021-07-15 20:55:46:702363][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:46:702383][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:46:702389][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:46:702568][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:46:731595][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:46:731616][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1663074369'
+[2021-07-15 20:55:46:731635][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:46:731643][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:46:731768][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:47:707314][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:47:707332][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W20.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_19.txt -format verilogBin '
+
+[2021-07-15 20:55:47:707347][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:47:707367][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:47:707373][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:47:707596][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:47:736230][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:47:736242][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1592638391'
+[2021-07-15 20:55:47:736256][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:47:736262][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:47:736387][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:48:693298][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:48:693317][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W21.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_20.txt -format verilogBin '
+
+[2021-07-15 20:55:48:693324][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:48:693350][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:48:693358][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:48:693522][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:48:724017][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:48:724028][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^596286713'
+[2021-07-15 20:55:48:724042][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:48:724048][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:48:724158][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:49:463745][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:49:463763][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W22.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_21.txt -format verilogBin '
+
+[2021-07-15 20:55:49:463770][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:49:463794][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:49:463802][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:49:463921][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:49:491490][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:49:491500][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^419003379'
+[2021-07-15 20:55:49:491516][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:49:491523][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:49:491627][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:50:152728][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:50:152750][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W23.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_22.txt -format verilogBin '
+
+[2021-07-15 20:55:50:152758][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:50:152776][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:50:152783][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:50:152975][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:50:174202][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:50:174214][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^198443199'
+[2021-07-15 20:55:50:174231][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:50:174240][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:50:174355][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:50:719776][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:50:719798][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W24.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_23.txt -format verilogBin '
+
+[2021-07-15 20:55:50:719806][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:50:719826][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:50:719832][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:50:719971][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:50:747738][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:50:747758][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^282691055'
+[2021-07-15 20:55:50:747773][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:50:747779][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:50:747919][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:51:295941][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:51:295963][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W25.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_24.txt -format verilogBin '
+
+[2021-07-15 20:55:51:295970][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:51:295989][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:51:295998][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:51:296128][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:51:319383][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:51:319405][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^162365561'
+[2021-07-15 20:55:51:319422][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:51:319428][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:51:319553][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:52:224586][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:52:224616][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W26.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_25.txt -format verilogBin '
+
+[2021-07-15 20:55:52:224623][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:52:224646][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:52:224652][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:52:224828][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:52:262891][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:52:262910][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^990708385'
+[2021-07-15 20:55:52:262927][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:52:262934][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:52:263078][3528193792] Finished:1:1. 
+[2021-07-15 20:55:52:814194][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:55:52:814226][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:55:53:129974][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:53:129995][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W27.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_26.txt -format verilogBin '
+
+[2021-07-15 20:55:53:130002][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:53:130023][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:53:130031][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:53:130236][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:53:151191][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:53:151209][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^146397640'
+[2021-07-15 20:55:53:151224][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:53:151230][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:53:151370][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:53:651723][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:53:651746][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W28.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_27.txt -format verilogBin '
+
+[2021-07-15 20:55:53:651753][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:53:651772][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:53:651782][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:53:651908][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:53:685359][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:53:685372][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^202837320'
+[2021-07-15 20:55:53:685387][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:53:685397][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:53:685548][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:54:317878][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:54:317903][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W29.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_28.txt -format verilogBin '
+
+[2021-07-15 20:55:54:317912][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:54:317937][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:54:317946][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:54:318114][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:54:351530][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:54:351550][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^700213537'
+[2021-07-15 20:55:54:351567][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:54:351576][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:54:351718][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:54:935661][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:54:935686][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W30.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_29.txt -format verilogBin '
+
+[2021-07-15 20:55:54:935694][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:54:935713][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:54:935720][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:54:935914][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:54:961941][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:54:961963][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^914637026'
+[2021-07-15 20:55:54:961979][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:54:961985][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:54:962125][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:55:753798][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:55:753818][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W31.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_30.txt -format verilogBin '
+
+[2021-07-15 20:55:55:753825][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:55:753845][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:55:753853][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:55:754053][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:55:779720][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:55:779741][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1721618046'
+[2021-07-15 20:55:55:779758][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:55:779765][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:55:779891][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:56:324742][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:56:324762][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W32.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_31.txt -format verilogBin '
+
+[2021-07-15 20:55:56:324769][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:56:324788][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:56:324798][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:56:324926][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:56:348859][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:56:348871][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^324512443'
+[2021-07-15 20:55:56:348886][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:56:348892][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:56:349027][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:56:917882][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:56:917903][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W33.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_32.txt -format verilogBin '
+
+[2021-07-15 20:55:56:917912][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:56:917931][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:56:917937][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:56:918127][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:56:944698][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:56:944709][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1825055530'
+[2021-07-15 20:55:56:944724][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:56:944730][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:56:944851][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:57:816266][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:57:816284][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W34.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_33.txt -format verilogBin '
+
+[2021-07-15 20:55:57:816291][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:57:816313][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:57:816320][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:57:816446][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:57:837616][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:57:837630][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^937470188'
+[2021-07-15 20:55:57:837649][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:57:837655][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:57:837768][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:58:378890][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:58:378912][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W35.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_34.txt -format verilogBin '
+
+[2021-07-15 20:55:58:378920][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:58:378939][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:58:378945][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:58:379135][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:58:402071][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:58:402083][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^562880137'
+[2021-07-15 20:55:58:402097][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:58:402103][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:58:402220][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:58:930893][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:58:930916][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W36.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_35.txt -format verilogBin '
+
+[2021-07-15 20:55:58:930924][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:58:930942][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:58:930949][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:58:931093][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:58:959360][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:58:959377][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^797801488'
+[2021-07-15 20:55:58:959398][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:58:959406][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:58:959532][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:59:748048][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:59:748069][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W37.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_36.txt -format verilogBin '
+
+[2021-07-15 20:55:59:748079][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:55:59:748099][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:59:748105][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:59:748226][3528193792] Finished:1:1. 
+
+[2021-07-15 20:55:59:784364][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:55:59:784377][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^322731942'
+[2021-07-15 20:55:59:784391][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:55:59:784400][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:55:59:784525][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:00:364095][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:00:364116][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W38.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_37.txt -format verilogBin '
+
+[2021-07-15 20:56:00:364123][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:00:364146][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:00:364152][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:00:364347][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:00:383247][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:00:383257][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1319686813'
+[2021-07-15 20:56:00:383273][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:00:383278][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:00:383413][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:00:941799][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:00:941820][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W39.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_38.txt -format verilogBin '
+
+[2021-07-15 20:56:00:941826][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:00:941846][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:00:941858][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:00:942073][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:00:972315][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:00:972514][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1534325783'
+[2021-07-15 20:56:00:972536][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:00:972544][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:00:972691][3528193792] Finished:1:1. 
+[2021-07-15 20:56:01:254974][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:56:01:255012][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:56:01:474098][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:01:474121][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W40.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_39.txt -format verilogBin '
+
+[2021-07-15 20:56:01:474132][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:01:474151][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:01:474157][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:01:474283][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:01:499441][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:01:499457][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^213529833'
+[2021-07-15 20:56:01:499479][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:01:499489][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:01:499644][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:02:334153][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:02:334171][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W41.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_40.txt -format verilogBin '
+
+[2021-07-15 20:56:02:334178][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:02:334200][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:02:334208][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:02:334329][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:02:361123][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:02:361147][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^757324055'
+[2021-07-15 20:56:02:361164][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:02:361170][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:02:365163][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:02:877018][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:02:877036][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W42.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_41.txt -format verilogBin '
+
+[2021-07-15 20:56:02:877043][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:02:877061][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:02:877070][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:02:877260][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:02:900304][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:02:900316][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1727207363'
+[2021-07-15 20:56:02:900331][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:02:900347][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:02:900467][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:03:434491][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:03:434531][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W43.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_42.txt -format verilogBin '
+
+[2021-07-15 20:56:03:434537][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:03:434558][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:03:434567][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:03:434751][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:03:465996][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:03:466022][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2139456335'
+[2021-07-15 20:56:03:466050][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:03:466060][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:03:466247][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:03:950427][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:03:950459][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W44.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_43.txt -format verilogBin '
+
+[2021-07-15 20:56:03:950472][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:03:950499][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:03:950510][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:03:950726][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:03:979823][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:03:979836][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1413810660'
+[2021-07-15 20:56:03:979854][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:03:979862][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:03:979972][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:04:516204][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:04:516229][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W45.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_44.txt -format verilogBin '
+
+[2021-07-15 20:56:04:516237][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:04:516258][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:04:516265][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:04:516400][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:04:544228][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:04:544243][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2034632640'
+[2021-07-15 20:56:04:544258][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:04:544264][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:04:544447][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:05:321634][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:05:321654][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W46.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_45.txt -format verilogBin '
+
+[2021-07-15 20:56:05:321660][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:05:321679][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:05:321689][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:05:321887][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:05:339732][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:05:339750][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^762981015'
+[2021-07-15 20:56:05:339766][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:05:339771][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:05:339898][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:05:920559][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:05:920581][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W47.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_46.txt -format verilogBin '
+
+[2021-07-15 20:56:05:920592][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:05:920611][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:05:920617][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:05:920823][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:05:948673][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:05:948697][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1056193176'
+[2021-07-15 20:56:05:948714][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:05:948720][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:05:948945][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:06:497704][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:06:497725][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W48.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_47.txt -format verilogBin '
+
+[2021-07-15 20:56:06:497732][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:06:497752][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:06:497760][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:06:497899][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:06:524856][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:06:524878][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1940057541'
+[2021-07-15 20:56:06:524895][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:06:524902][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:06:525098][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:07:53435][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:07:53458][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W49.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_48.txt -format verilogBin '
+
+[2021-07-15 20:56:07:53465][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:07:53483][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:07:53489][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:07:53609][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:07:82836][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:07:82850][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1333951327'
+[2021-07-15 20:56:07:82867][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:07:82873][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:07:83006][3528193792] Finished:1:1. 
+[2021-07-15 20:56:07:554846][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:56:07:554896][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:56:07:613637][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:07:613657][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W50.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_49.txt -format verilogBin '
+
+[2021-07-15 20:56:07:613666][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:07:613687][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:07:613696][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:07:613829][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:07:631753][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:07:631768][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^571783897'
+[2021-07-15 20:56:07:631784][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:07:631789][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:07:631924][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:08:128101][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:08:128124][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W51.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_50.txt -format verilogBin '
+
+[2021-07-15 20:56:08:128136][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:08:128159][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:08:128165][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:08:128372][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:08:150166][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:08:150181][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1385212284'
+[2021-07-15 20:56:08:150196][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:08:150201][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:08:150341][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:08:966145][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:08:966164][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W52.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_51.txt -format verilogBin '
+
+[2021-07-15 20:56:08:966171][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:08:966190][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:08:966197][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:08:966320][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:08:983204][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:08:983216][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1930238040'
+[2021-07-15 20:56:08:983232][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:08:983241][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:08:983368][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:09:508098][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:09:508119][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W53.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_52.txt -format verilogBin '
+
+[2021-07-15 20:56:09:508129][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:09:508150][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:09:508160][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:09:508370][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:09:539766][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:09:539779][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^990787276'
+[2021-07-15 20:56:09:539796][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:09:539804][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:09:539917][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:10:74742][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:10:74760][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W54.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_53.txt -format verilogBin '
+
+[2021-07-15 20:56:10:74767][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:10:74788][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:10:74796][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:10:74978][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:10:102124][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:10:102149][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1583655483'
+[2021-07-15 20:56:10:102172][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:10:102182][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:10:102344][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:10:598781][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:10:598801][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W55.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_54.txt -format verilogBin '
+
+[2021-07-15 20:56:10:598808][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:10:598835][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:10:598844][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:10:599033][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:10:599289][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:10:599301][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^65445447'
+[2021-07-15 20:56:10:599321][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:10:599328][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:10:599464][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:11:165519][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:11:165541][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W56.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_55.txt -format verilogBin '
+
+[2021-07-15 20:56:11:165549][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:11:165568][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:11:165574][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:11:165702][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:11:188128][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:11:188148][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1153152837'
+[2021-07-15 20:56:11:188165][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:11:188173][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:11:188301][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:11:666853][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:11:666873][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W57.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_56.txt -format verilogBin '
+
+[2021-07-15 20:56:11:666879][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:11:666898][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:11:666908][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:11:667097][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:11:688138][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:11:688152][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^426880220'
+[2021-07-15 20:56:11:688166][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:11:688172][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:11:688297][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:12:140894][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:12:140918][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W58.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_57.txt -format verilogBin '
+
+[2021-07-15 20:56:12:140925][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:12:140944][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:12:140950][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:12:141158][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:12:162100][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:12:162114][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^211843087'
+[2021-07-15 20:56:12:162132][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:12:162138][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:12:162258][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:12:614751][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:12:614772][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W59.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_58.txt -format verilogBin '
+
+[2021-07-15 20:56:12:614779][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:12:614799][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:12:614808][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:12:614999][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:12:638041][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:12:638065][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1355990157'
+[2021-07-15 20:56:12:638084][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:12:638091][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:12:638304][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:13:117533][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:13:117553][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W60.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_59.txt -format verilogBin '
+
+[2021-07-15 20:56:13:117559][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:13:117581][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:13:117588][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:13:117779][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:13:133476][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:13:133489][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1127093757'
+[2021-07-15 20:56:13:133503][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:13:133509][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:13:133624][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:13:630826][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:13:630846][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W61.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_60.txt -format verilogBin '
+
+[2021-07-15 20:56:13:630856][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:13:630876][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:13:630883][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:13:631008][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:13:649278][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:13:649291][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1126480113'
+[2021-07-15 20:56:13:649305][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:13:649311][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:13:649423][3528193792] Finished:1:1. 
+[2021-07-15 20:56:13:785249][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:56:13:785292][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:56:14:132504][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:14:132527][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W62.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_61.txt -format verilogBin '
+
+[2021-07-15 20:56:14:132534][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:14:132552][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:14:132558][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:14:132706][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:14:153088][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:14:153103][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^930124556'
+[2021-07-15 20:56:14:153121][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:14:153130][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:14:153255][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:14:601981][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:14:602003][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W63.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_62.txt -format verilogBin '
+
+[2021-07-15 20:56:14:602011][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:14:602031][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:14:602037][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:14:602209][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:14:626884][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:14:626905][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1451606200'
+[2021-07-15 20:56:14:626923][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:14:626929][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:14:627048][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:15:104596][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:15:104622][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W64.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_63.txt -format verilogBin '
+
+[2021-07-15 20:56:15:104633][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:15:104653][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:15:104660][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:15:104861][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:15:127615][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:15:127633][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^804051996'
+[2021-07-15 20:56:15:127649][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:15:127655][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:15:127774][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:15:593464][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:15:593483][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W65.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_64.txt -format verilogBin '
+
+[2021-07-15 20:56:15:593489][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:15:593510][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:15:593519][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:15:593643][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:15:619889][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:15:619913][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1867594744'
+[2021-07-15 20:56:15:619929][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:15:619942][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:15:620078][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:16:106893][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:16:106916][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W66.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_65.txt -format verilogBin '
+
+[2021-07-15 20:56:16:106924][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:16:106943][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:16:106949][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:16:107161][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:16:130204][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:16:130217][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2014486338'
+[2021-07-15 20:56:16:130232][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:16:130241][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:16:130370][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:16:630201][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:16:630222][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W67.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_66.txt -format verilogBin '
+
+[2021-07-15 20:56:16:630228][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:16:630255][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:16:630266][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:16:630485][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:16:659279][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:16:659296][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1601853484'
+[2021-07-15 20:56:16:659311][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:16:659317][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:16:659453][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:17:135361][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:17:135381][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W68.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_67.txt -format verilogBin '
+
+[2021-07-15 20:56:17:135388][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:17:135411][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:17:135418][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:17:135554][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:17:158595][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:17:158608][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^42843038'
+[2021-07-15 20:56:17:158622][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:17:158632][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:17:158775][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:17:605470][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:17:605500][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W69.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_68.txt -format verilogBin '
+
+[2021-07-15 20:56:17:605512][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:17:605538][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:17:605548][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:17:605703][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:17:630566][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:17:630581][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1186689503'
+[2021-07-15 20:56:17:630595][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:17:630601][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:17:630711][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:18:150657][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:18:150674][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W70.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_69.txt -format verilogBin '
+
+[2021-07-15 20:56:18:150681][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:18:150705][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:18:150712][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:18:150909][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:18:174301][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:18:174314][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^988695620'
+[2021-07-15 20:56:18:174330][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:18:174345][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:18:174470][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:18:662655][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:18:662673][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W71.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_70.txt -format verilogBin '
+
+[2021-07-15 20:56:18:662680][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:18:662702][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:18:662709][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:18:662834][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:18:687415][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:18:687434][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^256372871'
+[2021-07-15 20:56:18:687455][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:18:687466][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:18:687662][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:19:177908][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:19:177925][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W72.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_71.txt -format verilogBin '
+
+[2021-07-15 20:56:19:177936][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:19:177955][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:19:177961][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:19:178104][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:19:204051][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:19:204062][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1944013558'
+[2021-07-15 20:56:19:204081][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:19:204088][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:19:204208][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:19:667313][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:19:667329][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W73.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_72.txt -format verilogBin '
+
+[2021-07-15 20:56:19:667341][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:19:667364][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:19:667371][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:19:667561][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:19:692384][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:19:692395][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^568419335'
+[2021-07-15 20:56:19:692415][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:19:692422][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:19:692539][3528193792] Finished:1:1. 
+[2021-07-15 20:56:19:953757][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:56:19:953793][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:56:20:175208][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:20:175225][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W74.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_73.txt -format verilogBin '
+
+[2021-07-15 20:56:20:175232][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:20:175257][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:20:175265][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:20:175409][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:20:196900][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:20:196913][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^248345559'
+[2021-07-15 20:56:20:196928][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:20:196933][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:20:197051][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:20:723129][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:20:723146][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W75.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_74.txt -format verilogBin '
+
+[2021-07-15 20:56:20:723158][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:20:723180][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:20:723186][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:20:723316][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:20:739281][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:20:739296][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1210340571'
+[2021-07-15 20:56:20:739313][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:20:739319][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:20:739449][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:21:212748][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:21:212766][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W76.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_75.txt -format verilogBin '
+
+[2021-07-15 20:56:21:212773][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:21:212794][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:21:212803][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:21:212922][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:21:233102][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:21:233115][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^455568327'
+[2021-07-15 20:56:21:233129][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:21:233135][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:21:233236][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:21:716675][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:21:716694][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W77.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_76.txt -format verilogBin '
+
+[2021-07-15 20:56:21:716700][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:21:716719][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:21:716726][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:21:716853][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:21:739259][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:21:739271][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1011326574'
+[2021-07-15 20:56:21:739285][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:21:739293][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:21:739414][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:22:229054][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:22:229090][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W78.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_77.txt -format verilogBin '
+
+[2021-07-15 20:56:22:229100][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:22:229131][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:22:229141][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:22:229296][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:22:250594][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:22:250616][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^119050099'
+[2021-07-15 20:56:22:250638][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:22:250646][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:22:250761][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:22:723771][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:22:723789][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W79.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_78.txt -format verilogBin '
+
+[2021-07-15 20:56:22:723797][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:22:723819][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:22:723826][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:22:723947][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:22:745531][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:22:745543][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^248142220'
+[2021-07-15 20:56:22:745557][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:22:745563][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:22:745685][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:23:198327][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:23:198354][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W80.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_79.txt -format verilogBin '
+
+[2021-07-15 20:56:23:198361][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:23:198380][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:23:198386][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:23:198503][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:23:216410][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:23:216423][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^197794253'
+[2021-07-15 20:56:23:216438][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:23:216444][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:23:216568][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:23:720004][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:23:720023][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W81.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_80.txt -format verilogBin '
+
+[2021-07-15 20:56:23:720033][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:23:720053][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:23:720059][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:23:720186][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:23:743130][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:23:743142][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^690833996'
+[2021-07-15 20:56:23:743155][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:23:743161][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:23:743267][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:24:293030][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:24:293056][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W82.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_81.txt -format verilogBin '
+
+[2021-07-15 20:56:24:293065][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:24:293085][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:24:293091][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:24:293261][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:24:313839][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:24:313853][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1633354504'
+[2021-07-15 20:56:24:313867][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:24:313873][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:24:313999][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:24:815677][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:24:815699][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W83.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_82.txt -format verilogBin '
+
+[2021-07-15 20:56:24:815706][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:24:815725][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:24:815731][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:24:815847][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:24:837138][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:24:837149][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2128032293'
+[2021-07-15 20:56:24:837162][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:24:837168][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:24:837274][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:25:336522][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:25:336542][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC1.DP.W84.Memory -content_file extraction/memory/memory_fixed/layer_4_mem_83.txt -format verilogBin '
+
+[2021-07-15 20:56:25:336549][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:25:336569][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:25:336578][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:25:336701][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:25:359660][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:25:359679][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1681621272'
+[2021-07-15 20:56:25:359696][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:25:359703][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:25:359815][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:25:808261][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:25:808283][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W1.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_0.txt -format verilogBin '
+
+[2021-07-15 20:56:25:808290][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:25:808310][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:25:808316][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:25:808457][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:25:831595][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:25:831607][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1069526339'
+[2021-07-15 20:56:25:831621][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:25:831630][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:25:831752][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:26:725923][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:26:725944][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W2.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_1.txt -format verilogBin '
+
+[2021-07-15 20:56:26:725951][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:26:725971][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:26:725978][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:26:726109][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:26:748434][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:26:748445][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^45994092'
+[2021-07-15 20:56:26:748461][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:26:748469][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:26:748579][3528193792] Finished:1:1. 
+[2021-07-15 20:56:26:862041][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:56:26:862090][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:56:27:435756][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:27:435787][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W3.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_2.txt -format verilogBin '
+
+[2021-07-15 20:56:27:435798][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:27:435825][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:27:435836][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:27:436059][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:27:456692][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:27:456716][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^687290461'
+[2021-07-15 20:56:27:456734][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:27:456742][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:27:456927][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:27:997849][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:27:997871][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W4.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_3.txt -format verilogBin '
+
+[2021-07-15 20:56:27:997882][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:27:997906][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:27:997914][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:27:998085][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:28:21103][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:28:21115][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1496406559'
+[2021-07-15 20:56:28:21133][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:28:21140][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:28:21258][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:28:572431][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:28:572450][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W5.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_4.txt -format verilogBin '
+
+[2021-07-15 20:56:28:572459][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:28:572480][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:28:572486][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:28:572681][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:28:594371][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:28:594383][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^257837179'
+[2021-07-15 20:56:28:594401][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:28:594408][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:28:594517][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:29:301292][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:29:301310][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W6.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_5.txt -format verilogBin '
+
+[2021-07-15 20:56:29:301316][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:29:301341][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:29:301350][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:29:301541][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:29:321329][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:29:321350][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^2043280618'
+[2021-07-15 20:56:29:321364][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:29:321373][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:29:321492][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:29:868362][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:29:868382][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W7.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_6.txt -format verilogBin '
+
+[2021-07-15 20:56:29:868388][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:29:868409][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:29:868417][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:29:868613][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:29:894107][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:29:894128][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^476016668'
+[2021-07-15 20:56:29:894146][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:29:894160][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:29:894289][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:30:369434][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:30:369456][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W8.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_7.txt -format verilogBin '
+
+[2021-07-15 20:56:30:369464][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:30:369484][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:30:369490][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:30:369636][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:30:389954][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:30:389969][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1384317292'
+[2021-07-15 20:56:30:389986][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:30:389992][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:30:390124][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:30:856920][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:30:856937][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W9.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_8.txt -format verilogBin '
+
+[2021-07-15 20:56:30:856944][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:30:856964][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:30:856971][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:30:857092][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:30:877574][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:30:877585][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^825921526'
+[2021-07-15 20:56:30:877598][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:30:877604][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:30:877713][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:31:370524][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:31:370544][3528193792] Gui callback received with queryID = 7654321, cmdCode = 47,  cmdString = 'init -instance top.uut.FC2.DP.W10.Memory -content_file extraction/memory/memory_fixed/layer_5_mem_9.txt -format verilogBin '
+
+[2021-07-15 20:56:31:370550][3528193792] TBX_TRACE :bool checkIfTclCmdIsForXsm(const char*, bool*, std::__cxx11::string*, bool*, bool) scemi.cxx:7071
+[2021-07-15 20:56:31:370571][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:31:370578][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:31:370711][3528193792] Finished:1:1. 
+
+[2021-07-15 20:56:31:393212][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:56:31:393226][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1927622869'
+[2021-07-15 20:56:31:393244][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:56:31:393251][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:56:31:393368][3528193792] Finished:1:1. 
+[2021-07-15 20:56:33:187971][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:56:33:188003][3717953344] HD:: clock stopped.
+[2021-07-15 20:56:39:349342][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:56:39:349380][3717953344] HD:: clock stopped.
+[2021-07-15 20:56:45:560046][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:57:05:358203][3717953344] HD:: clock stopped.
+[2021-07-15 20:57:11:591563][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:57:11:591627][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:57:13:473173][3717953344] TBX_TRACE :void Tmct::SendAckForNoInbound() tmct.cxx:12910
+
+[2021-07-15 20:57:15:628545][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:57:15:628563][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^40885640'
+[2021-07-15 20:57:15:628580][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:57:15:628587][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:57:15:628713][3528193792] Finished:1:1. 
+[2021-07-15 20:57:15:715242][3528193792] Clkstop CB detected...30000
+[2021-07-15 20:57:15:715267][3528193792] Calling dm_StopReason_v2:1:1 ....[2021-07-15 20:57:15:715305][3528193792] Finished:1:1. 
+[2021-07-15 20:57:15:715314][3528193792] Calling dm_event_info_mature:1:1 ....[2021-07-15 20:57:15:715506][3528193792] Finished:1:1. 
+[2021-07-15 20:57:15:715519][3528193792] Calling dm_bp_list_active:1:1 ....[2021-07-15 20:57:15:715681][3528193792] Finished:1:1. 
+[2021-07-15 20:57:15:715694][3528193792] Calling dm_sendrundoneforccallbackexec:1:1 ....[2021-07-15 20:57:15:715770][3528193792] Finished:1:1. 
+[2021-07-15 20:57:15:715778][3528193792] Immediate Clkstop response sent due to internal BP.
+
+[2021-07-15 20:57:15:768745][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:57:15:768766][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^546032623'
+[2021-07-15 20:57:15:768788][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:57:15:768798][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:57:15:768984][3528193792] Finished:1:1. 
+
+[2021-07-15 20:57:17:773970][3717953344] TBX_TRACE :void Tmct::SendAckForNoInbound() tmct.cxx:12910
+
+[2021-07-15 20:57:19:206392][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:57:19:206420][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1794625559'
+[2021-07-15 20:57:19:206437][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:57:19:206447][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:57:19:206627][3528193792] Finished:1:1. 
+[2021-07-15 20:57:19:287234][3528193792] Clkstop CB detected...40000
+[2021-07-15 20:57:19:287259][3528193792] Calling dm_StopReason_v2:1:1 ....[2021-07-15 20:57:19:287287][3528193792] Finished:1:1. 
+[2021-07-15 20:57:19:287293][3528193792] Calling dm_event_info_mature:1:1 ....[2021-07-15 20:57:19:287508][3528193792] Finished:1:1. 
+[2021-07-15 20:57:19:287522][3528193792] Calling dm_bp_list_active:1:1 ....[2021-07-15 20:57:19:287653][3528193792] Finished:1:1. 
+[2021-07-15 20:57:19:287661][3528193792] Calling dm_sendrundoneforccallbackexec:1:1 ....[2021-07-15 20:57:19:287727][3528193792] Finished:1:1. 
+[2021-07-15 20:57:19:287735][3528193792] Immediate Clkstop response sent due to internal BP.
+
+[2021-07-15 20:57:19:316921][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:57:19:316939][3528193792] Gui callback received with queryID = 7654321, cmdCode = 31,  cmdString = ')@^1642739125'
+[2021-07-15 20:57:19:316954][3528193792] Sending Response for QueryId = 7654321, ErrorId = 0, Msg = Works Fine
+[2021-07-15 20:57:19:316961][3528193792] Calling dm_Result_ComodCommandFromGui:1:1 ....[2021-07-15 20:57:19:317155][3528193792] Finished:1:1. 
+[2021-07-15 20:57:24:180524][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:57:24:180554][3717953344] HD:: clock stopped.
+[2021-07-15 20:57:30:336777][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:57:30:336816][3717953344] HD:: clock stopped.
+[2021-07-15 20:57:36:753453][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:57:36:753517][3717953344] HD:: clock stopped.
+[2021-07-15 20:57:43:56473][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:57:43:56511][3717953344] HD:: clock stopped.
+[2021-07-15 20:57:49:487378][3717953344] HD:: 100M+ failed outbound poll.
+[2021-07-15 20:57:49:487421][3717953344] HD:: clock stopped.
+
+[2021-07-15 20:57:50:977051][3528193792] TBX_TRACE :void getGUIXactionCommandCBFunc(int, ComodelCommunCmdT, const char*) scemi.cxx:7667
+[2021-07-15 20:57:50:977076][3528193792] Gui callback received with queryID = 7654321, cmdCode = 17,  cmdString = ''
+
+[2021-07-15 20:57:50:977088][3528193792] TBX_TRACE :bool CheckIsQuitImmediateCmd(const char*) scemi.cxx:6468
+
+[2021-07-15 20:57:50:977100][3717953344] TBX_TRACE :void ProcessTBXDmsMessage(int, int, const char*) scemi.cxx:8353
+
+[2021-07-15 20:57:50:977126][3717953344] TBX_TRACE :static void SceMi::PerformQuitComodel() scemi.cxx:6247
+[2021-07-15 20:57:50:977136][3717953344] Calling dm_RegisterRunCompleteCallBack:1:1 ....[2021-07-15 20:57:51:47964][3717953344] Finished:1:0. 
+[2021-07-15 20:57:51:47991][3717953344] Calling dm_clock_suspend:1:1 ....[2021-07-15 20:57:51:74214][3717953344] Finished:1:1. 
+[2021-07-15 20:57:51:74241][3717953344] Calling dm_SetLAStateByTrigBin:1:1 ....[2021-07-15 20:57:51:114469][3717953344] Finished:1:1. 
+[2021-07-15 20:57:51:114486][3717953344] Calling dm_clock_resume:1:1 ....[2021-07-15 20:57:51:154474][3717953344] Finished:1:1. 
+
+[2021-07-15 20:57:51:154746][3717953344] TBX_TRACE :static int SceMi::RegSetTclSimFinish(bool) scemi.cxx:12678
+[2021-07-15 20:57:51:154850][3717953344] Calling dm_trace_istzfset:1:1 ....[2021-07-15 20:57:51:154887][3717953344] Finished:1:1. 
+[2021-07-15 20:57:51:154894][3717953344] Calling dm_clock_suspend:1:1 ....[2021-07-15 20:57:51:194464][3717953344] Finished:1:1. 
+[2021-07-15 20:57:51:194479][3717953344] Calling dm_reg_setvalue:1:1 ....[2021-07-15 20:57:51:195323][3717953344] Finished:1:1. 
+[2021-07-15 20:57:51:195343][3717953344] Calling dm_clock_resume:1:1 ....[2021-07-15 20:57:51:947529][3717953344] Finished:1:1. 
+[2021-07-15 20:57:51:947557][3717953344] Calling dm_clock_run_name:1:1 ....[2021-07-15 20:57:52:695497][3717953344] Finished:1:1. 
+[2021-07-15 20:57:52:713252][3717953344] OPCODE_SIM_FINISH received
+
+[2021-07-15 20:57:52:713293][3717953344] TBX_TRACE :void writeOutStatistics() tmwcviewcommands.cxx:2377
+
+[2021-07-15 20:57:52:713313][3717953344] TBX_TRACE :void writeStats(SceMiMessageData*, bool) tmwcviewcommands.cxx:2153
+[2021-07-15 20:57:52:713331][3717953344] Sim_Profile: TBX ClkCounter getregs
+[2021-07-15 20:57:52:713353][3717953344] Calling dm_clock_suspend:1:1 ....[2021-07-15 20:57:53:350684][3717953344] Finished:1:1. 
+[2021-07-15 20:57:53:350712][3717953344] Calling dm_reg_getvalue:1:1 ....[2021-07-15 20:57:53:722352][3717953344] Finished:1:1. 
+[2021-07-15 20:57:53:722377][3717953344] Calling dm_clock_resume:1:1 ....[2021-07-15 20:57:53:808933][3717953344] Finished:1:1. 
+[2021-07-15 20:57:53:943430][3717953344] Calling dm_set_simulationstat_v3:1:1 ....[2021-07-15 20:57:53:943536][3717953344] Finished:1:1. 
+[2021-07-15 20:58:27:114259][3717953344] Calling dm_Get_Waveform_File:1:0 ....[2021-07-15 20:58:27:116796][3717953344] Finished:1:0. 
+
+[2021-07-15 20:58:27:120869][3717953344] TBX_TRACE :static void TmwshCommands::HandleFinish(bool) tmwcviewcommands.cxx:7954
+
+[2021-07-15 20:58:27:120888][3717953344] TBX_TRACE :static void SceMi::Shutdown(SceMi*, SceMiEC*) scemi.cxx:12722
+[2021-07-15 20:58:27:120928][3717953344] Calling dm_RegisterRunCompleteCallBack:1:1 ....[2021-07-15 20:58:27:121457][3717953344] Finished:1:0. 
+
+[2021-07-15 20:58:27:121472][3717953344] TBX_TRACE :Tmct::~Tmct() tmct.cxx:5528
+[2021-07-15 20:58:27:125805][3717953344] Calling dm_RegisterRunCompleteCallBack:1:1 ....[2021-07-15 20:58:27:126162][3717953344] Finished:1:1. 
+
+[2021-07-15 20:58:27:126174][3717953344] TBX_TRACE :void closeProject() tmct.cxx:2277
+[2021-07-15 20:58:28:137981][3717953344] Calling dm_comodexit:1:1 ....[2021-07-15 20:58:28:138496][3717953344] Finished:1:1. 
+
+[2021-07-15 20:58:28:138512][3717953344] TBX_TRACE :static void Tmct::StopPollingThread() tmct.cxx:7758
+[2021-07-15 20:58:28:138518][3717953344] Stopped polling thread id 3528193792 from 3717953344
+[2021-07-15 20:58:28:139736][3717953344] 1: Detaching the current session from runtime

@@ -1,0 +1,41 @@
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/rtlc-advisor -dump_improvement_report -dump_area_report_only  -emul_platform D2                             ./veloce.med/hdl_files/mcttop.v -enc ./veloce.med/hdl_files/enc_crypt.ev -Clk vmw.clk          -Lutlib ./veloce.med/rtlc.out/out.lut.v -Root "top" -Ao med -target     -Dump c1 c1.dump -Dump c0 c0.dump -Dump e0 e0.dump -Dump e50 long_paths.dump -Mm 10.0 -disableSoftVw -SrND -NFBidi -RegTieUndrivenNets -KeepAlive veloce.med//rtlc.out/MOD_ANNOTATION/veloce.kal   -RTL -OPKC +define+MCT -TBX -Mem ./veloce.med/rtlc.out/vmw.mem -Com ./veloce.med/ilwork/vmw.com -SFF -SWOM -IVVN   -TBX -TBXnpw -TBXnpe    -force ./veloce.med/rtlc.out//iceforcesetstate.list -TNfi ./veloce.med/rtlc.out//iceforcesettie.list     -base_dir ./veloce.med   
+
+
+Executing Command:
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/rtlc-advisor -dump_improvement_report -dump_area_report_only  -emul_platform D2                             ./veloce.med/hdl_files/mcttop.v -enc ./veloce.med/hdl_files/enc_crypt.ev -Clk vmw.clk          -Lutlib ./veloce.med/rtlc.out/out.lut.v -Root "top" -Ao med -target     -Dump c1 c1.dump -Dump c0 c0.dump -Dump e0 e0.dump -Dump e50 long_paths.dump -Mm 10.0 -disableSoftVw -SrND -NFBidi -RegTieUndrivenNets -KeepAlive veloce.med//rtlc.out/MOD_ANNOTATION/veloce.kal   -RTL -OPKC +define+MCT -TBX -Mem ./veloce.med/rtlc.out/vmw.mem -Com ./veloce.med/ilwork/vmw.com -SFF -SWOM -IVVN   -TBX -TBXnpw -TBXnpe    -force ./veloce.med/rtlc.out//iceforcesetstate.list -TNfi ./veloce.med/rtlc.out//iceforcesettie.list     -base_dir ./veloce.med   
+Info!     [ADVISOR-1007]: : RTLC-Advisor, Release rtlc-advisor.2.1
+                         
+                         
+Info!     [ADVISOR-1002]: : Last compiled on Sep 30 2020 20:27:02
+                         
+Info!     [ADVISOR-1003]: : Started on Thu Jul 15 14:18:08 2021
+                         
+                         
+Info!     [ADVISOR-1007]: : Initializing...
+                         
+Warning   [ADVISOR-2072]: : Module incoMemDrive found as Black Box Module.
+
+
+
+Info    [ADVISOR]:: Performing Deadlogic Elimination... top
+Info    [ADVISOR]:: Dead Logic Elimination Report -
+			 total # of libcell nodes = 572135 
+			 total # of reachable libcell nodes = 505631
+			 total # of non-dl libcell nodes = 505199
+Info    [ADVISOR]:: Information about critical modules is dumped at 
+ 			"./veloce.med/ADVISOR_INFO//critical_modules.list". 
+
+Info    [ADVISOR]:: Reading Velsyn Complex Path Information..
+
+Info    [ADVISOR]:: Computing Critical Paths..
+Info    [ADVISOR]:: Maximum Critical Path Length is 39.
+
+Info    [ADVISOR]:: Information about critical paths is dumped at 	"./veloce.med/ADVISOR_INFO//path.txt". 
+Info!     [ADVISOR-1004]: : Finished on Thu Jul 15 14:18:11 2021
+                         
+                         
+Info!     [ADVISOR-1005]: : Total memory taken by advisor is 781.1 MB
+                         
+Info!     [ADVISOR-1006]: : Total CPU time taken by advisor is 3.0 secs.
+                         
+Task: exited with code: 0

@@ -1,0 +1,36 @@
+/tools/med_tools/software/Veloce_v20.0.3//bin/runDistributedTask.sh  -proj /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dcd_CompileParams.txt.0 -bnum 0 -cnum 14 -ssrcc  
+
+
+Executing Command:
+/tools/med_tools/software/Veloce_v20.0.3//bin/runDistributedTask.sh  -proj /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dcd_CompileParams.txt.0 -bnum 0 -cnum 14 -ssrcc -LicKey $LIC_KEY 
+
+
+Executing Command: 
+/tools/med_tools/software/Veloce_v20.0.3/bin/ssrmodelgen -boardid 0 -chipid 14 -base_dir ./veloce.med
+
+Info: Board 0, Chip 14
+Info: pipeline DB are skipped.
+
+TIMING: Function (SSR MODEL GEN) took time 0.108
+
+
+
+Executing Command: 
+/bin/touch ./veloce.med/lb0//ssr_debug.cc
+
+
+
+Executing Command: 
+/tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linux/gcc-6.2.0/bin/g++ -pipe --no-exceptions -xc++ -O0 -c ./veloce.med/lb0/lb0_u14_Ssr_SsrCC.cc.0 -o ./veloce.med/lb0/lb0_u14_Ssr_SsrCC.o.0
+
+
+
+Executing Command: 
+export LIBRARY_PATH= ; export PATH=/bin:/usr/bin ; unset COMPILER_PATH ; unset GCC_EXEC_PREFIX ; /tools/med_tools/software/Veloce_v20.0.3/bin/med_tools/linux/gcc-6.2.0/bin/g++ -o ./veloce.med/lb0/lb0_u14_Dcd_SsrC.exe.0 ./veloce.med/lb0/lb0_u14_Ssr_SsrCC.o.0 -L/tools/med_tools/software/Veloce_v20.0.3/lib/amd64.linux -lssrmodelexec
+
+
+
+Executing Command: 
+/bin/rm -f ./veloce.med/lb0/lb0_u14_Ssr_SsrCC.cc.0 ./veloce.med/lb0/lb0_u14_Ssr_SsrCC.o.0
+
+Task: exited with code: 0

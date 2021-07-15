@@ -1,0 +1,13 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - NXS
+## Application Pid - 100817
+## Log produced on - Thu Jul 15 21:02:24 2021
+###############################################
+Info!      [DMS-9999]: : [2021-07-15 21:02:24:889235] VMW_DMS_START_TASK_ID is
+                       set to 32768
+Info!      [DMS-9999]: : [2021-07-15 21:02:24:922103] Nexus Launched with
+                       -allowOtherUsers option. Auth Key Generated: 519207262
+Info!      [DMS-9999]: : [2021-07-15 21:08:24:925683] HeartBeat not received for
+                       E2WComodelClientTask (TaskId: 32776, PortId: 1) since
+                       2021-07-15 21:03 (5 mins).

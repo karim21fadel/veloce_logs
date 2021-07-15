@@ -1,0 +1,892 @@
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx     /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/rtlc-driver            -velcomp_tbx_merge            -import tipComodelInput -import tipComodelOutput -import tipComodelInputWrapper -import tipComodelOutputWrapper -import tipClockControl00 -import tipComodelReset -import M_RTLSIM_Assertion_Firing_Detection_1             -dont_touch_module DSIMU_FDPC_INIT0 -dont_touch_module DSIMU_FDPC_INIT1 -dont_touch_module interconnector -dont_touch_module TBX_BreakLongPath -dont_touch_module uclockgen -dont_touch_module ConvertZXModule -dont_touch_module VeloceGuiBreakSeqMacro            -dont_touch_module MctClockGenerator -dont_touch_module MctGlobalAssignBlock -dont_touch_module MctPublicUclockGen             -no_empty_modules -preserve -noNMdumps -no_new_ram_flow -tbx_transactor_compile  -no_xor_eq_opt -map_delay -no_pri_enc_opt -disable_incr -use_param_mem -cms -ums -no_global_sig_support -platform veloce -allow_EMPTYMOD -suppress RTLC-4886 -suppress TBXC-5775 -enable_div_radix_four -lic_key $LIC_KEY -infer_CLA            -f veloce.med/rtlc.out/TransactorNetMods.list  -w TransLib -lib_map_file veloce.med/tbx_transactor_lib.map -out_dir veloce.med/rtlc.out  -f veloce.med/hdl_files/tbx_transactor_comp_opts.list              -proj veloce.med/design_level/glob_Dcd_CompileParams.txt.0 -config_base veloce -emul_platform D2                                    -import MED_AND2 -import MED_OR2 -encrypt_netlist            -opt_level 3 -allow_unresolved_hierref            -main M_RTLSIM_Dummy_transactor_Top
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx     /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/rtlc-driver            -velcomp_tbx_merge            -import tipComodelInput -import tipComodelOutput -import tipComodelInputWrapper -import tipComodelOutputWrapper -import tipClockControl00 -import tipComodelReset -import M_RTLSIM_Assertion_Firing_Detection_1             -dont_touch_module DSIMU_FDPC_INIT0 -dont_touch_module DSIMU_FDPC_INIT1 -dont_touch_module interconnector -dont_touch_module TBX_BreakLongPath -dont_touch_module uclockgen -dont_touch_module ConvertZXModule -dont_touch_module VeloceGuiBreakSeqMacro            -dont_touch_module MctClockGenerator -dont_touch_module MctGlobalAssignBlock -dont_touch_module MctPublicUclockGen             -no_empty_modules -preserve -noNMdumps -no_new_ram_flow -tbx_transactor_compile  -no_xor_eq_opt -map_delay -no_pri_enc_opt -disable_incr -use_param_mem -cms -ums -no_global_sig_support -platform veloce -allow_EMPTYMOD -suppress RTLC-4886 -suppress TBXC-5775 -enable_div_radix_four -lic_key $LIC_KEY -infer_CLA            -w work_tbx_InternaL -lib_map_file veloce.med/tbx_internal_lib.map -out_dir veloce.med/rtlc.out  -f veloce.med/hdl_files/tbx_infra_comp_opts.list              -proj veloce.med/design_level/glob_Dcd_CompileParams.txt.0 -config_base veloce -emul_platform D2                                    -allow_ISL -tbx_last_drv_call -suppress RTLC-4873 -force_all            -main MctCore
+
+
+Executing Command:
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx     /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/rtlc-driver            -velcomp_tbx_merge            -import tipComodelInput -import tipComodelOutput -import tipComodelInputWrapper -import tipComodelOutputWrapper -import tipClockControl00 -import tipComodelReset -import M_RTLSIM_Assertion_Firing_Detection_1             -dont_touch_module DSIMU_FDPC_INIT0 -dont_touch_module DSIMU_FDPC_INIT1 -dont_touch_module interconnector -dont_touch_module TBX_BreakLongPath -dont_touch_module uclockgen -dont_touch_module ConvertZXModule -dont_touch_module VeloceGuiBreakSeqMacro            -dont_touch_module MctClockGenerator -dont_touch_module MctGlobalAssignBlock -dont_touch_module MctPublicUclockGen             -no_empty_modules -preserve -noNMdumps -no_new_ram_flow -tbx_transactor_compile  -no_xor_eq_opt -map_delay -no_pri_enc_opt -disable_incr -use_param_mem -cms -ums -no_global_sig_support -platform veloce -allow_EMPTYMOD -suppress RTLC-4886 -suppress TBXC-5775 -enable_div_radix_four -lic_key $LIC_KEY -infer_CLA            -f veloce.med/rtlc.out/TransactorNetMods.list  -w TransLib -lib_map_file veloce.med/tbx_transactor_lib.map -out_dir veloce.med/rtlc.out  -f veloce.med/hdl_files/tbx_transactor_comp_opts.list              -proj veloce.med/design_level/glob_Dcd_CompileParams.txt.0 -config_base veloce -emul_platform D2                                    -import MED_AND2 -import MED_OR2 -encrypt_netlist            -opt_level 3 -allow_unresolved_hierref            -main M_RTLSIM_Dummy_transactor_Top
+Info!     [RTLC-4822]: : RTLC-Driver, Release RTLC-Veloce 20.0.3
+Info!     [RTLC-4824]: : Last compiled on Sep 30 2020 20:27:19
+Status    [RTLC-4512]: : Initializing...
+Status    [RTLC-4516]: : Analyzing source files in Library TransLib.
+Status    [RTLC-4515]: : Files analyzed successfully.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 241.3 MB.
+Info!     [RTLC-4835]: : Total CPU time taken for compilation: 1.0 secs.
+Status    [RTLC-4504]: : Partitioning design ....
+Info!     [RTLC-4821]: : Creating Design Hierarchy ....
+Warning   [RTLC-1034]: File Internal_tbx_transactor, Line 3: Too few connections
+                       for instance ( M_IDFAULT_MUX_inst ) of module (
+                       M_IDFAULT_MUX ) declared at <Internal_tbx_transactor:26>.
+Warning   [RTLC-1034]: File Internal_tbx_transactor, Line 6: Too few connections
+                       for instance ( c0 ) of module (
+                       M_RTLSIM_TBX_TCAM_CLOCK_MACRO ) declared at
+                       <Internal_tbx_transactor3:18>.
+Warning   [RTLC-1073]: File Internal_tbx_transactor, Line 10: No connection to
+                       the output port ( dataOut ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 10: No connection to
+                       the input port ( sel ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 10: No connection to
+                       the input port ( sampling_cond ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 10: No connection to
+                       the input port ( clk ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 13: No connection to
+                       the input port ( iBHVCLK ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 13: No connection to
+                       the input port ( SIM_FINISH ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 13: No connection to
+                       the input port ( SIM_FINISH_TIMER ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 13: No connection to
+                       the input port ( NEXT_SIM_TIME ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 13: No connection to
+                       the input port ( NEXT_SIM_TIME_latch ).
+Warning   [RTLC-1073]: File Internal_tbx_transactor, Line 13: No connection to
+                       the output port ( BHVCLK ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 13: No connection to
+                       the input port ( RTLC_NBA ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 13: No connection to
+                       the input port ( RTLC_NB_ACTIVE ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 13: No connection to
+                       the input port ( CLK_STARTED ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 13: No connection to
+                       the input port ( CLK_STOPPED ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor1, Line 187: Mismatch in port
+                       size ( 64 ) and port connection size ( -1 ) for port (
+                       NEXT_TIME_POINT ) in instantiation (
+                       rtlcItopTransactorInst_0 ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor1, Line 187: Mismatch in port
+                       size ( 64 ) and port connection size ( -1 ) for port (
+                       SIM_TIME ) in instantiation ( rtlcItopTransactorInst_0 ).
+Warning   [RTLC-1034]: File Internal_tbx_transactor, Line 352: Too few
+                       connections for instance ( rtlcI_SceMiRunControl ) of
+                       module ( SceMiRunControl ) declared at
+                       <Internal_tbx_transactor2:35>.
+Warning   [RTLC-1036]: File Internal_tbx_transactor, Line 363: Mismatch in port
+                       size ( 2 ) and port connection size ( 3 ) for port (
+                       DeltaTimeout ) in instantiation ( rtlcI_SceMiRunControl
+                       ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor, Line 375: Mismatch in port
+                       size ( 1 ) and port connection size ( 0 ) for port (
+                       STOP_CLK ) in instantiation ( rtlcI_SceMiRunControl ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor, Line 377: Mismatch in port
+                       size ( 1 ) and port connection size ( 0 ) for port (
+                       alledgeclk ) in instantiation ( rtlcI_SceMiRunControl ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor, Line 378: Mismatch in port
+                       size ( 1 ) and port connection size ( 0 ) for port (
+                       NO_TIME_ADVANCE_eRtl_tmp ) in instantiation (
+                       rtlcI_SceMiRunControl ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor, Line 379: Mismatch in port
+                       size ( 1 ) and port connection size ( 0 ) for port (
+                       WAVE_ON_ACTIVITY_NOT_done ) in instantiation (
+                       rtlcI_SceMiRunControl ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor, Line 380: Mismatch in port
+                       size ( 1 ) and port connection size ( 0 ) for port (
+                       ReadWriteMemFopen_Not_Active ) in instantiation (
+                       rtlcI_SceMiRunControl ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor2, Line 288: Mismatch in port
+                       size ( 544 ) and port connection size ( 576 ) for port (
+                       Message ) in instantiation ( sceMiMessageOutPort ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor, Line 536: Mismatch in port
+                       size ( 64 ) and port connection size ( -1 ) for port (
+                       RunTimeQuesta ) in instantiation (
+                       run_time_interconnector ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor, Line 536: No connection to
+                       the input port ( RunTimeVps ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor2, Line 90: Mismatch in port
+                       size ( 480 ) and port connection size ( 512 ) for port (
+                       Message ) in instantiation ( sceMiMessageOutPort ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor1, Line 190: Mismatch in port
+                       size ( 1 ) and port connection size ( 0 ) for port (
+                       TASK0__ACT ) in instantiation ( rtlcItopTransactorInst_1
+                       ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor, Line 297: Mismatch in port
+                       size ( 32 ) and port connection size ( 512 ) for port (
+                       out ) in instantiation ( M_RTLSIM_CallerDataOut_mux_1 ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor1, Line 205: Mismatch in port
+                       size ( 2 ) and port connection size ( 1 ) for port ( in )
+                       in instantiation ( rtlc_7 ).
+Warning   [RTLC-1033]: File Internal_tbx_transactor1, Line 209: No connection to
+                       the input port ( FINCLK ).
+Warning   [RTLC-1036]: File Internal_tbx_transactor1, Line 223: Mismatch in port
+                       size ( 2 ) and port connection size ( 1 ) for port ( in )
+                       in instantiation ( rtlc_9 ).
+Warning   [RTLC-5775]: : Module "tipComodelOutput" not found. Ignoring option:
+                       -import tipComodelOutput
+Warning   [RTLC-5775]: : Module "MED_OR2" not found. Ignoring option: -import
+                       MED_OR2
+Warning   [RTLC-5775]: : Module "tipComodelInputWrapper" not found. Ignoring
+                       option: -import tipComodelInputWrapper
+Warning   [RTLC-5775]: : Module "MED_AND2" not found. Ignoring option: -import
+                       MED_AND2
+Warning   [RTLC-5775]: : Module "tipComodelOutputWrapper" not found. Ignoring
+                       option: -import tipComodelOutputWrapper
+Warning   [RTLC-5775]: : Module "tipClockControl00" not found. Ignoring option:
+                       -import tipClockControl00
+Warning   [RTLC-5775]: : Module "tipComodelInput" not found. Ignoring option:
+                       -import tipComodelInput
+Warning   [RTLC-5775]: : Module "M_RTLSIM_Assertion_Firing_Detection_1" not
+                       found. Ignoring option: -import
+                       M_RTLSIM_Assertion_Firing_Detection_1
+Warning   [RTLC-5775]: : Module "tipComodelReset" not found. Ignoring option:
+                       -import tipComodelReset
+Warning   [RTLC-5775]: : Module "uclockgen" not found. Ignoring option:
+                       -dont_touch_module uclockgen
+Warning   [RTLC-5775]: : Module "M_RTLSIM_MUXN_57_6" not found. Ignoring option:
+                       -dont_touch_module M_RTLSIM_MUXN_57_6
+Warning   [RTLC-5775]: : Module "VeloceGuiBreakSeqMacro" not found. Ignoring
+                       option: -dont_touch_module VeloceGuiBreakSeqMacro
+Warning   [RTLC-5775]: : Module "MctGlobalAssignBlock" not found. Ignoring
+                       option: -dont_touch_module MctGlobalAssignBlock
+Warning   [RTLC-5775]: : Module "ConvertZXModule" not found. Ignoring option:
+                       -dont_touch_module ConvertZXModule
+Warning   [RTLC-5775]: : Module "M_RTLSIM_transactor_Or_25" not found. Ignoring
+                       option: -dont_touch_module M_RTLSIM_transactor_Or_25
+Warning   [RTLC-5775]: : Module "M_RTLSIM_transactor_Or_4" not found. Ignoring
+                       option: -dont_touch_module M_RTLSIM_transactor_Or_4
+Warning   [RTLC-5775]: : Module "interconnector" not found. Ignoring option:
+                       -dont_touch_module interconnector
+Warning   [RTLC-5775]: : Module "M_RTLSIM_transactor_Or_28" not found. Ignoring
+                       option: -dont_touch_module M_RTLSIM_transactor_Or_28
+Warning   [RTLC-5775]: : Module "MctClockGenerator" not found. Ignoring option:
+                       -dont_touch_module MctClockGenerator
+Warning   [RTLC-5775]: : Module "DSIMU_FDPC_INIT0" not found. Ignoring option:
+                       -dont_touch_module DSIMU_FDPC_INIT0
+Warning   [RTLC-5775]: : Module "M_RTLSIM_transactor_Or_6" not found. Ignoring
+                       option: -dont_touch_module M_RTLSIM_transactor_Or_6
+Warning   [RTLC-5775]: : Module "DSIMU_FDPC_INIT1" not found. Ignoring option:
+                       -dont_touch_module DSIMU_FDPC_INIT1
+Warning   [RTLC-5775]: : Module "MctPublicUclockGen" not found. Ignoring option:
+                       -dont_touch_module MctPublicUclockGen
+Warning   [RTLC-5775]: : Module "TBX_BreakLongPath" not found. Ignoring option:
+                       -dont_touch_module TBX_BreakLongPath
+Status    [RTLC-4537]: : Time taken in Partitioning design: 1.01 secs.
+
+Info!     [RTLC-4822]: : RTLCompiler, Release RTLC-Veloce 20.0.3
+Info!     [RTLC-4822]: : Last compiled on Sep 30 2020 20:41:54
+Status    [RTLC-4512]: : Initializing...
+Info!     [RTLC-4820]: : '-allow_unresolved_hierref' option specified. For
+                       hier-ref's without range information range will be
+                       calculated from the context and it will be [contextSize -
+                       1 downto 0], if range can't be calculated from the
+                       context or it is used in a scalar context it will be
+                       treated as scalar. Any hier-ref to multi Dimension Array
+                       will be treate as hier-ref to single Dimension Array.
+Status    [RTLC-4506]: : Module M_RTLSIM_transactor_Mem_din_ReOrdr_1024_725_2
+                       Pre-processing...
+Status    [RTLC-4508]: : Module M_RTLSIM_transactor_Mem_din_ReOrdr_1024_725_2
+                       Compiling...
+Info!     [RTLC-4842]: : Compilation successfully completed.
+Info!     [RTLC-4856]: : Total lines of RTL compiled: 1033.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 247.3 MB.
+Info!     [RTLC-4835]: : Total CPU time taken for compilation: 1.0 secs.
+
+Info!     [RTLC-4822]: : RTLCompiler, Release RTLC-Veloce 20.0.3
+Info!     [RTLC-4822]: : Last compiled on Sep 30 2020 20:41:54
+Status    [RTLC-4512]: : Initializing...
+Info!     [RTLC-4820]: : '-allow_unresolved_hierref' option specified. For
+                       hier-ref's without range information range will be
+                       calculated from the context and it will be [contextSize -
+                       1 downto 0], if range can't be calculated from the
+                       context or it is used in a scalar context it will be
+                       treated as scalar. Any hier-ref to multi Dimension Array
+                       will be treate as hier-ref to single Dimension Array.
+Status    [RTLC-4506]: : Module M_RTLSIM_transactor_Mem_RdData_ReOrdr_1024_725_2
+                       Pre-processing...
+Status    [RTLC-4508]: : Module M_RTLSIM_transactor_Mem_RdData_ReOrdr_1024_725_2
+                       Compiling...
+Info!     [RTLC-4842]: : Compilation successfully completed.
+Info!     [RTLC-4856]: : Total lines of RTL compiled: 1033.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 247.3 MB.
+Info!     [RTLC-4835]: : Total CPU time taken for compilation: 1.0 secs.
+
+Info!     [RTLC-4822]: : RTLCompiler, Release RTLC-Veloce 20.0.3
+Info!     [RTLC-4822]: : Last compiled on Sep 30 2020 20:41:54
+Status    [RTLC-4512]: : Initializing...
+Info!     [RTLC-4820]: : '-allow_unresolved_hierref' option specified. For
+                       hier-ref's without range information range will be
+                       calculated from the context and it will be [contextSize -
+                       1 downto 0], if range can't be calculated from the
+                       context or it is used in a scalar context it will be
+                       treated as scalar. Any hier-ref to multi Dimension Array
+                       will be treate as hier-ref to single Dimension Array.
+Status    [RTLC-4506]: : Module
+                       transactorSch{XACTOR_CNT=>1,XSCHEDULING_MEM_DEPTH=>2048,MEM_WR_RD_ADDR=>12}
+                       Pre-processing...
+SimWarn   [RTLC-5811]: File
+                       /tools/med_tools/software/Veloce_v20.0.3/tbx/hdl/SceMiMacros.v,
+                       Line 44: Module SceMiMessageInPort{PortWidth=>32} This
+                       module is empty. Please check the design if this is
+                       intentional. This may lead to simulation mismatch.
+                       (Option -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can
+                       be used to convert this to SimError if required.)
+SimWarn   [RTLC-5811]: File
+                       /tools/med_tools/software/Veloce_v20.0.3/tbx/hdl/SceMiMacros.v,
+                       Line 54: Module SceMiMessageOutPort{PortWidth=>1056} This
+                       module is empty. Please check the design if this is
+                       intentional. This may lead to simulation mismatch.
+                       (Option -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can
+                       be used to convert this to SimError if required.)
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 15979: Hierarchical
+                       reference to net top.mctcore_inst.timeStamp is treated as
+                       a vector of size [63:0] depending on the context it is
+                       used.
+Status    [RTLC-4506]: : Module M_RTLSIM_Otc_Dynamic_Slot_56_6 Pre-processing...
+Warning   [RTLC-5540]: File Internal_tbx_transactor5, Line 17420: Index value
+                       might be out of prefix index constraints
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 13538: Hierarchical
+                       reference to net top.mctcore_inst.timeStamp is treated as
+                       a vector of size [63:0] depending on the context it is
+                       used.
+Note!     [RTLC-5251]: : Built-in hardware memory core inferred for variable ':
+                       "M_RTLSIM_top_transactor_2.xaction_mem depth = 2048, width = 1024",
+                       "M_RTLSIM_top_transactor_2.mem_wrPortCnt depth = 2048, width = 1"'.
+Status    [RTLC-4506]: : Module M_RTLSIM_top_transactor_2 Pre-processing...
+Status    [RTLC-4508]: : Module
+                       transactorSch{XACTOR_CNT=>1,XSCHEDULING_MEM_DEPTH=>2048,MEM_WR_RD_ADDR=>12}
+                       Compiling...
+Status    [RTLC-4508]: : Module SceMiMessageInPort{PortWidth=>32} Compiling...
+Status    [RTLC-4508]: : Module SceMiMessageOutPort{PortWidth=>1056}
+                       Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_Otc_Dynamic_Slot_56_6 Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_top_transactor_2 Compiling...
+Info!     [RTLC-4846]: : Rebalanced Expression Tree...
+Info!     [RTLC-4842]: : Compilation successfully completed.
+Info!     [RTLC-4856]: : Total lines of RTL compiled: 9186.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 606.1 MB.
+Info!     [RTLC-4835]: : Total CPU time taken for compilation: 11.2 secs.
+
+Info!     [RTLC-4822]: : RTLCompiler, Release RTLC-Veloce 20.0.3
+Info!     [RTLC-4822]: : Last compiled on Sep 30 2020 20:41:54
+Status    [RTLC-4512]: : Initializing...
+Info!     [RTLC-4820]: : '-allow_unresolved_hierref' option specified. For
+                       hier-ref's without range information range will be
+                       calculated from the context and it will be [contextSize -
+                       1 downto 0], if range can't be calculated from the
+                       context or it is used in a scalar context it will be
+                       treated as scalar. Any hier-ref to multi Dimension Array
+                       will be treate as hier-ref to single Dimension Array.
+Status    [RTLC-4506]: : Module M_IDFAULT_MUX Pre-processing...
+Status    [RTLC-4506]: : Module M_RTLSIM_TBX_MULTI_CLK_PRIM Pre-processing...
+Status    [RTLC-4506]: : Module M_RTLSIM_TBX_TCAM_CLOCK_MACRO_inner
+                       Pre-processing...
+Status    [RTLC-4506]: : Module M_RTLSIM_TBX_TCAM_CLOCK_MACRO Pre-processing...
+SimWarn   [RTLC-5811]: File Internal_tbx_transactor, Line 1: Module
+                       M_RTLSIM_TBX_INTERNAL_CLOCKGEN This module is empty.
+                       Please check the design if this is intentional. This may
+                       lead to simulation mismatch. (Option
+                       -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can be used
+                       to convert this to SimError if required.)
+Status    [RTLC-4506]: : Module M_RTLSIM_PRInfo_mux Pre-processing...
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 19: Hierarchical
+                       reference to net rtlcGlobConnNetwork.NEXT_SIM_TIME is
+                       treated as a vector of size [63:0] depending on the
+                       context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 21: Hierarchical
+                       reference to net rtlcGlobConnNetwork.SIM_TIME is treated
+                       as a vector of size [63:0] depending on the context it is
+                       used.
+Status    [RTLC-4506]: : Module M_RTLSIM_FSDBEnableSelector Pre-processing...
+Warning   [RTLC-5671]: File Internal_tbx_transactor, Line 160: Hierarchical
+                       reference to net
+                       top.mctcore_inst.channelController.counter_info is
+                       treated as a vector of size [319:0] depending on the
+                       context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor, Line 326: Hierarchical
+                       reference to net
+                       rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.dummyClockReportModule.gnum_iBhvclksWhenposEdgeEnableDown
+                       is treated as a vector of size [63:0] depending on the
+                       context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor, Line 324: Hierarchical
+                       reference to net
+                       top.mctcore_inst.channelController.profileReportInfo is
+                       treated as a vector of size [479:0] depending on the
+                       context it is used.
+SimWarn   [RTLC-5811]: File
+                       /tools/med_tools/software/Veloce_v20.0.3/tbx/hdl/SceMiMacros.v,
+                       Line 44: Module SceMiMessageInPort{PortWidth=>68} This
+                       module is empty. Please check the design if this is
+                       intentional. This may lead to simulation mismatch.
+                       (Option -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can
+                       be used to convert this to SimError if required.)
+SimWarn   [RTLC-5811]: File
+                       /tools/med_tools/software/Veloce_v20.0.3/tbx/hdl/SceMiMacros.v,
+                       Line 54: Module SceMiMessageOutPort{PortWidth=>544} This
+                       module is empty. Please check the design if this is
+                       intentional. This may lead to simulation mismatch.
+                       (Option -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can
+                       be used to convert this to SimError if required.)
+Warning   [RTLC-5461]: File Internal_tbx_transactor2, Line 288: Size mismatch in
+                       port (Message) in instance (sceMiMessageOutPort).
+Status    [RTLC-4506]: : Module WaveOnTimeXGen Pre-processing...
+Status    [RTLC-4506]: : Module SceMiRunControl Pre-processing...
+Warning   [RTLC-5461]: File Internal_tbx_transactor, Line 363: Size mismatch in
+                       port (DeltaTimeout) in instance (rtlcI_SceMiRunControl).
+Status    [RTLC-4506]: : Module RunTimeInterconnector Pre-processing...
+SimWarn   [RTLC-5811]: File
+                       /tools/med_tools/software/Veloce_v20.0.3/tbx/hdl/SceMiMacros.v,
+                       Line 54: Module SceMiMessageOutPort{PortWidth=>480} This
+                       module is empty. Please check the design if this is
+                       intentional. This may lead to simulation mismatch.
+                       (Option -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can
+                       be used to convert this to SimError if required.)
+Warning   [RTLC-5461]: File Internal_tbx_transactor2, Line 90: Size mismatch in
+                       port (Message) in instance (sceMiMessageOutPort).
+Status    [RTLC-4506]: : Module M_RTLSIM_BackupReplay_Transactor
+                       Pre-processing...
+SimWarn   [RTLC-5811]: File
+                       /tools/med_tools/software/Veloce_v20.0.3/tbx/hdl/SceMiMacros.v,
+                       Line 54: Module SceMiMessageOutPort{PortWidth=>32} This
+                       module is empty. Please check the design if this is
+                       intentional. This may lead to simulation mismatch.
+                       (Option -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can
+                       be used to convert this to SimError if required.)
+Status    [RTLC-4506]: : Module M_RTLSIM_top_transactor_0 Pre-processing...
+Status    [RTLC-4506]: : Module M_RTLSIM_CallerDataOut_mux_1 Pre-processing...
+Warning   [RTLC-5461]: File Internal_tbx_transactor, Line 297: Size mismatch in
+                       port (out) in instance (M_RTLSIM_CallerDataOut_mux_1).
+SimWarn   [RTLC-5811]: File
+                       /tools/med_tools/software/Veloce_v20.0.3/tbx/hdl/SceMiMacros.v,
+                       Line 54: Module SceMiMessageOutPort{PortWidth=>512} This
+                       module is empty. Please check the design if this is
+                       intentional. This may lead to simulation mismatch.
+                       (Option -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can
+                       be used to convert this to SimError if required.)
+Status    [RTLC-4506]: : Module M_RTLSIM_top_transactor_1 Pre-processing...
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1965: Hierarchical
+                       reference to net top.CLK is treated as scalar depending
+                       on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1966: Hierarchical
+                       reference to net top.uut.convA2_ifm_enable_read_current
+                       is treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1967: Hierarchical
+                       reference to net top.uut.convA2_ready is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1967: Hierarchical
+                       reference to net top.uut.convA2_end_to_previous is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1967: Hierarchical
+                       reference to net top.uut.pool2_start_to_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1967: Hierarchical
+                       reference to net top.uut.pool2_ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1967: Hierarchical
+                       reference to net top.uut.pool2_end_to_previous is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1968: Hierarchical
+                       reference to net top.uut.pool2_ifm_enable_read_A_current
+                       is treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1968: Hierarchical
+                       reference to net top.uut.convB_start_to_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1968: Hierarchical
+                       reference to net top.uut.convB_ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1968: Hierarchical
+                       reference to net top.uut.convB_ifm_enable_read_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1968: Hierarchical
+                       reference to net top.uut.convB_ifm_enable_read_current is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1969: Hierarchical
+                       reference to net top.uut.convB_end_to_previous is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1969: Hierarchical
+                       reference to net
+                       top.uut.memControl_conva1_bm_enable_write is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1969: Hierarchical
+                       reference to net top.uut.pool1_ifm_sel_next is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1969: Hierarchical
+                       reference to net top.uut.pool1_start_to_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1969: Hierarchical
+                       reference to net top.uut.pool1_ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1970: Hierarchical
+                       reference to net top.uut.pool1_end_to_previous is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1970: Hierarchical
+                       reference to net top.uut.pool1_ifm_enable_read_A_current
+                       is treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1970: Hierarchical
+                       reference to net top.uut.convA1_ifm_sel_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1970: Hierarchical
+                       reference to net top.uut.convA1_start_to_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1970: Hierarchical
+                       reference to net top.uut.convA1_ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1971: Hierarchical
+                       reference to net top.uut.memControl_fc2_bm_enable_write
+                       is treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1971: Hierarchical
+                       reference to net top.uut.memControl_fc1_bm_enable_write
+                       is treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1971: Hierarchical
+                       reference to net
+                       top.uut.memControl_conva2_bm_enable_write is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1971: Hierarchical
+                       reference to net top.uut.fc1_enable_read_current is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1971: Hierarchical
+                       reference to net top.uut.convA2_ifm_sel_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1972: Hierarchical
+                       reference to net top.uut.convA2_start_to_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1972: Hierarchical
+                       reference to net top.uut.convA2_ifm_enable_read_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1972: Hierarchical
+                       reference to net top.RST is treated as scalar depending
+                       on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1972: Hierarchical
+                       reference to net top.initialization_done is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1972: Hierarchical
+                       reference to net top.uut.fc1_bias_sel is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1973: Hierarchical
+                       reference to net top.output_ready is treated as scalar
+                       depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1974: Hierarchical
+                       reference to net top.uut.fc1_enable_write_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1975: Hierarchical
+                       reference to net top.uut.fc1_start_to_next is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1975: Hierarchical
+                       reference to net top.uut.fc1_end_to_previous is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1975: Hierarchical
+                       reference to net top.uut.fc2_bias_sel is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1975: Hierarchical
+                       reference to net top.uut.fc2_end_to_previous is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1975: Hierarchical
+                       reference to net top.uut.fc2_ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1976: Hierarchical
+                       reference to net top.uut.convA2_ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 1976: Hierarchical
+                       reference to net top.ready is treated as scalar depending
+                       on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2314: Hierarchical
+                       reference to net top.uut.ConvA1.clk is treated as scalar
+                       depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2315: Hierarchical
+                       reference to net top.uut.ConvA1.wm_fifo_enable is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2316: Hierarchical
+                       reference to net top.uut.ConvA1.wm_enable_read is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2316: Hierarchical
+                       reference to net top.uut.ConvA1.wm_addr_sel is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2316: Hierarchical
+                       reference to net top.uut.ConvA1.ifm_enable_read_current
+                       is treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2316: Hierarchical
+                       reference to net top.uut.ConvA1.conv_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2316: Hierarchical
+                       reference to net top.uut.ConvA1.fifo_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2317: Hierarchical
+                       reference to net top.uut.ConvA1.ready is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2317: Hierarchical
+                       reference to net top.uut.ConvA1.ifm_sel_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2317: Hierarchical
+                       reference to net top.uut.ConvA1.start_to_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2317: Hierarchical
+                       reference to net top.uut.ConvA1.ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2317: Hierarchical
+                       reference to net top.uut.ConvA1.end_from_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2318: Hierarchical
+                       reference to net top.uut.ConvA1.reset is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2318: Hierarchical
+                       reference to net top.uut.ConvA1.start_from_previous is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2318: Hierarchical
+                       reference to net top.uut.ConvA1.bm_enable_write is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2394: Hierarchical
+                       reference to net top.uut.Pool1.clk is treated as scalar
+                       depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2395: Hierarchical
+                       reference to net top.uut.Pool1.pool_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2396: Hierarchical
+                       reference to net top.uut.Pool1.fifo_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2396: Hierarchical
+                       reference to net top.uut.Pool1.ifm_sel_next is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2396: Hierarchical
+                       reference to net top.uut.Pool1.start_to_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2396: Hierarchical
+                       reference to net top.uut.Pool1.ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2396: Hierarchical
+                       reference to net top.uut.Pool1.end_from_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2397: Hierarchical
+                       reference to net top.uut.Pool1.end_to_previous is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2397: Hierarchical
+                       reference to net top.uut.Pool1.ifm_enable_read_A_current
+                       is treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2397: Hierarchical
+                       reference to net top.uut.Pool1.start_from_previous is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2397: Hierarchical
+                       reference to net top.uut.Pool1.reset is treated as scalar
+                       depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2406: Hierarchical
+                       reference to net top.uut.ConvB.clk is treated as scalar
+                       depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2407: Hierarchical
+                       reference to net top.uut.ConvB.bm_enable_read is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2408: Hierarchical
+                       reference to net top.uut.ConvB.wm_fifo_enable is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2408: Hierarchical
+                       reference to net top.uut.ConvB.wm_enable_read is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2408: Hierarchical
+                       reference to net top.uut.ConvB.wm_addr_sel is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2408: Hierarchical
+                       reference to net top.uut.ConvB.relu_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2408: Hierarchical
+                       reference to net top.uut.ConvB.accu_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2409: Hierarchical
+                       reference to net top.uut.ConvB.conv_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2409: Hierarchical
+                       reference to net top.uut.ConvB.fifo_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2409: Hierarchical
+                       reference to net top.uut.ConvB.start_to_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2409: Hierarchical
+                       reference to net top.uut.ConvB.ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2409: Hierarchical
+                       reference to net top.uut.ConvB.ifm_enable_read_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2410: Hierarchical
+                       reference to net top.uut.ConvB.reset is treated as scalar
+                       depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2410: Hierarchical
+                       reference to net top.uut.ConvB.end_from_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2410: Hierarchical
+                       reference to net top.uut.ConvB.end_to_previous is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2410: Hierarchical
+                       reference to net top.uut.ConvB.start_from_previous is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2410: Hierarchical
+                       reference to net top.uut.ConvB.ifm_enable_read_current is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2454: Hierarchical
+                       reference to net top.uut.Pool2.clk is treated as scalar
+                       depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2455: Hierarchical
+                       reference to net top.uut.Pool2.fifo_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2456: Hierarchical
+                       reference to net top.uut.Pool2.start_to_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2456: Hierarchical
+                       reference to net top.uut.Pool2.ifm_enable_write_next is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2456: Hierarchical
+                       reference to net top.uut.Pool2.end_from_next is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2456: Hierarchical
+                       reference to net top.uut.Pool2.conv_ready is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2456: Hierarchical
+                       reference to net top.uut.Pool2.end_to_previous is treated
+                       as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2457: Hierarchical
+                       reference to net top.uut.Pool2.pool_enable is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2457: Hierarchical
+                       reference to net top.uut.Pool2.ifm_enable_read_A_current
+                       is treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2457: Hierarchical
+                       reference to net top.uut.Pool2.start_from_previous is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2457: Hierarchical
+                       reference to net top.uut.Pool2.reset is treated as scalar
+                       depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2468: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.clk is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2469: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.bm_enable_write is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2470: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.bm_enable_read is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2470: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.wm_fifo_enable is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2470: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.wm_enable_read is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2470: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.wm_addr_sel is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2470: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.relu_enable is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2471: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.accu_enable is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2471: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.conv_enable is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2471: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.fifo_enable is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2471: Hierarchical
+                       reference to net top.uut.ConvA2.DP_A2.reset is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2491: Hierarchical
+                       reference to net top.uut.FC1.DP.FIFO1.clk is treated as
+                       scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2492: Hierarchical
+                       reference to net top.uut.FC1.DP.FIFO1.fifo_enable is
+                       treated as scalar depending on the context it is used.
+Warning   [RTLC-5671]: File Internal_tbx_transactor5, Line 2493: Hierarchical
+                       reference to net top.uut.FC2.DP.FIFO1.fifo_enable is
+                       treated as scalar depending on the context it is used.
+SimWarn   [RTLC-5811]: File Internal_tbx_transactor5, Line 55: Module
+                       M_RTLSIM_FSDB_Vhdl_Scope_2 This module is empty. Please
+                       check the design if this is intentional. This may lead to
+                       simulation mismatch. (Option
+                       -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can be used
+                       to convert this to SimError if required.)
+Status    [RTLC-4506]: : Module M_RTLSIM_FSDBChannelController2
+                       Pre-processing...
+Status    [RTLC-4506]: : Module M_RTLSIM_TriggerTraceOff_Transactor
+                       Pre-processing...
+SimWarn   [RTLC-5811]: File Internal_tbx_transactor, Line 2: Module
+                       M_TBX_DIR_AND_ENABLE_XTOR__WRAPPER This module is empty.
+                       Please check the design if this is intentional. This may
+                       lead to simulation mismatch. (Option
+                       -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can be used
+                       to convert this to SimError if required.)
+Warning   [RTLC-5671]: File
+                       /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/rtlc.out/TRANSACTOR_FILES/M_RTLSIM_Clock_Report_Module.v,
+                       Line 52: Hierarchical reference to net
+                       top.rtlcM_RTLSIM_DELAY_CLKGEN_16_n1.REMAINING_DELAY is
+                       treated as a vector of size [15:0] depending on the
+                       context it is used.
+Status    [RTLC-4506]: : Module IntervalProfileReortLogic Pre-processing...
+Status    [RTLC-4506]: : Module M_RTLSIM_Dummy_Clock_Report_Module
+                       Pre-processing...
+SimWarn   [RTLC-5811]: File Internal_tbx_transactor, Line 1: Module
+                       M_RTLSIM_Xrtl_ForceRelease_Connector This module is
+                       empty. Please check the design if this is intentional.
+                       This may lead to simulation mismatch. (Option
+                       -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can be used
+                       to convert this to SimError if required.)
+Status    [RTLC-4506]: : Module M_RTLSIM_top_transactor_3 Pre-processing...
+Status    [RTLC-4506]: : Module M_RTLSIM_top_transactor_wrapper
+                       Pre-processing...
+Status    [RTLC-4508]: : Module M_IDFAULT_MUX Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_TBX_MULTI_CLK_PRIM Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_TBX_TCAM_CLOCK_MACRO_inner Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_TBX_TCAM_CLOCK_MACRO Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_TBX_INTERNAL_CLOCKGEN Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_PRInfo_mux Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_FSDBEnableSelector Compiling...
+Status    [RTLC-4508]: : Module SceMiMessageInPort{PortWidth=>68} Compiling...
+Status    [RTLC-4508]: : Module SceMiMessageOutPort{PortWidth=>544} Compiling...
+Status    [RTLC-4508]: : Module WaveOnTimeXGen Compiling...
+SimWarn   [RTLC-5790]: : Module WaveOnTimeXGen, Net startWaveOnAtTimeX This
+                       signal is assigned from more than one concurrent
+                       sequential blocks. It may lead to a simulation mismatch,
+                       if any two clock edges happen at the same time.
+SimWarn   [RTLC-5790]: : Module WaveOnTimeXGen, Net isRdy This signal is
+                       assigned from more than one concurrent sequential blocks.
+                       It may lead to a simulation mismatch, if any two clock
+                       edges happen at the same time.
+Status    [RTLC-4508]: : Module SceMiRunControl Compiling...
+Status    [RTLC-4508]: : Module RunTimeInterconnector Compiling...
+Status    [RTLC-4508]: : Module SceMiMessageOutPort{PortWidth=>480} Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_BackupReplay_Transactor Compiling...
+Status    [RTLC-4508]: : Module reset_tbx_bhvc__modified Compiling...
+Status    [RTLC-4508]: : Module SceMiMessageOutPort{PortWidth=>32} Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_top_transactor_0 Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_CallerDataOut_mux_1 Compiling...
+Status    [RTLC-4508]: : Module SceMiMessageOutPort{PortWidth=>512} Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_top_transactor_1 Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_FSDB_Vhdl_Scope_2 Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_FSDBChannelController2 Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_TriggerTraceOff_Transactor Compiling...
+Status    [RTLC-4508]: : Module M_TBX_DIR_AND_ENABLE_XTOR__WRAPPER Compiling...
+Status    [RTLC-4508]: : Module IntervalProfileReortLogic Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_Dummy_Clock_Report_Module Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_Xrtl_ForceRelease_Connector
+                       Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_top_transactor_3 Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_top_transactor_wrapper Compiling...
+Status    [RTLC-4523]: : Root Module M_RTLSIM_Dummy_transactor_Top: Compiling...
+Info!     [RTLC-4846]: : Rebalanced Expression Tree...
+Info!     [RTLC-4842]: : Compilation successfully completed.
+Info!     [RTLC-4856]: : Total lines of RTL compiled: 9908.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 673.0 MB.
+Info!     [RTLC-4835]: : Total CPU time taken for compilation: 33.2 secs.
+Status    [RTLC-4537]: : Time taken in compiling all partitions: 51.57 secs.
+Status    [RTLC-4513]: : Overall running time for compilation: 52.0 secs.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 701.0 MB.
+
+
+Executing Command:
+/usr/bin/env TBX_HOME=/tools/med_tools/software/Veloce_v20.0.3/tbx     /tools/med_tools/software/Veloce_v20.0.3/tbx/rtlc/bin/rtlc-driver            -velcomp_tbx_merge            -import tipComodelInput -import tipComodelOutput -import tipComodelInputWrapper -import tipComodelOutputWrapper -import tipClockControl00 -import tipComodelReset -import M_RTLSIM_Assertion_Firing_Detection_1             -dont_touch_module DSIMU_FDPC_INIT0 -dont_touch_module DSIMU_FDPC_INIT1 -dont_touch_module interconnector -dont_touch_module TBX_BreakLongPath -dont_touch_module uclockgen -dont_touch_module ConvertZXModule -dont_touch_module VeloceGuiBreakSeqMacro            -dont_touch_module MctClockGenerator -dont_touch_module MctGlobalAssignBlock -dont_touch_module MctPublicUclockGen             -no_empty_modules -preserve -noNMdumps -no_new_ram_flow -tbx_transactor_compile  -no_xor_eq_opt -map_delay -no_pri_enc_opt -disable_incr -use_param_mem -cms -ums -no_global_sig_support -platform veloce -allow_EMPTYMOD -suppress RTLC-4886 -suppress TBXC-5775 -enable_div_radix_four -lic_key $LIC_KEY -infer_CLA            -w work_tbx_InternaL -lib_map_file veloce.med/tbx_internal_lib.map -out_dir veloce.med/rtlc.out  -f veloce.med/hdl_files/tbx_infra_comp_opts.list              -proj veloce.med/design_level/glob_Dcd_CompileParams.txt.0 -config_base veloce -emul_platform D2                                    -allow_ISL -tbx_last_drv_call -suppress RTLC-4873 -force_all            -main MctCore
+Info!     [RTLC-4822]: : RTLC-Driver, Release RTLC-Veloce 20.0.3
+Info!     [RTLC-4824]: : Last compiled on Sep 30 2020 20:27:19
+Status    [RTLC-4512]: : Initializing...
+Status    [RTLC-4516]: : Analyzing source files in Library work_tbx_InternaL.
+Status    [RTLC-4515]: : Files analyzed successfully.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 241.2 MB.
+Info!     [RTLC-4835]: : Total CPU time taken for compilation: 1.0 secs.
+Status    [RTLC-4504]: : Partitioning design ....
+Info!     [RTLC-4821]: : Creating Design Hierarchy ....
+Warning   [RTLC-5775]: : Module "tipComodelOutput" not found. Ignoring option:
+                       -import tipComodelOutput
+Warning   [RTLC-5775]: : Module "tipComodelInput" not found. Ignoring option:
+                       -import tipComodelInput
+Warning   [RTLC-5775]: : Module "M_RTLSIM_Assertion_Firing_Detection_1" not
+                       found. Ignoring option: -import
+                       M_RTLSIM_Assertion_Firing_Detection_1
+Warning   [RTLC-5775]: : Module "VeloceGuiBreakSeqMacro" not found. Ignoring
+                       option: -dont_touch_module VeloceGuiBreakSeqMacro
+Warning   [RTLC-5775]: : Module "MctClockGenerator" not found. Ignoring option:
+                       -dont_touch_module MctClockGenerator
+Warning   [RTLC-5775]: : Module "DSIMU_FDPC_INIT0" not found. Ignoring option:
+                       -dont_touch_module DSIMU_FDPC_INIT0
+Warning   [RTLC-5775]: : Module "DSIMU_FDPC_INIT1" not found. Ignoring option:
+                       -dont_touch_module DSIMU_FDPC_INIT1
+Warning   [RTLC-5775]: : Module "TBX_BreakLongPath" not found. Ignoring option:
+                       -dont_touch_module TBX_BreakLongPath
+Status    [RTLC-4537]: : Time taken in Partitioning design: 0.86 secs.
+
+Info!     [RTLC-4822]: : RTLCompiler, Release RTLC-Veloce 20.0.3
+Info!     [RTLC-4822]: : Last compiled on Sep 30 2020 20:41:54
+Status    [RTLC-4512]: : Initializing...
+Status    [RTLC-4506]: : Module M_RTLSIM_Output_Port_Mux_Controller_Core_5
+                       Pre-processing...
+Status    [RTLC-4506]: : Module
+                       M_RTLSIM_Output_Port_Mux_Controller{NUM_OUT_PORTS=>5}
+                       Pre-processing...
+Status    [RTLC-4506]: : Module tipComodelWrapper_PathBreaker{TIP_SIZE=>1152}
+                       Pre-processing...
+Status    [RTLC-4506]: : Module tipComodelWrapper_PathBreaker{TIP_SIZE=>192}
+                       Pre-processing...
+Status    [RTLC-4506]: : Module M_RTLSIM_CRC_PH_II Pre-processing...
+Status    [RTLC-4506]: : Module
+                       M_RTLSIM_SanitySignalGenerator{TIP_SIGNAL_SIZE=>1152}
+                       Pre-processing...
+Status    [RTLC-4506]: : Module
+                       M_RTLSIM_SanitySignalGenerator{TIP_SIGNAL_SIZE=>192}
+                       Pre-processing...
+Status    [RTLC-4508]: : Module M_RTLSIM_MUX_9_4_128_Wrapper Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_MUX_9_4_64_Wrapper Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_Output_Port_Mux_Controller_Core_5
+                       Compiling...
+Status    [RTLC-4508]: : Module
+                       M_RTLSIM_Output_Port_Mux_Controller{NUM_OUT_PORTS=>5}
+                       Compiling...
+Status    [RTLC-4508]: : Module tipComodelWrapper_PathBreaker{TIP_SIZE=>1152}
+                       Compiling...
+Status    [RTLC-4508]: : Module tipComodelWrapper_PathBreaker{TIP_SIZE=>192}
+                       Compiling...
+Status    [RTLC-4508]: : Module M_RTLSIM_CRC_PH_II Compiling...
+Status    [RTLC-4508]: : Module
+                       M_RTLSIM_SanitySignalGenerator{TIP_SIGNAL_SIZE=>1152}
+                       Compiling...
+Status    [RTLC-4508]: : Module
+                       M_RTLSIM_SanitySignalGenerator{TIP_SIGNAL_SIZE=>192}
+                       Compiling...
+Info!     [RTLC-4842]: : Compilation successfully completed.
+Info!     [RTLC-4856]: : Total lines of RTL compiled: 275.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 290.1 MB.
+Info!     [RTLC-4835]: : Total CPU time taken for compilation: 4.4 secs.
+
+Info!     [RTLC-4822]: : RTLCompiler, Release RTLC-Veloce 20.0.3
+Info!     [RTLC-4822]: : Last compiled on Sep 30 2020 20:41:54
+Status    [RTLC-4512]: : Initializing...
+Note!     [RTLC-5251]: : Built-in hardware memory core inferred for variable ':
+                       "ChannelController.outTrMem depth = 2048, width = 1152"'.
+Status    [RTLC-4506]: : Module ChannelController Pre-processing...
+Warning   [RTLC-5540]: File Internal_tbx_transactor, Line 531: Index value might
+                       be out of prefix index constraints
+Warning   [RTLC-5540]: File Internal_tbx_transactor, Line 543: Index value might
+                       be out of prefix index constraints
+Warning   [RTLC-5540]: File Internal_tbx_transactor, Line 544: Index value might
+                       be out of prefix index constraints
+Warning   [RTLC-5540]: File Internal_tbx_transactor, Line 577: Index value might
+                       be out of prefix index constraints
+Warning   [RTLC-5540]: File Internal_tbx_transactor, Line 1026: Index value
+                       might be out of prefix index constraints
+Status    [RTLC-4508]: : Module ChannelController Compiling...
+Info!     [RTLC-4846]: : Rebalanced Expression Tree...
+Info!     [RTLC-4842]: : Compilation successfully completed.
+Info!     [RTLC-4856]: : Total lines of RTL compiled: 1865.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 374.6 MB.
+Info!     [RTLC-4835]: : Total CPU time taken for compilation: 12.0 secs.
+
+Info!     [RTLC-4822]: : RTLCompiler, Release RTLC-Veloce 20.0.3
+Info!     [RTLC-4822]: : Last compiled on Sep 30 2020 20:41:54
+Status    [RTLC-4512]: : Initializing...
+SimWarn   [RTLC-5811]: File
+                       /tools/med_tools/software/Veloce_v20.0.3/tbx/hdl/SceMiMacros.v,
+                       Line 44: Module SceMiMessageInPort{PortWidth=>32} This
+                       module is empty. Please check the design if this is
+                       intentional. This may lead to simulation mismatch.
+                       (Option -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can
+                       be used to convert this to SimError if required.)
+SimWarn   [RTLC-5811]: File
+                       /tools/med_tools/software/Veloce_v20.0.3/tbx/hdl/SceMiMacros.v,
+                       Line 90: Module SceMiClockControl{ClockNum=>0} This
+                       module is empty. Please check the design if this is
+                       intentional. This may lead to simulation mismatch.
+                       (Option -disallow_EMPTYMOD/-disallow_EMPTYMOD_for_mod can
+                       be used to convert this to SimError if required.)
+Status    [RTLC-4506]: : Module SimTimeInPs Pre-processing...
+Status    [RTLC-4522]: : Root Module MctCore: Pre-processing...
+Status    [RTLC-4508]: : Module SceMiMessageInPort{PortWidth=>32} Compiling...
+Status    [RTLC-4508]: : Module SceMiClockControl{ClockNum=>0} Compiling...
+Status    [RTLC-4508]: : Module MctSwControl{ClockNum=>0} Compiling...
+Status    [RTLC-4508]: : Module SimTimeInPs Compiling...
+Status    [RTLC-4523]: : Root Module MctCore: Compiling...
+Info!     [RTLC-4842]: : Compilation successfully completed.
+Info!     [RTLC-4856]: : Total lines of RTL compiled: 181.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 257.6 MB.
+Info!     [RTLC-4835]: : Total CPU time taken for compilation: 1.0 secs.
+Status    [RTLC-4537]: : Time taken in compiling all partitions: 26.09 secs.
+Info!     [RTLC-4821]: : TBX-Internal-Linter invocation..
+Status    [RTLC-4513]: : Overall running time for compilation: 29.0 secs.
+Info!     [RTLC-4857]: : Total memory taken for compilation: 682.3 MB.
+Task: exited with code: 0

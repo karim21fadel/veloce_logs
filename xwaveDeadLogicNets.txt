@@ -1,0 +1,1 @@
+../veloce.med/XWAVE/xwaveDeadLogicNets.txt

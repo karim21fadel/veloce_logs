@@ -1,0 +1,10 @@
+# REPORT FORMAT :
+
+# SIMTIME   TIMEADVANCE_COUNTER   UCLOCK_COUNTER  (MaxNumCycles In the Range)
+#                top.CLK 
+
+
+  40000        5         1376197       ( 4 ) 
+ EET Thu Jul 15 20:57:53 2021
+1                 4  
+

@@ -1,0 +1,2587 @@
+/tools/med_tools/software/Veloce_v20.0.3/bin/velsyn -vs          ./veloce.med/hdl_files/mcttop.v -enc ./veloce.med/hdl_files/enc_crypt.ev         -Lutlib ./veloce.med/rtlc.out/out.lut.v -Root "top" -Ao med -target D2-200    -Dump c1 c1.dump -Dump c0 c0.dump -Dump e0 e0.dump -Dump e50 long_paths.dump -Mm 10.0 -disableSoftVw -SrND -NFBidi -RegTieUndrivenNets -KeepAlive veloce.med//rtlc.out/MOD_ANNOTATION/veloce.kal   -RTL -OPKC +define+MCT -TBX -Mem ./veloce.med/rtlc.out/vmw.mem -Com ./veloce.med/ilwork/vmw.com -SFF -SWOM -dumpDir veloce.log//velsyn/ -IVVN 20.0.3  -TBX  -KeepAlive veloce.med/rtlc.out/rtlcKeepAlive.txt -KeepAlive  veloce.med/tbxInternalKeepAlive.txt  -TBXnpw -TBXnpe    -force ./veloce.med/rtlc.out//iceforcesetstate.list -TNfi ./veloce.med/rtlc.out//iceforcesettie.list     -base_dir ./veloce.med    -Clk veloce.med/rtlc.out/vmw.clk.generated -velvdbflow
+
+
+Executing Command:
+/tools/med_tools/software/Veloce_v20.0.3/bin/velsyn -vs          ./veloce.med/hdl_files/mcttop.v -enc ./veloce.med/hdl_files/enc_crypt.ev         -Lutlib ./veloce.med/rtlc.out/out.lut.v -Root "top" -Ao med -target D2-200    -Dump c1 c1.dump -Dump c0 c0.dump -Dump e0 e0.dump -Dump e50 long_paths.dump -Mm 10.0 -disableSoftVw -SrND -NFBidi -RegTieUndrivenNets -KeepAlive veloce.med//rtlc.out/MOD_ANNOTATION/veloce.kal   -RTL -OPKC +define+MCT -TBX -Mem ./veloce.med/rtlc.out/vmw.mem -Com ./veloce.med/ilwork/vmw.com -SFF -SWOM -dumpDir veloce.log//velsyn/ -IVVN 20.0.3  -TBX  -KeepAlive veloce.med/rtlc.out/rtlcKeepAlive.txt -KeepAlive  veloce.med/tbxInternalKeepAlive.txt  -TBXnpw -TBXnpe    -force ./veloce.med/rtlc.out//iceforcesetstate.list -TNfi ./veloce.med/rtlc.out//iceforcesettie.list     -base_dir ./veloce.med  -LicKey $LIC_KEY         -Clk veloce.med/rtlc.out/vmw.clk.generated                                     -velvdbflow
+HostInfo: Linux egc-med-cairo 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux
+HostInfo: NumCpu 32 ApproxMIPS 8456.1 RealMem 257661MB PageSize 4096 AddrSize 64bit
+HostInfo: Free Ram: 8515MB  Shared Ram: 0MB  Buffered Ram: 4MB
+HostInfo: Load Averages: 1min(10.16) 5min(10.23) 15min(9.64)
+HostInfo: Total Swap: 51199MB	Free: 50256MB
+HostInfo: Number of processes: 17362
+BuildInfo: GIT_BRANCH  RELBR-v20_0_3 
+           SHA_TAG     521e4764153605fd8e996e3b81c9cbe7929d4483 
+Warning   [Velsyn-13962]: : Invalid request for printing 0 critical paths. 9 critical paths will be printed.
+
+                       Veloce Design Compiler
+             Copyright Mentor Graphics Corporation 2003 - 2020
+                           All Rights Reserved
+                          8005 SW Boeckman Road
+                       Wilsonville, OR, 97070, USA
+
+                            Version 20.0.3
+
+
+
+Dsyn Process ID 21492
+
+..
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/vmw_defines.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/med_rtl_reference.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/med_rtl_lut_reference.v
+Reading Verilog file: ./veloce.med/rtlc.out/out.lut.v
+Resolving References
+Resolving References
+.
+Reading Design Files ...
+Reading Verilog file: ./veloce.med/hdl_files/mcttop.v
+Reading include file veloce.med/hdl_files/ChannelParameters.v
+Reading include file veloce.med/rtlc.out/out.synth.vmw.v
+Reading include file veloce.med/rtlc.out/NET/DSIMU_FDPC_INIT0.v
+Reading include file veloce.med/rtlc.out/NET/DSIMU_FDPC_INIT1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_ADD_CLA_18.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_ADD_CLA_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_ADD_CLA_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_AND_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_AND_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_AND_4.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_CLK_PRIM0_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_12.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_16.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_24.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DECR_CLA_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DEC_2_30.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DEC_2_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DEC_7_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_DataOut_For_Caller_0.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_10.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_106.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_16.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_1680.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_20.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_22.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_220.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_30.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_32.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_34.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_35.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_36.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_38.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_40.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_42.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_45.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_48.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_50.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_540.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_560.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_8.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_EQ_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_11.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_12.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_13.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_16.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_32.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_INCR_CLA_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_LT_CLA_16.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_LT_CLA_17.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_LT_CLA_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Latcher_EN_Size_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Latcher_EN_Size_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Latcher_Size_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_2_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_4_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_57_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_9_4.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUX_3_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_NOR_29.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_NOR_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_NOR_8.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_10.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_11.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_12.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_13.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_18.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_21.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_32.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_4.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_5.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_56.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_64.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_65.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_7.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_8.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_OR_9.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_XOR_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_And_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_And_7.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Mem_din_128_56.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_2.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_25.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_28.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_3.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_4.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_5.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Or_6.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_PosedgeEnable_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_PriEncoder_1.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_PriEncoder_56.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_buffer_128.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_buffer_32.v
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_encoder_56_6.v
+Reading include file veloce.med/rtlc.out/NET/TBX_BreakLongPath.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc0_3_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc10_15_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc11_11_1024_3_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc12_11_1_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc13_11_1152_5_0_0_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc1_10_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc2_8_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc3_10_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc4_10_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc5_8_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc6_7_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc7_5_20_5_0_2_2.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc8_7_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/VMW_PARAM_MEM_rtlc9_7_20_5_0_1_1.v
+Reading include file veloce.med/rtlc.out/NET/incoMemDrive.v
+Reading include file veloce.med/rtlc.out/NET/rtlc_1.v
+Reading include file veloce.med/rtlc.out/NET/rtlc_2.v
+Reading include file veloce.med/rtlc.out/NET/rtlc_3.v
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 1: Module M_RTLSIM_MUXN_4_2 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_4_2.v, Line 1: Previous definition of module M_RTLSIM_MUXN_4_2
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 6159: Module M_RTLSIM_MUXN_2_1 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/M_RTLSIM_MUXN_2_1.v, Line 1: Previous definition of module M_RTLSIM_MUXN_2_1
+Reading include file veloce.med/rtlc.out/NET/rtlc_4.v
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 1: Module M_RTLSIM_MUXN_4_2 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 1: Previous definition of module M_RTLSIM_MUXN_4_2
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 21: Module M_RTLSIM_MUXN_2_1 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 6159: Previous definition of module M_RTLSIM_MUXN_2_1
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 33: Module M_RTLSIM_INCR_3 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 137: Previous definition of module M_RTLSIM_INCR_3
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 56: Module M_RTLSIM_INCR_8 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 85: Previous definition of module M_RTLSIM_INCR_8
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 108: Module M_RTLSIM_INCR_10 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 21: Previous definition of module M_RTLSIM_INCR_10
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 172: Module M_RTLSIM_INCR_4 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 160: Previous definition of module M_RTLSIM_INCR_4
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 242: Module M_RTLSIM_INCR_2 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 225: Previous definition of module M_RTLSIM_INCR_2
+Reading include file veloce.med/rtlc.out/NET/rtlc_5.v
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 390: Module M_RTLSIM_MUXN_2_1 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 21: Previous definition of module M_RTLSIM_MUXN_2_1
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 577: Module M_RTLSIM_MUXN_4_2 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 1: Previous definition of module M_RTLSIM_MUXN_4_2
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 597: Module M_RTLSIM_INCR_5 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_3.v, Line 190: Previous definition of module M_RTLSIM_INCR_5
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 632: Module M_RTLSIM_INCR_8 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 56: Previous definition of module M_RTLSIM_INCR_8
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 684: Module M_RTLSIM_INCR_10 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 108: Previous definition of module M_RTLSIM_INCR_10
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 3899: Module M_RTLSIM_INCR_3 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 33: Previous definition of module M_RTLSIM_INCR_3
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 3922: Module M_RTLSIM_INCR_4 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 172: Previous definition of module M_RTLSIM_INCR_4
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 3952: Module M_RTLSIM_INCR_7 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 260: Previous definition of module M_RTLSIM_INCR_7
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 3999: Module M_RTLSIM_INCR_6 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 202: Previous definition of module M_RTLSIM_INCR_6
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 6460: Module M_RTLSIM_INCR_2 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_4.v, Line 242: Previous definition of module M_RTLSIM_INCR_2
+.Reading include file veloce.med/rtlc.out/NET/rtlc_6.v
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_6.v, Line 126: Module M_RTLSIM_EQ_16 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/M_RTLSIM_EQ_16.v, Line 1: Previous definition of module M_RTLSIM_EQ_16
+Warning   [Velsyn-12514]: : File veloce.med/rtlc.out/NET/rtlc_6.v, Line 595: Module M_RTLSIM_MUXN_2_1 is already defined, replacing the previous definition.
+Warning   [Velsyn-12518]: : File veloce.med/rtlc.out/NET/rtlc_5.v, Line 390: Previous definition of module M_RTLSIM_MUXN_2_1
+Reading include file veloce.med/rtlc.out/NET/rtlc_top_GLOBAL_SIGNAL.v
+Reading include file veloce.med/ilwork/tipComodelMacros.v
+Reading include file veloce.med/hdl_files/MctGlobalAssignBlock_gate.v
+Reading include file veloce.med/hdl_files/from_install/MctPublicUclockGen.v
+Reading include file veloce.med/hdl_files/from_install/TbxClockGenFD-veloce.v
+Reading include file veloce.med/hdl_files/veloce.uclockgen.v
+Reading include file veloce.med/hdl_files/from_install/tipComodelMacrosWrapper.v
+Reading include file veloce.med/hdl_files/from_install/VeloceGuiBreakSeqMacro.v
+Reading include file veloce.med/hdl_files/from_install/forceSetLib.v
+Reading include file veloce.med/hdl_files/from_install/ipLib.v
+
+Reading Verilog file: ./veloce.med/hdl_files/enc_crypt.ev
+Reading include file veloce.med/rtlc.out/NET/ChannelController.e
+..Reading include file veloce.med/rtlc.out/NET/IntervalProfileReortLogic.e
+Reading include file veloce.med/rtlc.out/NET/M_IDFAULT_MUX.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_BackupReplay_Transactor.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_CRC_PH_II.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_CallerDataOut_mux_1.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Dummy_Clock_Report_Module.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Dummy_transactor_Top.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_FSDBChannelController2.e
+.........Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_FSDBEnableSelector.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_FSDB_Vhdl_Scope_2.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Final_Logic.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_GLOB_CONN.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUX_9_4_128_Wrapper.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_MUX_9_4_64_Wrapper.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Otc_Dynamic_Slot_56_6.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Output_Port_Mux_Controller_Core_5.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_PRInfo_mux.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TBX_INTERNAL_CLOCKGEN.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TBX_MULTI_CLK_PRIM.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TBX_TCAM_CLOCK_MACRO.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TBX_TCAM_CLOCK_MACRO_inner.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TIMER_PRIM.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_TriggerTraceOff_Transactor.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_Xrtl_ForceRelease_Connector.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_storecookie.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_0.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_1.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_2.e
+....Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_3.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_top_transactor_wrapper.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Mem_RdData_ReOrdr_1024_725_2.e
+Reading include file veloce.med/rtlc.out/NET/M_RTLSIM_transactor_Mem_din_ReOrdr_1024_725_2.e
+Reading include file veloce.med/rtlc.out/NET/M_TBXSIM_DirXtorConnWrapper.e
+Reading include file veloce.med/rtlc.out/NET/M_TBX_DIR_AND_ENABLE_XTOR__WRAPPER.e
+Reading include file veloce.med/rtlc.out/NET/MctCore.e
+Reading include file veloce.med/rtlc.out/NET/RunTimeInterconnector.e
+Reading include file veloce.med/rtlc.out/NET/SceMiRunControl.e
+Reading include file veloce.med/rtlc.out/NET/SimTimeInPs.e
+Reading include file veloce.med/rtlc.out/NET/WaveOnTimeXGen.e
+Reading include file veloce.med/rtlc.out/NET/reset_tbx_bhvc__modified.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_6.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_M_RTLSIM_Output_Port_Mux_Controller_NUM_OUT_PORTS_5.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_M_RTLSIM_SanitySignalGenerator_TIP_SIGNAL_SIZE_1152.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_M_RTLSIM_SanitySignalGenerator_TIP_SIGNAL_SIZE_192.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_MctSwControl_ClockNum_0.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiClockControl_ClockNum_0.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageInPort_PortWidth_32.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageInPort_PortWidth_68.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_1056.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_32.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_480.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_512.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_SceMiMessageOutPort_PortWidth_544.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_tipComodelWrapper_PathBreaker_TIP_SIZE_1152.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_tipComodelWrapper_PathBreaker_TIP_SIZE_192.e
+Reading include file veloce.med/rtlc.out/NET/rtlc_transactorSch_XACTOR_CNT_1_XSCHEDULING_MEM_DEPTH_2048_MEM_WR_RD_ADDR_12.e
+.
+End of phase: ReadInputFiles
+TimeStamp: 4.5 user + 0.3 sys = 0.08 mins. Elapsed time: user+sys = 0.05 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.05 mins, Elapsed time = 0.05 mins
+MemoryStats: busy   156M + empty   4M + bigblks   6M + other   2M =   168M
+
+....
+End of phase: CreateRoot
+TimeStamp: 5.0 user + 0.3 sys = 0.09 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.06 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   167M + empty   9M + bigblks   8M + other   0M =   184M
+
+..
+Technology Initialization ...
+Reading library primitives
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/med_rtl_synthprim.v
+Resolving References
+Reading board topology
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond2_array_proto.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond_protos.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond2_logic_board.v
+.
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond2_switch_board.v
+Reading Verilog file: /tools/med_tools/software/Veloce_v20.0.3/lib/diamond2_mid_plane.v
+.......
+Resolving References
+.
+End of phase: CreateTechSpec
+TimeStamp: 6.1 user + 0.4 sys = 0.11 mins. Elapsed time: user+sys = 0.02 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.08 mins, Elapsed time = 0.02 mins
+MemoryStats: busy   271M + empty  17M + bigblks  11M + other   0M =   299M
+
+
+Building Topology Graph...
+NUM SWITCH INSTRUCTIONS USED = 450
+
+Reading info of Edges which are connected to switch and have unequal delays between slot0 and slot1 boards
+No.of out edges with diff switch delay are 33 
+No of In edges with diff switch delay are 31 
+.
+End of phase: TopologyGraph
+TimeStamp: 6.1 user + 0.4 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.09 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   289M + empty  15M + bigblks  11M + other   0M =   315M
+
+.
+End of phase: BuildIOChannels
+TimeStamp: 6.1 user + 0.4 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.09 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   289M + empty  15M + bigblks  11M + other   0M =   315M
+
+
+Resolving Libraries ...
+Resolving References
+.
+End of phase: ResolveLibraries
+TimeStamp: 6.2 user + 0.4 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.09 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   289M + empty  15M + bigblks  11M + other   0M =   315M
+
+.
+End of phase: ExposeBondedCores
+TimeStamp: 6.3 user + 0.4 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.09 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   290M + empty  14M + bigblks  11M + other   0M =   315M
+
+
+Reading Clock Description File ...
+.
+End of phase: ClockRead
+TimeStamp: 6.3 user + 0.4 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.09 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   290M + empty  14M + bigblks  11M + other   0M =   315M
+
+....
+End of phase: WriteDatabase
+TimeStamp: 6.4 user + 0.5 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.09 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   290M + empty  14M + bigblks  12M + other   0M =   317M
+
+.
+End of phase: MapFileBegin
+TimeStamp: 6.4 user + 0.5 sys = 0.11 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.09 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   290M + empty  14M + bigblks  12M + other   0M =   317M
+
+
+Expanding ...
+Expunged 5735 dangling power nodes.
+Warning   [Velsyn-6536]: : Modules of type: incoMemDrive in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: rtlc_top_GLOBAL_SIGNAL in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: uclockgen in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: rtlc_SceMiMessageInPort_PortWidth_68 in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: rtlc_SceMiMessageOutPort_PortWidth_480 in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: M_RTLSIM_TBX_INTERNAL_CLOCKGEN in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: M_RTLSIM_FSDB_Vhdl_Scope_2 in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: M_RTLSIM_Xrtl_ForceRelease_Connector in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: rtlc_SceMiMessageInPort_PortWidth_32 in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: rtlc_SceMiMessageOutPort_PortWidth_32 in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: rtlc_SceMiMessageOutPort_PortWidth_512 in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: rtlc_SceMiMessageOutPort_PortWidth_1056 in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: M_TBX_DIR_AND_ENABLE_XTOR__WRAPPER in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: M_TBXSIM_DirXtorConnWrapper in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: rtlc_SceMiMessageOutPort_PortWidth_544 in user design are empty.
+Warning   [Velsyn-6536]: : Modules of type: rtlc_SceMiClockControl_ClockNum_0 in user design are empty.
+
+Gate and Lut count in the design after expand phase
+Number of MED primitive modules:     586437 
+Number of 1 input LUTs:      955
+Number of 2 input LUTs:    98038
+Number of 3 input LUTs:   151060
+Number of 4 input LUTs:   202811
+Number of LUTs        :   452864
+Number of flip-flops  :   133294
+Number of debug LBPs  :        1
+Number of latches     :        0
+Number of tristates   :        0
+Number of memories    :      146
+Number of combinatorial synthesis LUTs:      127
+Number of synthesis flip-flops        :       11
+.
+End of phase: Expand
+TimeStamp: 10.1 user + 0.8 sys = 0.18 mins. Elapsed time: user+sys = 0.07 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.16 mins, Elapsed time = 0.07 mins
+MemoryStats: busy   539M + empty  21M + bigblks  18M + other   3M =   581M
+
+
+Assigning Global IDs ...
+.
+End of phase: ComputeAndAssignUID
+TimeStamp: 10.1 user + 0.8 sys = 0.18 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.16 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   539M + empty  21M + bigblks  18M + other   3M =   581M
+
+...
+End of phase: VerifyAndInsertTriggerLogic
+TimeStamp: 10.1 user + 0.8 sys = 0.18 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.16 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   540M + empty  20M + bigblks  18M + other   3M =   581M
+
+
+Processing the Keep Alive input ...
+Reading annotation file veloce.med//rtlc.out/MOD_ANNOTATION/veloce.kal ...
+Reading annotation file veloce.med/rtlc.out/rtlcKeepAlive.txt ...
+Reading annotation file veloce.med/tbxInternalKeepAlive.txt ...
+.
+End of phase: ProcessKeepAlive
+TimeStamp: 10.1 user + 0.8 sys = 0.18 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.16 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   540M + empty  20M + bigblks  18M + other   3M =   581M
+
+
+Processing memory location file ...
+..Total Expanded Nets=687177	Modules=668415	Unexpanded Nets=687177	Modules=668415	Scalar Cost=2344676
+       MTSD nets=0	 MTSD modules=0
+......................................................................................................................................... Warning 5: Net top.mctcore_inst.GposEdgeEnable: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.STOP_CLK: top has multiple drivers
+ Warning 5: Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_0.rtlcI_SceMiRunControl.isOpcodeDelayDmRegSetValueCalls: top has multiple drivers
+ Warning 5: Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcn0_0: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.BREAKPOINT_CONDITION_final: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.BREAKPOINT_CONDITION: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.takeFromMemory: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.doNotSendToTransactor: top has multiple drivers
+ Warning 5: Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.dummyClockReportModule.IntervalProfileReortLogicInst.bIsTxnRdyForPrDump: top has multiple drivers
+ Warning 5: Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_0.couterInfoTxnEn: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.timeAdvSig: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[31]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[30]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[29]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[28]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[27]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[26]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[25]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[24]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[23]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[22]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[21]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[20]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[19]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[18]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[17]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[16]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[15]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[14]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[13]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[12]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[11]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[10]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[9]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[8]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[7]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[6]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[5]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[4]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[3]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[2]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[1]: top has multiple drivers
+ Warning 5: Net top.mctcore_inst.channelController.CanoeDelay[0]: top has multiple drivers
+ Warning 5: File veloce.med/rtlc.out/NET/rtlc_6.e, Line 498, Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcItopTransactorInst_2.M_RTLSIM_Otc_Dynamic_Slot_56_6_12_Inst.HigherPriorityXactorPosEn: top has multiple drivers
+.
+Number of user primitive modules: 0
+.20 mem outputs can avoid auto-probing if -Terse100 is specified
+.
+Reading annotation file ./veloce.med/rtlc.out//iceforcesettie.list ...
+.
+End of phase: DetachNoconnectNets
+TimeStamp: 10.5 user + 0.8 sys = 0.19 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.16 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   543M + empty  17M + bigblks  18M + other   3M =   581M
+
+.
+End of phase: CvtRtlVisibility
+TimeStamp: 10.5 user + 0.8 sys = 0.19 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.16 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   544M + empty  16M + bigblks  18M + other   3M =   581M
+
+
+Raw Gate and Lut count in the design
+Number of MED primitive modules:     586437 
+Number of 1 input LUTs:      955
+Number of 2 input LUTs:    98038
+Number of 3 input LUTs:   151060
+Number of 4 input LUTs:   202811
+Number of LUTs        :   452864
+Number of flip-flops  :   133295
+Number of debug LBPs  :        0
+Number of latches     :        0
+Number of tristates   :        0
+Number of memories    :      146
+Number of combinatorial synthesis LUTs:      127
+Number of synthesis flip-flops        :       11
+Normalized design cost after processing design IOs: 
+Luts         = 1.000000 
+Flip-flops   = 1.000000 
+.
+Transforming Memory Elements ...
+Number of memories: 711
+Read Ports: 678, Write Ports: 822
+Memory Addresses: 919008, Data Bytes: 919008, Read Data Pins: 4685
+.
+End of phase: MemSplit
+TimeStamp: 10.6 user + 0.8 sys = 0.19 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.17 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   544M + empty  16M + bigblks  18M + other   3M =   581M
+
+.
+End of phase: ReadTriggerNetsFile
+TimeStamp: 10.6 user + 0.8 sys = 0.19 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.17 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   544M + empty  16M + bigblks  18M + other   3M =   581M
+
+
+Eliminating Dead Logic ...
+Removed 108400 dead modules.
+Total Expanded Nets=568745	Modules=562529	Unexpanded Nets=568745	Modules=562529	Scalar Cost=2079240
+       MTSD nets=0	 MTSD modules=0
+..........................................................................
+........................................
+End of phase: DeadLogic
+TimeStamp: 11.3 user + 0.8 sys = 0.20 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.18 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   552M + empty   8M + bigblks  18M + other   3M =   581M
+
+
+Gate and Lut count after 1st dead logic elimination step
+Number of MED primitive modules:     520640 
+Number of 1 input LUTs:      406
+Number of 2 input LUTs:    90188
+Number of 3 input LUTs:   135851
+Number of 4 input LUTs:   159990
+Number of LUTs        :   386435
+Number of flip-flops  :   133295
+Number of debug LBPs  :        0
+Number of latches     :        0
+Number of tristates   :        0
+Number of memories    :      711
+Number of combinatorial synthesis LUTs:      194
+Number of synthesis flip-flops        :       11
+Normalized design cost after dead logic elimination 
+Luts         = 0.853503 
+Flip-flops   = 1.000000 
+.
+Processing clocked-noflows ...
+.
+Performing Initial Combinatorial Resynthesis ...
+Simplified 0 Force Bigates to Read-only Bigate
+Warning   [Velsyn-14589]: : Net top.mctcore_inst.targetCclockEnabled[0]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.mctcore_inst.targetCreset[0]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[511]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[510]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[509]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[508]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[507]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[506]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[505]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[504]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[503]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[502]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[501]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[500]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[499]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[498]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[497]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[496]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[495]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[494]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[493]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[492]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[491]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[490]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[489]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[488]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[487]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[486]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[485]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[484]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[483]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[482]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[481]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[480]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[479]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[478]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[477]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[476]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[475]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[474]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[473]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[472]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[471]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[470]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[469]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[468]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[467]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[466]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[465]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[464]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[463]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[462]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[461]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[460]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[459]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[458]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[457]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[456]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[455]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[454]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[453]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[452]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[451]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[450]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[449]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[448]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[447]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[446]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[445]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[444]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[443]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[442]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[441]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[440]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[439]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[438]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[437]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[436]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[435]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[434]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[433]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[432]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[431]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[430]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[429]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[428]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[427]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[426]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[425]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[424]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[423]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[422]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[421]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[420]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[419]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[418]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[417]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[416]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[415]: No driver -- sourcing with init-0 register
+Warning   [Velsyn-14589]: : Net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.rtlcItopTransactorInst_1.dataOut[414]: No driver -- sourcing with init-0 register
+Note!     [Velsyn-500026]: : $VMW_MAX_ERROR_COUNT EXCEEDED (100) for message 14589
+                           controlled via environment variable.
+
+Gate and Lut count after initial combinatorial resynthesis step
+Number of MED primitive modules:     522618 
+Number of 1 input LUTs:      406
+Number of 2 input LUTs:    90188
+Number of 3 input LUTs:   135851
+Number of 4 input LUTs:   159990
+Number of LUTs        :   386435
+Number of flip-flops  :   135387
+Number of debug LBPs  :        0
+Number of latches     :        0
+Number of tristates   :        0
+Number of memories    :      711
+Number of combinatorial synthesis LUTs:       80
+Number of synthesis flip-flops        :       11
+Normalized design cost after initial combinatorial resynthesis 
+Luts         = 0.853251 
+Flip-flops   = 1.015693 
+Total Expanded Nets=570836	Modules=566669	Unexpanded Nets=570836	Modules=566669	Scalar Cost=2087608
+       MTSD nets=0	 MTSD modules=0
+..........................................................................
+.........................................
+End of phase: ConvertCombo
+TimeStamp: 11.9 user + 0.8 sys = 0.21 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.19 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   568M + empty   8M + bigblks  18M + other   3M =   597M
+
+
+Processing clocked-noflows ...
+.
+Reading annotation file ./veloce.med/rtlc.out//iceforcesetstate.list ...
+Found 0 forcible flops in the force annotation files
+.
+End of phase: MarkForceModules
+TimeStamp: 11.9 user + 0.8 sys = 0.21 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.19 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   568M + empty   8M + bigblks  18M + other   3M =   597M
+
+..
+Performing Domain Analysis ...
+MemoryStats: busy   568M + empty   8M + bigblks  18M + other   3M =   597M
+Converting Self Loops...
+Number of Self Loops removed = 0
+MemoryStats: busy   571M + empty  21M + bigblks  18M + other   3M =   613M
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4269: MemUsed 592.3MB AnalyzeClockDomains
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4304: MemUsed 592.3MB before AddNetTimeSig
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4307: MemUsed 617.1MB after  AddNetTimeSig
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4332: MemUsed 617.3MB before PropagateA
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4334: MemUsed 617.1MB after PropagateA
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4344: sExpandNeedClockSig 0, sExpandDeadOutput 0
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4345: MemUsed 617.1MB after ExpandClockLogic
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4351: MemUsed 617.1MB after PropagateB
+Warning   [Velsyn-2614]: : 5788 Luts were reduced to smaller Luts for inactive Inputs
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4483: MemUsed 630.7MB after PropagateC
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4490: MemUsed 630.7MB after PropagateD
+/misc/diamond_rd_qa/v2003-1/rnd/software/clkanal/ClkAnal.cc,4753: MemUsed 630.7MB after AnalyzeClockDomains
+Eliminating Constant Logic ...
+Removed 36659 dead modules.
+Total Expanded Nets=484663	Modules=480496	Unexpanded Nets=484663	Modules=480496	Scalar Cost=1871880
+       MTSD nets=0	 MTSD modules=0
+..........................................................................
+.......................
+End of phase: ClockAnalysisDomain
+TimeStamp: 17.7 user + 1.0 sys = 0.31 mins. Elapsed time: user+sys = 0.10 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.29 mins, Elapsed time = 0.10 mins
+MemoryStats: busy   605M + empty  19M + bigblks  19M + other   2M =   645M
+
+.
+End of phase: PodRead
+TimeStamp: 17.7 user + 1.0 sys = 0.31 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.29 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   605M + empty  19M + bigblks  19M + other   2M =   645M
+
+.
+End of phase: VerifyIODomainConstraints
+TimeStamp: 17.7 user + 1.0 sys = 0.31 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.29 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   605M + empty  19M + bigblks  19M + other   2M =   645M
+
+
+Splitting Asynchronous FIFOs...
+.
+Begin Form Groups...
+FormGroupsTime: 0.001+0.098{mods}+0.047{nets}+0.009 = 0.155s {numMods 0.480m numNets 0.485m}
+End Form Groups: 0% complete
+
+DomainAdjMtx
+
+                       domain0  Total Outputs
+        domain0              0              0
+
+   Total Inputs              0              0
+.
+Performing Transition and Sampling Analysis ...
+ShareTimeSignatures normal 81 + clock 0 = total 81
+DEBUG: ExpandPotentialClockLogic() ...
+MemoryStats: busy   582M + empty  42M + bigblks  19M + other   2M =   645M
+DEBUG: ExpandPotentialClockLogic() ...
+MemoryStats: busy   582M + empty  42M + bigblks  19M + other   2M =   645M
+DEBUG: PropagateSamples(cDomainPhase) ...
+MemoryStats: busy   582M + empty  42M + bigblks  19M + other   2M =   645M
+DEBUG: EnqueueClockLogicTransitions ...
+MemoryStats: busy   582M + empty  42M + bigblks  19M + other   2M =   645M
+DEBUG: PropagateTransitions(cDomainPhase) ...
+MemoryStats: busy   582M + empty  42M + bigblks  19M + other   2M =   645M
+DEBUG: InstantiateNetTimeSig ...
+MemoryStats: busy   600M + empty  24M + bigblks  19M + other   2M =   645M
+Warning   [Velsyn-2553]: : Added 0 user selected NoFlows.
+                        
+Warning   [Velsyn-2583]: : 0 of user selected NoFlows are latch outputs.
+                        
+-- BuildClockTreeMuxFlopAnchors() finding latchGateNets ...
+-- BuildClockTreeMuxFlopAnchors() building anchors ...
+-- BuildClockTreeMuxFlopAnchors() done
+-- PruneClockTrees() finding clock tree clock nets ...
+-- PruneClockTrees() identifying non-clocks ...
+-- PruneClockTrees () done
+DEBUG: InitializeForPropagate(cTimingPhase) ...
+MemoryStats: busy   603M + empty  53M + bigblks  19M + other   2M =   677M
+-- BuildOutputMuxFlopAnchors() finding latchGateNets ...
+-- BuildOutputMuxFlopAnchors() building anchors ...
+-- BuildOutputMuxFlopAnchors() done
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G0_en_neg, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_0, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_1, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_2, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_4, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_5, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_6, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_7, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_11, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_13, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_Vec_latchedAtNeg_19, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G1_en_neg, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G2_Vec_latchedAtNeg_0, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G2_Vec_latchedAtNeg_1, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G2_Vec_latchedAtNeg_2, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G2_Vec_latchedAtNeg_3, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G2_Vec_latchedAtNeg_4, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G2_Vec_latchedAtNeg_5, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G2_Vec_latchedAtNeg_6, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G2_Vec_latchedAtNeg_7, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G2_en_neg, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_0, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_1, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_2, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_3, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_4, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_5, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_6, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_7, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_8, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_9, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_10, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_11, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_12, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_13, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_14, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_15, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_16, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_17, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_18, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_19, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_20, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_21, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_22, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_23, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_24, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_25, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_26, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_27, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_28, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_29, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_30, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_31, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_32, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_Vec_latchedAtNeg_33, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G3_en_neg, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_0, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_1, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_2, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_3, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_4, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_5, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_6, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_7, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_8, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_9, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_10, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_11, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_12, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_13, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_14, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_15, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_16, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_17, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_18, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_19, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_20, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_21, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_22, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_23, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_24, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_25, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_26, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_27, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_28, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_29, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_30, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_31, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_32, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_33, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_34, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_Vec_latchedAtNeg_35, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G4_en_neg, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G5_Vec_latchedAtNeg_0, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G5_Vec_latchedAtNeg_1, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G5_Vec_latchedAtNeg_2, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G5_Vec_latchedAtNeg_3, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G5_Vec_latchedAtNeg_4, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G5_Vec_latchedAtNeg_5, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Warning   [Velsyn-2649]: : TBX inactive_negedge/inactive_posedge model performance may be degraded due to inactive-edge-clocked state top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlcreg_G5_Vec_latchedAtNeg_6, clock net top.rtlcGlobConnNetwork.rtlcItopTransactorInst_wrapper.OtcChannelControllerInst_2.rtlc2_neg_clk_n1891.
+Note!     [Velsyn-500026]: : $VMW_MAX_ERROR_COUNT EXCEEDED (100) for message 2649
+                           controlled via environment variable.
+ShareTimeSignatures normal 33 + clock 70 = total 103
+.
+End of phase: ClockAnalysisTiming
+TimeStamp: 25.5 user + 1.1 sys = 0.44 mins. Elapsed time: user+sys = 0.12 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.42 mins, Elapsed time = 0.12 mins
+MemoryStats: busy   583M + empty  73M + bigblks  19M + other   2M =   677M
+
+.
+End of phase: InstrumentPrimaryInputs
+TimeStamp: 25.5 user + 1.1 sys = 0.44 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.42 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   583M + empty  73M + bigblks  19M + other   2M =   677M
+
+Instrumented 0 flexible triggers
+Instrumented 0 synth triggers
+.
+End of phase: InstrumentTriggerNets
+TimeStamp: 25.5 user + 1.1 sys = 0.44 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.42 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   583M + empty  73M + bigblks  19M + other   2M =   677M
+
+
+Eliminating Static Logic ...
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.convA2_IFM16.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M5.convA2_IFM3.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M5.convA2_IFM2.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M5.convA2_IFM1.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M4.convA2_IFM3.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M4.convA2_IFM2.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M4.convA2_IFM1.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M3.convA2_IFM3.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M3.convA2_IFM2.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M3.convA2_IFM1.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M2.convA2_IFM3.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M2.convA2_IFM2.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M2.convA2_IFM1.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M1.convA2_IFM3.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M1.convA2_IFM2.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr4.M1.convA2_IFM1.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr2.IFM2.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.mem_arrr2.IFM1.IFM_Memory:
+                         read port 1, bits [0:19] are unused.
+                        
+Warning   [Velsyn-5505]: : Removed dead ports from memory top.uut.ConvA1.DP_A1.convA1_IFM1.IFM_Memory:
+                         read port 0, bits [0:19] are unused.
+                        
+Removed 6291 dead modules.
+Removed 95 dead modules.
+Domain domain0: Number of luts reduced due to constant inputs = 0
+Added 65077 entries to ClockDomain DB
+Total Expanded Nets=484554	Modules=480767	Unexpanded Nets=484554	Modules=480767	Scalar Cost=3743392
+       MTSD nets=0	 MTSD modules=0
+..........................................................................
+......................
+Gate and Lut count after 2nd dead logic elimination step
+Number of MED primitive modules:     468595 
+Number of 1 input LUTs:      366
+Number of 2 input LUTs:    88127
+Number of 3 input LUTs:   132652
+Number of 4 input LUTs:   143173
+Number of LUTs        :   364318
+Number of flip-flops  :   103347
+Number of debug LBPs  :        0
+Number of latches     :        0
+Number of tristates   :        0
+Number of memories    :      711
+Number of combinatorial synthesis LUTs:      214
+Number of synthesis flip-flops        :        8
+Normalized design cost after static logic elimination 
+Luts         = 0.804722 
+Flip-flops   = 0.775321 
+.
+End of phase: DeadLogic2
+TimeStamp: 27.1 user + 1.2 sys = 0.47 mins. Elapsed time: user+sys = 0.03 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.45 mins, Elapsed time = 0.03 mins
+MemoryStats: busy   584M + empty  72M + bigblks  21M + other   0M =   677M
+
+..
+End of phase: OptOrderedBMems
+TimeStamp: 27.1 user + 1.2 sys = 0.47 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.45 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   584M + empty  72M + bigblks  21M + other   0M =   677M
+
+
+Performing Initial Timing Resynthesis ...
+.
+End of phase: ConvertAllInitial
+TimeStamp: 27.2 user + 1.2 sys = 0.47 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.45 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   584M + empty  72M + bigblks  21M + other   0M =   677M
+
+.
+Performing Initial Timing Resynthesis ...
+MemoryStats: busy   584M + empty  72M + bigblks  21M + other   0M =   677M
+Total Expanded Nets=484554	Modules=480767	Unexpanded Nets=484554	Modules=480767	Scalar Cost=3743392
+       MTSD nets=0	 MTSD modules=0
+..........................................................................
+.......................
+End of phase: ConvertAllLast
+TimeStamp: 28.3 user + 1.3 sys = 0.49 mins. Elapsed time: user+sys = 0.02 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.47 mins, Elapsed time = 0.02 mins
+MemoryStats: busy   584M + empty  72M + bigblks  21M + other   0M =   677M
+
+MemoryStats: busy   584M + empty  72M + bigblks  21M + other   0M =   677M
+SNAPSHOT: before ClockNetworks: nmod 480768 nnet 484554 nconn 1972693
+
+domain0 clock network contains 12 modules.
+
+Clock-copy module cost: orig: 20 clock: 20 cycle: 0 data: 12 predict: 0 predcycle: 0 total added: 12
+0 clock modules need to be replicated on multiple Crystals.
+
+
+Optimized 2 routed-clock mux enables.
+
+Optimized 2 routed-clock gate inputs.
+.
+End of phase: ConvertClockNetworks
+TimeStamp: 28.9 user + 1.3 sys = 0.50 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.48 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   600M + empty  56M + bigblks  21M + other   0M =   677M
+
+.
+End of phase: DHierPartition
+TimeStamp: 28.9 user + 1.3 sys = 0.50 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.48 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   600M + empty  56M + bigblks  21M + other   0M =   677M
+
+
+Transforming Memory Elements ...
+Ancestor (domain0): null
+Memory allocation (start):
+  CMEM: 3.29 Macros (146 mems)
+    merged rows: 253088
+    merged read ports: 156
+    merged write ports: 206
+Memory allocation (finish):
+  CMEM: 3.29 Macros (146 mems)
+    merged rows: 253088
+    merged read ports: 156
+    merged write ports: 206
+Re-merged 520 memory byte slices for CMem.
+0 MemSlices Unmerged
+Re-wired 0 BMEM2 read ports reaching pipelined cones on 0 memory module instances.
+Replicated 0 BMEM2 multi-TR read ports on 0 memory module instances.
+Number of memories: 191
+Read Ports: 173, Write Ports: 228
+Memory Addresses: 241952, Data Bytes: 899680, Read Data Pins: 4305
+.
+End of phase: TransformMemory
+TimeStamp: 29.6 user + 1.4 sys = 0.52 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.49 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   600M + empty  56M + bigblks  21M + other   0M =   677M
+
+..
+End of phase: ProcessOptPhase1
+TimeStamp: 29.6 user + 1.4 sys = 0.52 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.49 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   600M + empty  56M + bigblks  21M + other   0M =   677M
+
+.
+End of phase: ConvertWiredLogic
+TimeStamp: 29.6 user + 1.4 sys = 0.52 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.49 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   600M + empty  56M + bigblks  21M + other   0M =   677M
+
+
+Performing Dependence Analysis ...
+.
+End of phase: DependAnalyze
+TimeStamp: 30.0 user + 1.4 sys = 0.52 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.50 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   601M + empty  55M + bigblks  21M + other   0M =   677M
+
+..
+Rewire unsampled nets ...
+Domain domain0: Number of luts reduced due to constant inputs = 0
+Total Expanded Nets=486129	Modules=480473	Unexpanded Nets=486129	Modules=480473	Scalar Cost=3743428
+       MTSD nets=0	 MTSD modules=0
+..........................................................................
+........................
+End of phase: RewireUnsampledNets
+TimeStamp: 30.3 user + 1.4 sys = 0.53 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.51 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   601M + empty  55M + bigblks  21M + other   0M =   677M
+
+.Added 0 FF pipeline flops with 0 requiring MFCs
+
+Gate and Lut count after clock tree processing step
+Number of MED primitive modules:     468282 
+Number of 1 input LUTs:      365
+Number of 2 input LUTs:    88129
+Number of 3 input LUTs:   132652
+Number of 4 input LUTs:   143173
+Number of LUTs        :   364319
+Number of flip-flops  :   103349
+Number of debug LBPs  :        0
+Number of latches     :        0
+Number of tristates   :        0
+Number of memories    :      191
+Number of combinatorial synthesis LUTs:      419
+Number of synthesis flip-flops        :        8
+Normalized design cost after clock tree processing 
+Luts         = 0.805177 
+Flip-flops   = 0.775336 
+Number of inverters merged = 398 
+
+Identifying Flop Lut merge candidates ....
+
+Gate and Lut count after flop-lut merge identification step
+Number of MED primitive modules:     467884 
+Number of 1 input LUTs:       98
+Number of 2 input LUTs:    88132
+Number of 3 input LUTs:   132652
+Number of 4 input LUTs:   143173
+Number of LUTs        :   364055
+Number of flip-flops  :   103349
+Number of debug LBPs  :        0
+Number of latches     :        0
+Number of tristates   :        0
+Number of memories    :      191
+Number of combinatorial synthesis LUTs:      285
+Number of synthesis flip-flops        :        8
+Normalized design cost after Flop-lut merge processing 
+Luts         = 0.804299 
+Flip-flops   = 0.775336 
+Estimated design MFC count before partitioning =     459328 
+Number of IsMultipleFanoutNet net: 315677.
+Instrumentations added: 0.
+.
+Performing or Reading Partitioning ...
+MemoryStats: busy   604M + empty  52M + bigblks  21M + other   0M =   677M
+SNAPSHOT: before Partition: nmod 487042 nnet 492709 nconn 1973576
+Num Pins for IO Frames Bundling: 0 0
+ShareTimeSignatures normal 34 + clock 105 = total 139
+Replicated 19276 modules to 74733 destinations
+NetPruner removed 285 nets
+
+NetPruner re-inserted 285 nets
+Created 3 long split cmem bundles
+Created 0 long split lcmem bundles
+
+Bundling Flop Lut merge candidates ....
+NetPruner removed 285 nets
+
+NetPruner re-inserted 285 nets
+
+Applying performance optimizations on domain module domain0
+
+Comodel multi fanout net present - introducing buffer after OpTbxLogic bundling
+CoarsePartition: Design Size Crystals 3641 [1828608, 58250, 0, 0]
+Design Size: Macros:     3.64  mfcs:     2.60   cmem:    3.64  
+EstimatePartitionConstraints: NumClusters 1 MaxCost 120000
+CoarsePartitioner:          0 modules ignored in Mincut
+CoarsePartition: Initial Cluster Size : Macros:     3.64  mfcs:     2.61   cmem:    3.64  Cuts:  0.00
+ 	 max cluster size 120000
+-----------------------------------------------------------------------------------------------------------------------------------
+CoarsePartitions
+-----------------------------------------------------------------------------------------------------------------------------------
+CoarsePartition: Solution: Macros:     3.64  mfcs:     2.61   cmem:    3.64  Cuts:  0.00
+-----------------------------------------------------------------------------------------------------------------------------------
+Templates:
+CoarsePartition: Number of Partitions 1
+Starting partition of: top
+Minimum size (0 Macros):
+  Nested: 0 Macros
+  MFCs: 0 / 175892 (0 Macros)
+  LUTs: 0 / 156544 (0 Macros)
+  FFs: 0 / 78000 (0 Macros)
+  CMEMs (0 Macros):
+    rows: 0 / 524288 (0 Macros)
+    read ports: 0 / 64 (0 Macros)
+    write ports: 0 / 64 (0 Macros)
+  BMEMs (0 Macros):
+    rows: 0 / 33554432 (0 Macros)
+    read ports: 0 / 4 (0 Macros)
+    write ports: 0 / 4 (0 Macros)
+Starting preclustering of: top.domain0.CostPartition_0_domain0
+-- before Precluster root has  459343 mods,  463257 nets,  463254 adj
+numBid0 2 numWired 0 numRelocated 0 (numMems 189)
+-- preclust design cost 1837244 Crystal cost 721612 preclustDegree 10
+inmods=459341, target outmods=6000
+Begin NewPrecluster...
+-- totalCost 1837244 sizeBiasLimit 3200 numCrystal 32
+-- stamp 1 numMods 459341 wantNumMods 381253 maxCost 3200
+.......................................
+-- queued 203228, tried 79147, merged 78088, nmods 381253
+-- stamp 2 numMods 381253 wantNumMods 316439 maxCost 3200
+.........................
+-- queued 168716, tried 168716, merged 50383, nmods 330870
+-- stamp 3 numMods 330870 wantNumMods 274622 maxCost 3200
+..........
+............
+-- queued 146444, tried 146444, merged 44472, nmods 286398
+-- stamp 4 numMods 286398 wantNumMods 237710 maxCost 3200
+........................
+-- queued 126788, tried 90864, merged 48688, nmods 237710
+Costs:     0    1    2    3    4    8   16   32   64  128  256
+Costs:    11    0    0    0  73k 160k 4427    0    0    0    3
+Costs: totalCost 1837096, totalMods 237523, avgCost 7.7, flops 94909
+-- stamp 5 numMods 237710 wantNumMods 197299 maxCost 3200
+.....................
+-- queued 105268, tried 97374, merged 40411, nmods 197299
+-- stamp 6 numMods 197299 wantNumMods 163758 maxCost 3200
+................
+-- queued 87406, tried 66063, merged 33541, nmods 163758
+-- stamp 7 numMods 163758 wantNumMods 135919 maxCost 3200
+.
+...........
+-- queued 72581, tried 72581, merged 23131, nmods 140627
+-- stamp 8 numMods 140627 wantNumMods 116720 maxCost 3200
+............
+-- queued 62358, tried 43078, merged 23907, nmods 116720
+-- stamp 9 numMods 116720 wantNumMods 96877 maxCost 3200
+..........
+-- queued 51791, tried 33888, merged 19843, nmods 96877
+Costs:     0    1    2    3    4    8   16   32   64  128  256
+Costs:    11    0    0    0 1154  24k  57k  14k    0    0    3
+Costs: totalCost 1837096, totalMods 96690, avgCost 19.0, flops 94909
+-- stamp 10 numMods 96877 wantNumMods 80407 maxCost 3200
+........
+-- queued 43022, tried 35032, merged 16470, nmods 80407
+-- stamp 11 numMods 80407 wantNumMods 66737 maxCost 3200
+.......
+-- queued 35742, tried 29719, merged 13670, nmods 66737
+-- stamp 12 numMods 66737 wantNumMods 55391 maxCost 3200
+.....
+-- queued 29699, tried 23222, merged 11346, nmods 55391
+-- stamp 13 numMods 55391 wantNumMods 45974 maxCost 3200
+.....
+-- queued 24684, tried 21497, merged 9417, nmods 45974
+-- stamp 14 numMods 45974 wantNumMods 38158 maxCost 3200
+....
+-- queued 20521, tried 17260, merged 7816, nmods 38158
+Costs:     0    1    2    3    4    8   16   32   64  128  256
+Costs:     9    0    0    0  149   81 4930  25k   8k   43    3
+Costs: totalCost 1837096, totalMods 37971, avgCost 48.4, flops 94909
+-- stamp 15 numMods 38158 wantNumMods 31671 maxCost 3200
+...
+-- queued 17066, tried 13747, merged 6487, nmods 31671
+-- stamp 16 numMods 31671 wantNumMods 26286 maxCost 3200
+...
+-- queued 14201, tried 11726, merged 5385, nmods 26286
+-- stamp 17 numMods 26286 wantNumMods 21817 maxCost 3200
+..
+-- queued 11819, tried 9926, merged 4469, nmods 21817
+-- stamp 18 numMods 21817 wantNumMods 18108 maxCost 3200
+..
+-- queued 9843, tried 6859, merged 3709, nmods 18108
+-- stamp 19 numMods 18108 wantNumMods 15029 maxCost 3200
+..
+-- queued 8205, tried 5708, merged 3079, nmods 15029
+Costs:     0    1    2    3    4    8   16   32   64  128  256  512
+Costs:     9    0    0    0  137    2   39 1894   7k   5k  685    1
+Costs: totalCost 1837096, totalMods 14842, avgCost 123.8, flops 94909
+-- stamp 20 numMods 15029 wantNumMods 12474 maxCost 3200
+
+.
+-- queued 6843, tried 4520, merged 2555, nmods 12474
+-- stamp 21 numMods 12474 wantNumMods 10353 maxCost 3200
+.
+-- queued 5714, tried 3893, merged 2121, nmods 10353
+-- stamp 22 numMods 10353 wantNumMods 8592 maxCost 3200
+.
+-- queued 4778, tried 3325, merged 1761, nmods 8592
+-- stamp 23 numMods 8592 wantNumMods 7131 maxCost 3200
+.
+-- queued 3998, tried 3034, merged 1461, nmods 7131
+-- stamp 24 numMods 7131 wantNumMods 6000 maxCost 3200
+
+-- queued 3140, tried 2568, merged 1131, nmods 6000
+Costs:     0    1    2    3    4    8   16   32   64  128  256  512 1024
+Costs:     9    0    0    0  136    2    2  176  555 2147 1634 1112   40
+Costs: totalCost 1837096, totalMods 5813, avgCost 316.0, flops 94909
+-- stamp 25 numMods 6000 wantNumMods 6000 maxCost 3200
+Costs:     0    1    2    3    4    8   16   32   64  128  256  512 1024
+Costs:     9    0    0    0  136    2    2  176  555 2147 1634 1112   40
+Costs: totalCost 1837096, totalMods 5813, avgCost 316.0, flops 94909
+Destroyed 0 out of 5666 bunches in 0 passes
+-- pc.NumBunches 6000
+
+End NewPrecluster: 0% complete
+PartitionTime: PartPreclust{} took 8.5sec wall
+PartitionTime: waitForPreclust took 0sec wall
+-- NewPrecluster results
+NewPrecluster results for: top.domain0.CostPartition_0_domain0
+NetPruner removed 285 nets
+
+NetPruner re-inserted 285 nets
+-- toCluster.Num 6002
+-- after Precluster root has    6002 mods,   94302 nets,   94299 adj
+Starting partitioning of: top.domain0.CostPartition_0_domain0
+Minimum size (4 Macros):
+  Nested: 0 Macros
+  MFCs: 459311 / 175892 (3 Macros)
+  LUTs: 355825 / 156544 (3 Macros)
+  FFs: 103486 / 78000 (2 Macros)
+  CMEMs (4 Macros):
+    rows: 241952 / 524288 (1 Macros)
+    read ports: 173 / 64 (3 Macros)
+    write ports: 228 / 64 (4 Macros)
+  BMEMs (0 Macros):
+    rows: 0 / 33554432 (0 Macros)
+    read ports: 0 / 4 (0 Macros)
+    write ports: 0 / 4 (0 Macros)
+-- gMacroCostConstraint 703571, numMods 6000
+0 instances -> 1 runs
+-- SplitIntoFpgas (num 4)
+Inexact solution found (25): [0, 0, 0, 0, 5, 0]
+Repartition(3.64 Macros): A-B=3091 + W=1360 => 7542
+  Repartition[MFC](2.61 Macros)
+  Repartition[LUT](2.27 Macros)
+  Repartition[FF](1.33 Macros)
+  Repartition[XMEM](0.00 Macros)
+  Repartition[CMEM](3.64 Macros)
+  Repartition[BMEM2](0.00 Macros)
+  => 1.83, 1.81 Macros
+Inexact solution found (196): [0, 0, 0, 0, 14, 0]
+Repartition(1.83 Macros): A-B=7341 + W=3092 => 17534
+  Repartition[MFC](1.78 Macros)
+  Repartition[LUT](1.49 Macros)
+  Repartition[FF](1.02 Macros)
+  Repartition[XMEM](0.00 Macros)
+  Repartition[CMEM](1.83 Macros)
+  Repartition[BMEM2](0.00 Macros)
+  => 0.92, 0.92 Macros
+Repartition(1.81 Macros): A-B=347 + W=4450 => 5130
+  Repartition[MFC](0.83 Macros)
+  Repartition[LUT](0.78 Macros)
+  Repartition[FF](0.31 Macros)
+  Repartition[XMEM](0.00 Macros)
+  Repartition[CMEM](1.81 Macros)
+  Repartition[BMEM2](0.00 Macros)
+  => 0.91, 0.91 Macros
+PartitionTime: SplitDesign took 5.7sec wall
+Attempt 0: fpgas=4, excessCost=0, Adj=11885
+SmoothA00: nbad 0/0/0/0 0/4 res 907/913/922 pin 200/524/859 adj 11885
+
+SmoothA00: nbad 0/0/0/0 0/4 res 907/913/922 pin 200/524/859 adj 11885
+
+PartitionTime: PartSmoothA took 0.2sec wall
+Starting MemPartition
+NumMemMods: 189, ActualTotalRows:241952
+NumFreeCMEMs: 512
+PartitionTime: PartMem took 0.2sec wall
+SmoothB00: nbad 0/0/0/0 0/4 res 193/662/917 pin 200/524/859 adj 11885
+
+SmoothB00: nbad 0/0/0/0 0/4 res 193/662/917 pin 200/524/859 adj 11885
+
+PartitionTime: PartSmoothB took 0.6sec wall
+HierMincut returned 4 macros
+PartitionTime: PartitionHlm took 7.7sec wall
+PartitionTime: waitForMgp took 0sec wall
+Partitioned design into 4 blocks
+ShareTimeSignatures normal 34 + clock 104 = total 138
+*******************
+Partition Time (egc-med-cairo) -
+real     = 24.490000
+user     = 23.460000
+system   = 1.010000
+********************
+MemoryStats: busy   600M + empty  72M + bigblks  22M + other   1M =   694M
+SNAPSHOT: after Partition(): nmod 487239 nnet 492906 nconn 1973970
+PhaseStatsReport: partition finish
+TotalStats                       wall    56.0 (100%)            user    54.8 sys   2.5 flt     0 iblk     0 oblk 13.3k
+Partition.PartitionDesign.PreclustHlms.Preclust wall     8.9 (15.9%) cum 15.9% user     8.6 sys   0.3 flt     0 iblk     0 oblk     0
+ClockAnalysisTiming              wall     7.4 (13.2%) cum 29.2% user     7.3 sys   0.1 flt     0 iblk     0 oblk     8
+ClockAnalysisDomain              wall     6.0 (10.6%) cum 39.8% user     5.8 sys   0.1 flt     0 iblk     0 oblk 12.1k
+Partition.PartitionDesign.SplitDesign wall     5.7 (10.2%) cum 50.0% user     5.6 sys   0.1 flt     0 iblk     0 oblk     0
+Expand                           wall     4.0 ( 7.2%) cum 57.2% user     3.6 sys   0.4 flt     0 iblk     0 oblk   352
+ReadInputFiles                   wall     3.3 ( 5.8%) cum 63.1% user     3.0 sys   0.2 flt     0 iblk     0 oblk     0
+Partition.CreateCpHlms           wall     2.7 ( 4.8%) cum 67.8% user     2.4 sys   0.2 flt     0 iblk     0 oblk     0
+Partition.PartitionDesign.PreclustHlms wall     1.9 ( 3.3%) cum 71.2% user     1.7 sys   0.1 flt     0 iblk     0 oblk     0
+DeadLogic2                       wall     1.6 ( 2.9%) cum 74.1% user     1.6 sys   0.1 flt     0 iblk     0 oblk     0
+CreateTechSpec                   wall     1.2 ( 2.2%) cum 76.3% user     1.1 sys   0.1 flt     0 iblk     0 oblk     0
+ConvertAllLast                   wall     1.2 ( 2.1%) cum 78.4% user     1.1 sys   0.1 flt     0 iblk     0 oblk   744
+CompleteFrontEnd                 wall     1.1 ( 2.0%) cum 80.4% user     1.0 sys   0.1 flt     0 iblk     0 oblk     0
+Partition.FlattenDomains         wall     1.0 ( 1.7%) cum 82.2% user     0.9 sys   0.1 flt     0 iblk     0 oblk     0
+.
+End of phase: Partition
+TimeStamp: 54.8 user + 2.5 sys = 0.96 mins. Elapsed time: user+sys = 0.41 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.93 mins, Elapsed time = 0.41 mins
+MemoryStats: busy   600M + empty  72M + bigblks  22M + other   1M =   694M
+
+
+Assigning Global IDs ...
+NameTable stats:
+  Last UID: 2824644
+  Total Number of Nodes: 2824143
+6005 Tie(s) recorded in the Recon database.
+Velsyn has generated recon.vdb, the dependent tasks on this may start.
+.
+End of phase: ReadAndAssignUID
+TimeStamp: 55.7 user + 2.6 sys = 0.97 mins. Elapsed time: user+sys = 0.02 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.95 mins, Elapsed time = 0.02 mins
+MemoryStats: busy   628M + empty  44M + bigblks  49M + other   1M =   722M
+
+.
+End of phase: ProcessOptPhase2
+TimeStamp: 55.7 user + 2.6 sys = 0.97 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.95 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   628M + empty  44M + bigblks  49M + other   1M =   722M
+
+.
+Restructuring Post-partitioned Hierarchy ...
+Begin Forming Blocks...
+Mapping blocks in domain domain0 from block ID 1
+Begin Form Groups...
+FormGroupsTime: 0.000+0.310{mods}+0.269{nets}+0.008 = 0.587s {numMods 0.487m numNets 0.492m}
+End Form Groups: 0% complete
+End Forming Blocks: 0% complete
+Total Expanded Nets=530086	Modules=487310	Unexpanded Nets=530086	Modules=487310	Scalar Cost=5613320
+       MTSD nets=0	 MTSD modules=0
+..........................................................................
+.................................
+End of phase: Blockify
+TimeStamp: 56.5 user + 2.7 sys = 0.99 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.97 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   631M + empty  41M + bigblks  49M + other   1M =   722M
+
+.
+End of phase: RewireMemBlocks
+TimeStamp: 56.5 user + 2.7 sys = 0.99 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.97 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   631M + empty  41M + bigblks  49M + other   1M =   722M
+
+Replicate Clock Network
+.
+End of phase: ReplicateClocks
+TimeStamp: 56.8 user + 2.7 sys = 0.99 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 0.97 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   631M + empty  41M + bigblks  49M + other   1M =   722M
+
+
+Processing Design IOs ...
+Total Expanded Nets=530042	Modules=487430	Unexpanded Nets=530042	Modules=487430	Scalar Cost=5613320
+       MTSD nets=0	 MTSD modules=0
+..........................................................................
+.................................
+End of phase: Externalize
+TimeStamp: 58.8 user + 2.7 sys = 1.02 mins. Elapsed time: user+sys = 0.03 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.00 mins, Elapsed time = 0.03 mins
+MemoryStats: busy   649M + empty  23M + bigblks  49M + other   1M =   722M
+
+..
+End of phase: WriteDBExternalize
+TimeStamp: 58.8 user + 2.7 sys = 1.02 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.00 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   649M + empty  23M + bigblks  49M + other   1M =   722M
+
+
+Performing Dependence Analysis ...
+.
+End of phase: DependAnalyze2
+TimeStamp: 60.0 user + 2.8 sys = 1.05 mins. Elapsed time: user+sys = 0.02 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.03 mins, Elapsed time = 0.02 mins
+MemoryStats: busy   651M + empty  37M + bigblks  49M + other   1M =   738M
+
+.
+End of phase: ConstrainedIOPlace
+TimeStamp: 60.2 user + 2.8 sys = 1.05 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.03 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   651M + empty  37M + bigblks  49M + other   1M =   738M
+
+.
+End of phase: PlaceClockConstrainedIOs
+TimeStamp: 60.2 user + 2.8 sys = 1.05 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.03 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   651M + empty  37M + bigblks  49M + other   1M =   738M
+
+
+Performing Placement ...
+-- NewPlaceDesign() ...
+top
+Forming Adjacency graph..NewPlace::Serialize --> Writing file Placedb.txt
+NewPlace::Serialize --> Done writing file Placedb.txt
+
+iterNum = 0
+
+ Total Traffic to be routed over 2 boards is 10780 (MinBoards Req 1)
+Boards: Available: 2 Minimum Req: 1 Logic: 1 BMem: 0
+Final no. of boards decided: 1
+Mapping out direct board edges from board 0 to (1, 2, 3)
+Mapping out all edges with unequal delays for board 0
+Mapping out direct board edges from board 1 to (0, 2, 3)
+Mapping out all edges with unequal delays for board 1
+MincutTopLevelBisection : Got 1 Maximuses
+  MincutTopLevelBisection: Processing Maximus 0: NumMacros: 4 Usable Macros: 16
+ Usable Crystals: 16
+
+
+------------Final Arrangement in this iteration-----------------
+MincutTopLevelBisection : Got 1 boxes
+  MincutTopLevelBisection: Processing Box0: NumMacros: 4 Usable: 16
+
+Starting : Nodes 4 Cost 4 ConstarinedCost 0
+
+Index: 0
+	ub1=0 lb1=0 
+	ub2=16 lb2=4 
+		A-B=0 + W=0 => 0
+	Part1 (A): Nodes 0 Cost 0 ConstrainedCost 0
+	Part2 (B): Nodes 4 Cost 4 ConstrainedCost 0
+	Cut 0
+
+Starting : Nodes 4 Cost 4 ConstarinedCost 0
+
+Index: 0
+	ub1=0 lb1=0 
+	ub2=16 lb2=4 
+		A-B=0 + W=0 => 0
+	Part1 (A): Nodes 0 Cost 0 ConstrainedCost 0
+	Part2 (B): Nodes 4 Cost 4 ConstrainedCost 0
+	Cut 0
+  MincutTopLevelBisection: Box0 partitioned into 4 Quads
+    MincutTopLevelBisection: Processing Quad0: NumMacros: 4 Usable: 16
+
+Starting : Nodes 4 Cost 4 ConstarinedCost 0
+
+Index: 0
+	ub1=0 lb1=0 
+	ub2=16 lb2=4 
+		A-B=0 + W=0 => 0
+	Part1 (A): Nodes 0 Cost 0 ConstrainedCost 0
+	Part2 (B): Nodes 4 Cost 4 ConstrainedCost 0
+	Cut 0
+    MincutTopLevelBisection: Quad0 partitioned into 2 boards
+Assigned board 0 with 16 Crystals to 4 atoms (0 atoms are Constrained Blocks).
+
+Number of Domains: 2
+Board Id: 0	Capacity: 25194
+
+Dumping Interboard connectivity before reducing InterBoard traffic
+
+ Interboard Traffic
+ ------------------
+ Outgoing traffic from board 0 is 0
+ Incoming traffic to board 0 is 0
+
+Addressing boards with overall high traffic values...
+
+Processing intraboard for root: top
+Processing IntraboardPlacement for board 0....Placing Clusters
+
+
+Placement of design completed on 1 boards
+
+Box traffic
+	Box: 0 InTraffic: 0 OutTraffic: 0 
+Max OutTraffic: 0
+Total interCrystal Traffic = 10780
+Total intraCrystal Traffic = 0
+-- NewPlaceDesign() done
+.
+End of phase: Place
+TimeStamp: 60.4 user + 2.8 sys = 1.05 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.03 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   651M + empty  37M + bigblks  49M + other   1M =   738M
+
+
+Placing clocks ...
+.
+End of phase: PlaceClocks
+TimeStamp: 60.4 user + 2.8 sys = 1.05 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.03 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   651M + empty  37M + bigblks  49M + other   1M =   738M
+
+.
+Optimizing High-Fanout Nets ...
+Optimized 0 / 0 nets in domain domain0
+Optimized 0 nets in domain domain0 for inter board optimization
+.
+End of phase: FanoutOptimize
+TimeStamp: 62.7 user + 2.9 sys = 1.09 mins. Elapsed time: user+sys = 0.04 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.07 mins, Elapsed time = 0.04 mins
+MemoryStats: busy   657M + empty  63M + bigblks  49M + other   1M =   771M
+
+..
+End of phase: WriteDBPlace
+TimeStamp: 62.7 user + 2.9 sys = 1.09 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.07 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   657M + empty  63M + bigblks  49M + other   1M =   771M
+
+..
+Replicating critical user logic ...
+
+.
+
+Domain 0, Iteration 1, maxLimit 230, lastMaxLimit 1000000
+	TR - (0, 0) : Depth 170, Limit 230, Slack 60, Valid 1
+	TR - (0, 1) : Depth 132, Limit 132, Slack 0, Valid 1
+	TR - (1, 0) : Depth 98, Limit 98, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 230, Slack 205, Valid 1
+.
+
+Domain 0, Iteration 2, maxLimit 211, lastMaxLimit 230
+	TR - (0, 0) : Depth 170, Limit 211, Slack 41, Valid 1
+	TR - (0, 1) : Depth 131, Limit 131, Slack 0, Valid 1
+	TR - (1, 0) : Depth 80, Limit 80, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 211, Slack 186, Valid 1
+.
+
+Domain 0, Iteration 3, maxLimit 206, lastMaxLimit 211
+	TR - (0, 0) : Depth 170, Limit 206, Slack 36, Valid 1
+	TR - (0, 1) : Depth 130, Limit 130, Slack 0, Valid 1
+	TR - (1, 0) : Depth 76, Limit 76, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 206, Slack 181, Valid 1
+.
+
+Domain 0, Iteration 4, maxLimit 186, lastMaxLimit 206
+	TR - (0, 0) : Depth 170, Limit 186, Slack 16, Valid 1
+	TR - (0, 1) : Depth 128, Limit 128, Slack 0, Valid 1
+	TR - (1, 0) : Depth 58, Limit 58, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 186, Slack 161, Valid 1
+.
+
+Domain 0, Iteration 5, maxLimit 173, lastMaxLimit 186
+	TR - (0, 0) : Depth 170, Limit 173, Slack 3, Valid 1
+	TR - (0, 1) : Depth 116, Limit 116, Slack 0, Valid 1
+	TR - (1, 0) : Depth 57, Limit 57, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 173, Slack 148, Valid 1
+.
+
+Domain 0, Iteration 6, maxLimit 170, lastMaxLimit 173
+	TR - (0, 0) : Depth 170, Limit 170, Slack 0, Valid 1
+	TR - (0, 1) : Depth 113, Limit 113, Slack 1, Valid 1
+	TR - (1, 0) : Depth 56, Limit 56, Slack 1, Valid 1
+	TR - (1, 1) : Depth 25, Limit 170, Slack 145, Valid 1
+.
+
+Domain 0, Iteration 7, maxLimit 169, lastMaxLimit 170
+	TR - (0, 0) : Depth 169, Limit 169, Slack 0, Valid 1
+	TR - (0, 1) : Depth 113, Limit 113, Slack 0, Valid 1
+	TR - (1, 0) : Depth 56, Limit 56, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 169, Slack 144, Valid 1
+.
+
+Domain 0, Iteration 8, maxLimit 166, lastMaxLimit 169
+	TR - (0, 0) : Depth 166, Limit 166, Slack 0, Valid 1
+	TR - (0, 1) : Depth 95, Limit 95, Slack 16, Valid 1
+	TR - (1, 0) : Depth 55, Limit 55, Slack 16, Valid 1
+	TR - (1, 1) : Depth 25, Limit 166, Slack 141, Valid 1
+.
+
+Domain 0, Iteration 9, maxLimit 153, lastMaxLimit 166
+	TR - (0, 0) : Depth 153, Limit 153, Slack 0, Valid 1
+	TR - (0, 1) : Depth 95, Limit 95, Slack 3, Valid 1
+	TR - (1, 0) : Depth 55, Limit 55, Slack 3, Valid 1
+	TR - (1, 1) : Depth 25, Limit 153, Slack 128, Valid 1
+.
+
+Domain 0, Iteration 10, maxLimit 150, lastMaxLimit 153
+	TR - (0, 0) : Depth 150, Limit 150, Slack 0, Valid 1
+	TR - (0, 1) : Depth 95, Limit 95, Slack 0, Valid 1
+	TR - (1, 0) : Depth 55, Limit 55, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 150, Slack 125, Valid 1
+.
+
+Domain 0, Iteration 11, maxLimit 148, lastMaxLimit 150
+	TR - (0, 0) : Depth 137, Limit 148, Slack 11, Valid 1
+	TR - (0, 1) : Depth 94, Limit 94, Slack 0, Valid 1
+	TR - (1, 0) : Depth 54, Limit 54, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 148, Slack 123, Valid 1
+.
+
+Domain 0, Iteration 12, maxLimit 145, lastMaxLimit 148
+	TR - (0, 0) : Depth 137, Limit 145, Slack 8, Valid 1
+	TR - (0, 1) : Depth 92, Limit 92, Slack 0, Valid 1
+	TR - (1, 0) : Depth 53, Limit 53, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 145, Slack 120, Valid 1
+.
+
+Domain 0, Iteration 13, maxLimit 143, lastMaxLimit 145
+	TR - (0, 0) : Depth 137, Limit 143, Slack 6, Valid 1
+	TR - (0, 1) : Depth 91, Limit 91, Slack 0, Valid 1
+	TR - (1, 0) : Depth 52, Limit 52, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 143, Slack 118, Valid 1
+.
+
+Domain 0, Iteration 14, maxLimit 139, lastMaxLimit 143
+	TR - (0, 0) : Depth 137, Limit 139, Slack 2, Valid 1
+	TR - (0, 1) : Depth 88, Limit 88, Slack 0, Valid 1
+	TR - (1, 0) : Depth 51, Limit 51, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 139, Slack 114, Valid 1
+.
+
+Domain 0, Iteration 15, maxLimit 137, lastMaxLimit 139
+	TR - (0, 0) : Depth 137, Limit 137, Slack 0, Valid 1
+	TR - (0, 1) : Depth 87, Limit 87, Slack 1, Valid 1
+	TR - (1, 0) : Depth 49, Limit 49, Slack 1, Valid 1
+	TR - (1, 1) : Depth 25, Limit 137, Slack 112, Valid 1
+.
+
+Domain 0, Iteration 16, maxLimit 136, lastMaxLimit 137
+	TR - (0, 0) : Depth 131, Limit 136, Slack 5, Valid 1
+	TR - (0, 1) : Depth 87, Limit 87, Slack 0, Valid 1
+	TR - (1, 0) : Depth 49, Limit 49, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 136, Slack 111, Valid 1
+.
+
+Domain 0, Iteration 17, maxLimit 131, lastMaxLimit 136
+	TR - (0, 0) : Depth 131, Limit 131, Slack 0, Valid 1
+	TR - (0, 1) : Depth 85, Limit 85, Slack 10, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 10, Valid 1
+	TR - (1, 1) : Depth 25, Limit 131, Slack 106, Valid 1
+.
+
+Domain 0, Iteration 18, maxLimit 130, lastMaxLimit 131
+	TR - (0, 0) : Depth 130, Limit 130, Slack 0, Valid 1
+	TR - (0, 1) : Depth 85, Limit 85, Slack 9, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 9, Valid 1
+	TR - (1, 1) : Depth 25, Limit 130, Slack 105, Valid 1
+.
+
+Domain 0, Iteration 19, maxLimit 128, lastMaxLimit 130
+	TR - (0, 0) : Depth 128, Limit 128, Slack 0, Valid 1
+	TR - (0, 1) : Depth 85, Limit 85, Slack 7, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 7, Valid 1
+	TR - (1, 1) : Depth 25, Limit 128, Slack 103, Valid 1
+.
+
+Domain 0, Iteration 20, maxLimit 127, lastMaxLimit 128
+	TR - (0, 0) : Depth 127, Limit 127, Slack 0, Valid 1
+	TR - (0, 1) : Depth 85, Limit 85, Slack 6, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 6, Valid 1
+	TR - (1, 1) : Depth 25, Limit 127, Slack 102, Valid 1
+.
+
+Domain 0, Iteration 21, maxLimit 124, lastMaxLimit 127
+	TR - (0, 0) : Depth 124, Limit 124, Slack 0, Valid 1
+	TR - (0, 1) : Depth 85, Limit 85, Slack 3, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 3, Valid 1
+	TR - (1, 1) : Depth 25, Limit 124, Slack 99, Valid 1
+.
+
+Domain 0, Iteration 22, maxLimit 123, lastMaxLimit 124
+	TR - (0, 0) : Depth 123, Limit 123, Slack 0, Valid 1
+	TR - (0, 1) : Depth 85, Limit 85, Slack 2, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 2, Valid 1
+	TR - (1, 1) : Depth 25, Limit 123, Slack 98, Valid 1
+.
+
+Domain 0, Iteration 23, maxLimit 121, lastMaxLimit 123
+	TR - (0, 0) : Depth 117, Limit 121, Slack 4, Valid 1
+	TR - (0, 1) : Depth 85, Limit 85, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 121, Slack 96, Valid 1
+.
+
+Domain 0, Iteration 24, maxLimit 119, lastMaxLimit 121
+	TR - (0, 0) : Depth 117, Limit 119, Slack 2, Valid 1
+	TR - (0, 1) : Depth 83, Limit 83, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 119, Slack 94, Valid 1
+.
+
+Domain 0, Iteration 25, maxLimit 118, lastMaxLimit 119
+	TR - (0, 0) : Depth 117, Limit 118, Slack 1, Valid 1
+	TR - (0, 1) : Depth 82, Limit 82, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 118, Slack 93, Valid 1
+.
+
+Domain 0, Iteration 26, maxLimit 117, lastMaxLimit 118
+	TR - (0, 0) : Depth 117, Limit 117, Slack 0, Valid 1
+	TR - (0, 1) : Depth 81, Limit 81, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 117, Slack 92, Valid 1
+.
+
+Domain 0, Iteration 27, maxLimit 116, lastMaxLimit 117
+	TR - (0, 0) : Depth 110, Limit 116, Slack 6, Valid 1
+	TR - (0, 1) : Depth 80, Limit 80, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 116, Slack 91, Valid 1
+.
+
+Domain 0, Iteration 28, maxLimit 115, lastMaxLimit 116
+	TR - (0, 0) : Depth 110, Limit 115, Slack 5, Valid 1
+	TR - (0, 1) : Depth 79, Limit 79, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 115, Slack 90, Valid 1
+.
+
+Domain 0, Iteration 29, maxLimit 114, lastMaxLimit 115
+	TR - (0, 0) : Depth 110, Limit 114, Slack 4, Valid 1
+	TR - (0, 1) : Depth 78, Limit 78, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 114, Slack 89, Valid 1
+.
+
+Domain 0, Iteration 30, maxLimit 113, lastMaxLimit 114
+	TR - (0, 0) : Depth 110, Limit 113, Slack 3, Valid 1
+	TR - (0, 1) : Depth 77, Limit 77, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 113, Slack 88, Valid 1
+.
+
+Domain 0, Iteration 31, maxLimit 112, lastMaxLimit 113
+	TR - (0, 0) : Depth 110, Limit 112, Slack 2, Valid 1
+	TR - (0, 1) : Depth 76, Limit 76, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 112, Slack 87, Valid 1
+.
+
+Domain 0, Iteration 32, maxLimit 111, lastMaxLimit 112
+	TR - (0, 0) : Depth 110, Limit 111, Slack 1, Valid 1
+	TR - (0, 1) : Depth 75, Limit 75, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 111, Slack 86, Valid 1
+.
+
+Domain 0, Iteration 33, maxLimit 110, lastMaxLimit 111
+	TR - (0, 0) : Depth 110, Limit 110, Slack 0, Valid 1
+	TR - (0, 1) : Depth 74, Limit 74, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 110, Slack 85, Valid 1
+.
+
+Domain 0, Iteration 34, maxLimit 109, lastMaxLimit 110
+	TR - (0, 0) : Depth 109, Limit 109, Slack 0, Valid 1
+	TR - (0, 1) : Depth 73, Limit 73, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 109, Slack 84, Valid 1
+.
+
+Domain 0, Iteration 35, maxLimit 108, lastMaxLimit 109
+	TR - (0, 0) : Depth 108, Limit 108, Slack 0, Valid 1
+	TR - (0, 1) : Depth 72, Limit 72, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 108, Slack 83, Valid 1
+.
+
+Domain 0, Iteration 36, maxLimit 107, lastMaxLimit 108
+	TR - (0, 0) : Depth 107, Limit 107, Slack 0, Valid 1
+	TR - (0, 1) : Depth 71, Limit 71, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 107, Slack 82, Valid 1
+.
+
+Domain 0, Iteration 37, maxLimit 106, lastMaxLimit 107
+	TR - (0, 0) : Depth 106, Limit 106, Slack 0, Valid 1
+	TR - (0, 1) : Depth 70, Limit 70, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 106, Slack 81, Valid 1
+.
+
+Domain 0, Iteration 38, maxLimit 105, lastMaxLimit 106
+	TR - (0, 0) : Depth 105, Limit 105, Slack 0, Valid 1
+	TR - (0, 1) : Depth 69, Limit 69, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 105, Slack 80, Valid 1
+.
+
+Domain 0, Iteration 39, maxLimit 104, lastMaxLimit 105
+	TR - (0, 0) : Depth 104, Limit 104, Slack 0, Valid 1
+	TR - (0, 1) : Depth 68, Limit 68, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 104, Slack 79, Valid 1
+.
+
+Domain 0, Iteration 40, maxLimit 103, lastMaxLimit 104
+	TR - (0, 0) : Depth 103, Limit 103, Slack 0, Valid 1
+	TR - (0, 1) : Depth 67, Limit 67, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 103, Slack 78, Valid 1
+.
+
+Domain 0, Iteration 41, maxLimit 102, lastMaxLimit 103
+	TR - (0, 0) : Depth 102, Limit 102, Slack 0, Valid 1
+	TR - (0, 1) : Depth 66, Limit 66, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 102, Slack 77, Valid 1
+.
+
+Domain 0, Iteration 42, maxLimit 101, lastMaxLimit 102
+	TR - (0, 0) : Depth 101, Limit 101, Slack 0, Valid 1
+	TR - (0, 1) : Depth 65, Limit 65, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 101, Slack 76, Valid 1
+.
+
+Domain 0, Iteration 43, maxLimit 100, lastMaxLimit 101
+	TR - (0, 0) : Depth 97, Limit 100, Slack 3, Valid 1
+	TR - (0, 1) : Depth 64, Limit 64, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 100, Slack 75, Valid 1
+.
+
+Domain 0, Iteration 44, maxLimit 99, lastMaxLimit 100
+	TR - (0, 0) : Depth 97, Limit 99, Slack 2, Valid 1
+	TR - (0, 1) : Depth 63, Limit 63, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 99, Slack 74, Valid 1
+.
+
+Domain 0, Iteration 45, maxLimit 98, lastMaxLimit 99
+	TR - (0, 0) : Depth 97, Limit 98, Slack 1, Valid 1
+	TR - (0, 1) : Depth 62, Limit 62, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 98, Slack 73, Valid 1
+.
+
+Domain 0, Iteration 46, maxLimit 97, lastMaxLimit 98
+	TR - (0, 0) : Depth 97, Limit 97, Slack 0, Valid 1
+	TR - (0, 1) : Depth 61, Limit 61, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 97, Slack 72, Valid 1
+.
+
+Domain 0, Iteration 47, maxLimit 96, lastMaxLimit 97
+	TR - (0, 0) : Depth 96, Limit 96, Slack 0, Valid 1
+	TR - (0, 1) : Depth 60, Limit 60, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 96, Slack 71, Valid 1
+.
+
+Domain 0, Iteration 48, maxLimit 95, lastMaxLimit 96
+	TR - (0, 0) : Depth 95, Limit 95, Slack 0, Valid 1
+	TR - (0, 1) : Depth 59, Limit 59, Slack 0, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 0, Valid 1
+	TR - (1, 1) : Depth 25, Limit 95, Slack 70, Valid 1
+.
+
+Domain 0, Iteration 49, maxLimit 95, lastMaxLimit 95
+	TR - (0, 0) : Depth 95, Limit 95, Slack 0, Valid 1
+	TR - (0, 1) : Depth 58, Limit 58, Slack 1, Valid 1
+	TR - (1, 0) : Depth 36, Limit 36, Slack 1, Valid 1
+	TR - (1, 1) : Depth 25, Limit 95, Slack 70, Valid 1
+
+
+Starting another run of replicate with crossings count disabled.
+
+.
+
+Domain 0, Iteration 1, maxLimit 81, lastMaxLimit 1000000
+	TR - (0, 0) : Depth 80, Limit 81, Slack 1, Valid 1
+	TR - (0, 1) : Depth 50, Limit 50, Slack 0, Valid 1
+	TR - (1, 0) : Depth 31, Limit 31, Slack 0, Valid 1
+	TR - (1, 1) : Depth 20, Limit 81, Slack 61, Valid 1
+
+
+Macros: 4/0/0/0/0/0 0/0/0/0/0 0
+
+Total Expanded Nets=531461	Modules=488044	Unexpanded Nets=531461	Modules=488044	Scalar Cost=5587920
+       MTSD nets=0	 MTSD modules=0
+..........................................................................
+................................*******************
+Replicate Time (egc-med-cairo) -
+real     = 13.880000
+user     = 13.600000
+system   = 0.270000
+********************
+.
+End of phase: ReplicateLogic
+TimeStamp: 76.8 user + 3.2 sys = 1.33 mins. Elapsed time: user+sys = 0.24 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.31 mins, Elapsed time = 0.24 mins
+MemoryStats: busy   699M + empty  21M + bigblks  56M + other   1M =   777M
+
+Instrumentations removed: 0
+..
+Localizing ...
+.
+End of phase: Localize
+TimeStamp: 78.4 user + 3.2 sys = 1.36 mins. Elapsed time: user+sys = 0.03 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.34 mins, Elapsed time = 0.03 mins
+MemoryStats: busy   700M + empty  20M + bigblks  56M + other   1M =   777M
+
+.
+End of phase: RewireSlowMemWriteEnables
+TimeStamp: 78.4 user + 3.2 sys = 1.36 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.34 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   700M + empty  20M + bigblks  56M + other   1M =   777M
+
+..
+End of phase: ComputeAuxilaryBlockDelays
+TimeStamp: 78.4 user + 3.2 sys = 1.36 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.34 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   700M + empty  20M + bigblks  56M + other   1M =   777M
+
+.
+Writing the clock, run-time and scope map files ...
+...
+End of phase: ComputeDependenceMasking
+TimeStamp: 83.2 user + 3.2 sys = 1.44 mins. Elapsed time: user+sys = 0.08 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.42 mins, Elapsed time = 0.08 mins
+MemoryStats: busy   700M + empty  20M + bigblks  56M + other   1M =   777M
+
+
+Writing the Canonical UID Map File ...
+Pre Assign Name Elt count: 130
+Info!     [Velsyn-50126]: : Maximum ring length of cached aliases: 1500
+                          Threshold for alias caching: 500
+Post Assign Name Elt count: 0
+.
+Allocating Communication Channels...
+MemoryStats: busy   710M + empty  10M + bigblks  56M + other   1M =   777M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/DcaFiles/SerializeDB.db' using lazy-SymbolTable-write
+ZFileWrite(.../DcaFiles/SerializeDB.db): 0M.
+Serialization done.
+
+Depths at for Epoch Limits:
+For module domain domain0, subdomain domain0:
+
+Unweighted Depths:
+
+from->to:   0    1  
+          ---  ---  
+       0:   0    0  
+       1:   0    0  
+
+
+Number of Macros Used: 4
+Number of Boards Used: 1
+
+NETDELAYGRAPH: Phase: 0 EpochSizes: 
+Number of GRCA buckets set to 4.
+   Domain : 0 NDG: 54  Adjusted: 128
+NETDELAYGRAPH: Phase: 0 After IO delay adjustments, EpochSizes:
+    Domain: 0 Epoch: 0 Adjusted: 128
+    Domain: 0 Epoch: 1 Adjusted: 128
+Epoch Size(s) as calculated by NetDelayGraph without ignoring constant links: 
+    domain0: NDG: 54 (e0): 54 (e1): 33
+ DCA (e0): 128
+ DCA (e1): 128
+
+
+Total Single TR REs 12542
+Total Multi TR REs 1
+
+Slack CutOff : 11
+Total Number of Links = 24029
+Total Number of Critical Links = 313
+
+Total Number of REs = 12543
+
+Now Enqueing Critical nets to the priority queue.....
+         Total number of critical REs enqueued = 250
+
+-----RE Distribution Information:----- 
+IO REs = 0
+IOFrame REs = 0
+SrcBMem REs = 0
+DstBMem REs = 0
+Comodel REs = 96
+MTD REs = 0
+XDom REs = 0
+IntraMacro REs = 0 (0 TRs)
+IntraBoard REs = 12293  (12294 TRs)
+InterBoard REs = 0  (0 TRs)
+InterBox REs = 0  (0 TRs)
+InterMaximus REs = 0  (0 TRs)
+Control REs = 0
+AllDistSearch = GRouteFail_DisableAvoidHop
+GRCA Bucket Id: 0 No. of REs: 9273
+	Worst Board for this bucket = 0 (Traffic 9273)
+GRCA Bucket Id: 1 No. of REs: 2055
+	Worst Board for this bucket = 0 (Traffic 2055)
+GRCA Bucket Id: 2 No. of REs: 0
+	Worst Board for this bucket = 0 (Traffic 0)
+GRCA Bucket Id: 3 No. of REs: 0
+	Worst Board for this bucket = 0 (Traffic 0)
+GRCA Bucket Id: 4 No. of REs: 1214
+	Worst Board for this bucket = 0 (Traffic 1214)
+GRCA Bucket Id: 5 No. of REs: 0
+	Worst Board for this bucket = 0 (Traffic 0)
+GRCA Bucket Id: 6 No. of REs: 0
+	Worst Board for this bucket = 0 (Traffic 0)
+GRCA Bucket Id: 7 No. of REs: 0
+	Worst Board for this bucket = 0 (Traffic 0)
+   Domain : 0 NDG: 54  Adjusted: 128
+NETDELAYGRAPH: Phase: 4 After IO delay adjustments, EpochSizes:
+    Domain: 0 Epoch: 0 Adjusted: 128
+    Domain: 0 Epoch: 1 Adjusted: 128
+
+Processing Comodel REs.....
+
+DCA : Searching Global Routes...
+
+
+Processing Critical REs.....
+
+
+ Total REs 250, DistReq noHop ... 10% ... 20% ... 30% ... 40% ... 50% ... 60% ... 70% ... 80% ... 90% ... 100%
+
+Processing IntraBoard REs.....[12293]
+
+numMacroMinorityDomainREs here is 0 
+numCritREs here is 0 
+numMinorityDomainREs here is 0 
+numNonCritREs here is 12197 
+
+
+ Total REs 12197, DistReq noHop ... 10% ... 20% ... 30% ... 40% ... 50% ... 60% ... 70% ... 80% ... 90% ... 100%
+
+
+ Total REs 3916, DistReq oneHop ... 10% ... 20% ... 30% ... 40% ... 50% ... 60% ... 70% ... 80% ... 90% ... 100%
+
+
+Failed IntraBoard GRoutes = 2797
+ Disabling NOP and muxpin constraints on GREdges......
+Retrying Failed GRoutes: 2797 Trial Count: 1
+
+
+ Total REs 0, DistReq noHop ... 100%
+
+ 
+Inter Box GR Time - 
+real     = 0.000000
+ user     = 0.000000
+ system   = 0.000000
+ Routing Inter Quad Intra Box REs..............................
+
+numMacroMinorityDomainREs here is 0 
+numCritREs here is 0 
+numMinorityDomainREs here is 0 
+numNonCritREs here is 0 
+
+
+ Total REs 0, DistReq noHop ... 100%
+
+
+Routing 0 InterBoardREs and 2797 IntraBoardREs
+numMacroMinorityDomainREs here is 0 
+numCritREs here is 0 
+numMinorityDomainREs here is 0 
+numNonCritREs here is 2797 
+.
+Unrouted GRoutes after mode 1 is : 2771
+ Allow Hops through unrelated boards......
+ Disable GRGraph Pruning......
+Retrying Failed GRoutes: 2771 Trial Count: 2
+
+
+ Total REs 0, DistReq noHop ... 100%
+
+ 
+Inter Box GR Time - 
+real     = 0.000000
+ user     = 0.000000
+ system   = 0.000000
+ Routing Inter Quad Intra Box REs..............................
+
+numMacroMinorityDomainREs here is 0 
+numCritREs here is 0 
+numMinorityDomainREs here is 0 
+numNonCritREs here is 0 
+
+
+ Total REs 0, DistReq noHop ... 100%
+
+
+Routing 0 InterBoardREs and 2771 IntraBoardREs
+numMacroMinorityDomainREs here is 0 
+numCritREs here is 0 
+numMinorityDomainREs here is 0 
+numNonCritREs here is 2771 
+.
+Unrouted GRoutes after mode 2 is : 0
+AVB's allowed in DCA for routing
+AVB:0  
+   Domain : 0 NDG: 54  Adjusted: 128
+NETDELAYGRAPH: Phase: 5 After IO delay adjustments, EpochSizes:
+    Domain: 0 Epoch: 0 Adjusted: 128
+    Domain: 0 Epoch: 1 Adjusted: 128
+
+*******************
+GRouteSearch Time -
+real     = 0.450000 
+user     = 0.400000 
+system   = 0.050000 
+********************
+   Domain : 0 NDG: 54  Adjusted: 128
+NETDELAYGRAPH: Phase: 6 After IO delay adjustments, EpochSizes:
+    Domain: 0 Epoch: 0 Adjusted: 128
+    Domain: 0 Epoch: 1 Adjusted: 128
+Processing Comodel REs.....
+
+DCA : Searching Detailed Routes...
+
+Processing InterMacro REs.....[12543]
+
+numMacroMinorityDomainREs here is 0 
+numCritREs_indexed here is 0 
+numCritREs_unindexed here is 0 
+numMinorityDomainREs here is 0 
+numNonCritREs here is 12447 
+ ... 10% ... 20% ... 30% ... 40% ... 50% ... 60% ... 70% ... 80% ... 90% ... 100%
+
+numMacroMinorityDomainREs here is 0 
+numCritREs_indexed here is 0 
+numCritREs_unindexed here is 0 
+numMinorityDomainREs here is 0 
+numNonCritREs here is 12447 
+ ... 10% ... 20% ... 30% ... 40% ... 50% ... 60% ... 70% ... 80% ... 90% ... 100%
+
+AVB's allowed in DCA for routing
+AVB:0  
+
+Total WrapArounds Done = 0
+
+****************************************************
+
+
+
+*******************
+
+Number of REs Demotionless SoftMuxed = 0
+
+Number of REs Demotionless SoftDemuxed = 0
+
+PutDelayTagsOnSlowNets: Inserting delaytags on slow softvw and slow demotionless nets...
+PutDelayTagsOnSlowNets: Inserted 0 delaytags on slow softvw and slow demotionless nets.
+
+********************
+DCA : Creating Dependence Database
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dsyn_DependDB.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../glob_Dsyn_DependDB.vdb.0): 0M
+ DCA-DependDB File Saved 
+.
+DCA : Creating Connectivity Database
+Unused IOChannels in user partitions: 
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dsyn_LinkDB.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../glob_Dsyn_LinkDB.vdb.0): 0M
+ ConnectivityDB File Saved
+.
+DCA : Creating Route Database
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dsyn_RouteDB.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../glob_Dsyn_RouteDB.vdb.0): 0M
+ RouteDB File Saved 
+.
+DCA : Creating ClockDomain Database
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dsyn_DomainDB.vdb.0' using lazy-SymbolTable-write
+
+ ClkDomDB File Saved
+ZFileWrite(.../glob_Dsyn_DomainDB.vdb.0): 0M.
+*******************
+DCA Time (egc-med-cairo) -
+real     = 19.450000
+user     = 18.750000
+system   = 0.540000
+********************
+.
+End of phase: ComAlloc
+TimeStamp: 104.0 user + 3.9 sys = 1.80 mins. Elapsed time: user+sys = 0.32 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.78 mins, Elapsed time = 0.32 mins
+MemoryStats: busy   784M + empty  16M + bigblks  61M + other   1M =   862M
+
+
+Caching display data at Block IO ...
+.
+End of phase: CacheDisplayDataAtBlockIO
+TimeStamp: 104.0 user + 3.9 sys = 1.80 mins. Elapsed time: user+sys = 0.00 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.78 mins, Elapsed time = 0.00 mins
+MemoryStats: busy   784M + empty  16M + bigblks  61M + other   1M =   862M
+
+
+ Max recursion depth encountered during topological sort = 30 
+
+ Computing depth of Propagation Cycles 
+
+ Depth of Propagation cycles is : 4 
+.
+End of phase: ComputePropagationCycleCount
+TimeStamp: 105.8 user + 4.1 sys = 1.83 mins. Elapsed time: user+sys = 0.03 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.82 mins, Elapsed time = 0.03 mins
+MemoryStats: busy   785M + empty  31M + bigblks  61M + other   1M =   878M
+
+.ShareTimeSignatures normal 39 + clock 124 = total 163
+.
+Synthesizing Design Logic ...
+Total Expanded Nets=8944417	Modules=7998972	Unexpanded Nets=581662	Modules=510870	Scalar Cost=3714200
+       MTSD nets=0	 MTSD modules=0
+.
+Performing backend synthesis of Crystal 0...
+....................................
+Performing backend synthesis of Crystal 1...
+.................................
+Performing backend synthesis of Crystal 2...
+...........
+Performing backend synthesis of Crystal 3...
+........................
+Performing backend synthesis of Crystal 4...
+.
+Performing backend synthesis of Crystal 5...
+.
+Performing backend synthesis of Crystal 6...
+.
+Performing backend synthesis of Crystal 7...
+.
+Performing backend synthesis of Crystal 8...
+.
+Performing backend synthesis of Crystal 9...
+.
+Performing backend synthesis of Crystal 10...
+.
+Performing backend synthesis of Crystal 11...
+.
+Performing backend synthesis of Crystal 12...
+.
+Performing backend synthesis of Crystal 13...
+.
+Performing backend synthesis of Crystal 14...
+.
+Performing backend synthesis of Crystal 15...
+.
+Performing backend synthesis of Crystal 16...
+.
+Performing backend synthesis of Crystal 17...
+.
+Performing backend synthesis of Crystal 18...
+.
+Performing backend synthesis of Crystal 19...
+.
+Performing backend synthesis of Crystal 20...
+.
+Performing backend synthesis of Crystal 21...
+.
+Performing backend synthesis of Crystal 22...
+.
+Performing backend synthesis of Crystal 23...
+.
+Performing backend synthesis of Crystal 24...
+.
+Performing backend synthesis of Crystal 25...
+.
+Performing backend synthesis of Crystal 26...
+.
+Performing backend synthesis of Crystal 27...
+.
+Performing backend synthesis of Crystal 28...
+.
+Performing backend synthesis of Crystal 29...
+.
+Performing backend synthesis of Crystal 30...
+.
+Performing backend synthesis of Crystal 31...
+BigCrystals: no big Crystals, max ratio 0.90
+.Number of Flop Lut MFCs merged in design = 8369 
+
+End of phase: BackEndSynthesis
+TimeStamp: 107.4 user + 4.1 sys = 1.86 mins. Elapsed time: user+sys = 0.03 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 1.84 mins, Elapsed time = 0.03 mins
+MemoryStats: busy   818M + empty  14M + bigblks  64M + other   1M =   897M
+
+
+Begin macro parallel loop 1 (Velcc netlist generation) ...
+-- CrystalLoop1 starting with MGPIsSequential cTrue
+Number of fpgas for DCCChipWrite are 16 that will be written by velsyn.
+Total Number of fpgas used are 16.
+DCC Format Netlist Write Completed for macro <board 0, chip 0, pid 21492> and file checksum <uncompressed 98809257, adler 15D3A09E>.
+
+MemoryStats: busy   821M + empty  11M + bigblks  64M + other   1M =   897M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u0_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u0_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u0_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 0, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 1, pid 21492> and file checksum <uncompressed 113201843, adler 5F2AC4E0>.
+
+MemoryStats: busy   828M + empty  20M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u1_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u1_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u1_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 1, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 2, pid 21492> and file checksum <uncompressed 18050575, adler DA9F236D>.
+
+MemoryStats: busy   829M + empty  19M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u2_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u2_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u2_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 2, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 3, pid 21492> and file checksum <uncompressed 100854237, adler FAA72951>.
+
+MemoryStats: busy   829M + empty  19M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u3_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u3_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u3_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 3, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 4, pid 21492> and file checksum <uncompressed 35678, adler 9C4FA767>.
+
+MemoryStats: busy   832M + empty  16M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u4_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u4_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u4_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 4, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 5, pid 21492> and file checksum <uncompressed 36219, adler FF9435FF>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u5_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u5_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u5_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 5, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 6, pid 21492> and file checksum <uncompressed 35448, adler 92D77335>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u6_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u6_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u6_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 6, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 7, pid 21492> and file checksum <uncompressed 35462, adler 55AB73AD>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u7_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u7_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u7_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 7, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 8, pid 21492> and file checksum <uncompressed 34766, adler 756CBE0D>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u8_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u8_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u8_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 8, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 9, pid 21492> and file checksum <uncompressed 34671, adler 60BA470>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u9_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u9_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u9_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 9, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 10, pid 21492> and file checksum <uncompressed 34671, adler 6260A438>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u10_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u10_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u10_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 10, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 11, pid 21492> and file checksum <uncompressed 34764, adler FAC2BF9F>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u11_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u11_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u11_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 11, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 12, pid 21492> and file checksum <uncompressed 35865, adler EE3BE35F>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u12_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u12_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u12_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 12, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 13, pid 21492> and file checksum <uncompressed 34766, adler FF7EC1B1>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u13_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u13_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u13_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 13, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 14, pid 21492> and file checksum <uncompressed 35342, adler F4F25188>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u14_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u14_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u14_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 14, pid 21492>.
+
+DCC Format Netlist Write Completed for macro <board 0, chip 15, pid 21492> and file checksum <uncompressed 35267, adler CF8C13D6>.
+
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+-- DBFile '/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u15_Dsyn_ssr.vdb.0' using lazy-SymbolTable-write
+ZFileWrite(.../lb0/lb0_u15_Dsyn_ssr.vdb.0): 0M.
+SSR Database (/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/lb0/lb0_u15_Dsyn_ssr.vdb.0) Writing Succeeded.
+SSR Database Write Completed for macro <board 0, chip 15, pid 21492>.
+
+End macro parallel loop 1 ...
+CrystalLoop1Time: 17.783s wall / 16 Crystals = 1.111s/Crystal
+Writing resource file ...
+
+End of phase: NetlistGeneration
+TimeStamp: 123.8 user + 4.6 sys = 2.14 mins. Elapsed time: user+sys = 0.28 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 2.14 mins, Elapsed time = 0.30 mins
+MemoryStats: busy   831M + empty  17M + bigblks  64M + other   1M =   913M
+
+Begin macro loop 2 (SSR/Map data file generation) ...
+-- Writing the UIDToStruct with MGPIsSequential cTrue
+==== Closed MentorDB database in pid: 21492
+
+End of phase: WriteUIDBasedMapFiles
+TimeStamp: 128.4 user + 4.8 sys = 2.22 mins. Elapsed time: user+sys = 0.08 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 2.22 mins, Elapsed time = 0.08 mins
+MemoryStats: busy   791M + empty  73M + bigblks  58M + other  12M =   933M
+
+Velsyn has completed writing files for Velgs to start
+PhaseStatsReport: velgs start
+TotalStats                       wall   133.3 (100%)            user   128.4 sys   4.8 flt     0 iblk  4.1k oblk 129.4k
+CrystalLoop1                     wall    17.8 (13.3%) cum 13.3% user    16.5 sys   0.4 flt     0 iblk     0 oblk 88.7k
+ComAlloc.Dumpe                   wall    16.3 (12.2%) cum 25.6% user    15.9 sys   0.3 flt     0 iblk     0 oblk  1.7k
+ReplicateLogic                   wall    12.8 ( 9.6%) cum 35.2% user    12.5 sys   0.3 flt     0 iblk     0 oblk   176
+Partition.PartitionDesign.PreclustHlms.Preclust wall     8.9 ( 6.7%) cum 41.9% user     8.6 sys   0.3 flt     0 iblk     0 oblk     0
+ClockAnalysisTiming              wall     7.4 ( 5.6%) cum 47.5% user     7.3 sys   0.1 flt     0 iblk     0 oblk     8
+ClockAnalysisDomain              wall     6.0 ( 4.5%) cum 51.9% user     5.8 sys   0.1 flt     0 iblk     0 oblk 12.1k
+Partition.PartitionDesign.SplitDesign wall     5.7 ( 4.3%) cum 56.2% user     5.6 sys   0.1 flt     0 iblk     0 oblk     0
+WriteUIDProperties               wall     4.0 ( 3.0%) cum 59.3% user     3.7 sys   0.2 flt     0 iblk     0 oblk 11.5k
+Expand                           wall     4.0 ( 3.0%) cum 62.3% user     3.6 sys   0.4 flt     0 iblk     0 oblk   352
+ReadInputFiles                   wall     3.3 ( 2.4%) cum 64.7% user     3.0 sys   0.2 flt     0 iblk     0 oblk     0
+ComAlloc                         wall     3.1 ( 2.3%) cum 67.0% user     2.7 sys   0.2 flt     0 iblk     0 oblk 10.1k
+Partition.CreateCpHlms           wall     2.7 ( 2.0%) cum 69.0% user     2.4 sys   0.2 flt     0 iblk     0 oblk     0
+ComputeDependenceMasking         wall     2.5 ( 1.8%) cum 70.9% user     2.4 sys   0.0 flt     0 iblk     0 oblk    16
+WriteCanonicalUIDMapFile         wall     2.3 ( 1.7%) cum 72.6% user     2.1 sys   0.1 flt     0 iblk     0 oblk  3.6k
+Externalize                      wall     2.0 ( 1.5%) cum 74.1% user     2.0 sys   0.0 flt     0 iblk     0 oblk     0
+ComputePropagationCycleCount     wall     1.9 ( 1.4%) cum 75.5% user     1.8 sys   0.2 flt     0 iblk     0 oblk     0
+Partition.PartitionDesign.PreclustHlms wall     1.9 ( 1.4%) cum 76.9% user     1.7 sys   0.1 flt     0 iblk     0 oblk     0
+DeadLogic2                       wall     1.6 ( 1.2%) cum 78.1% user     1.6 sys   0.1 flt     0 iblk     0 oblk     0
+ComputeDependenceMasking.MGPDependAnal wall     1.3 ( 0.9%) cum 79.1% user     1.2 sys   0.0 flt     0 iblk     0 oblk     0
+CreateTechSpec                   wall     1.2 ( 0.9%) cum 80.0% user     1.1 sys   0.1 flt     0 iblk     0 oblk     0
+Localize.DependAnal              wall     1.2 ( 0.9%) cum 80.9% user     1.2 sys   0.0 flt     0 iblk     0 oblk     0
+ConvertAllLast                   wall     1.2 ( 0.9%) cum 81.8% user     1.1 sys   0.1 flt     0 iblk     0 oblk   744
+FanoutOptimize.MGPDependAnal     wall     1.2 ( 0.9%) cum 82.7% user     1.1 sys   0.1 flt     0 iblk     0 oblk     0
+DependAnalyze2.MGPDependAnal     wall     1.2 ( 0.9%) cum 83.6% user     1.1 sys   0.0 flt     0 iblk     0 oblk     0
+CompleteFrontEnd                 wall     1.1 ( 0.8%) cum 84.4% user     1.0 sys   0.1 flt     0 iblk     0 oblk     0
+ReadAndAssignUID                 wall     1.1 ( 0.8%) cum 85.3% user     0.9 sys   0.1 flt     0 iblk  4.1k oblk   128
+Partition.FlattenDomains         wall     1.0 ( 0.7%) cum 86.0% user     0.9 sys   0.1 flt     0 iblk     0 oblk     0
+Writing the memory map file ...
+Closing the map files ...
+...
+End of phase: FinalizeMapFiles
+TimeStamp: 129.2 user + 4.9 sys = 2.23 mins. Elapsed time: user+sys = 0.01 mins (egc-med-cairo)
+TimeStamp (Wall Clock): 2.24 mins, Elapsed time = 0.01 mins
+MemoryStats: busy   750M + empty 114M + bigblks  56M + other  13M =   933M
+
+
+Total Warnings: 15650, total Errors: 0
+MemoryStats: busy   750M + empty 114M + bigblks  56M + other  13M =   933M
+SNAPSHOT: before ~Syn(): nmod 2 nnet 0 nconn 0
+PhaseStatsReport: velsyn finish
+TotalStats                       wall   134.1 (100%)            user   129.2 sys   4.9 flt     0 iblk  4.1k oblk 132.9k
+CrystalLoop1                     wall    17.8 (13.3%) cum 13.3% user    16.5 sys   0.4 flt     0 iblk     0 oblk 88.7k
+ComAlloc.Dumpe                   wall    16.3 (12.2%) cum 25.4% user    15.9 sys   0.3 flt     0 iblk     0 oblk  1.7k
+ReplicateLogic                   wall    12.8 ( 9.5%) cum 35.0% user    12.5 sys   0.3 flt     0 iblk     0 oblk   176
+Partition.PartitionDesign.PreclustHlms.Preclust wall     8.9 ( 6.6%) cum 41.6% user     8.6 sys   0.3 flt     0 iblk     0 oblk     0
+ClockAnalysisTiming              wall     7.4 ( 5.5%) cum 47.1% user     7.3 sys   0.1 flt     0 iblk     0 oblk     8
+ClockAnalysisDomain              wall     6.0 ( 4.4%) cum 51.6% user     5.8 sys   0.1 flt     0 iblk     0 oblk 12.1k
+Partition.PartitionDesign.SplitDesign wall     5.7 ( 4.3%) cum 55.8% user     5.6 sys   0.1 flt     0 iblk     0 oblk     0
+WriteUIDProperties               wall     4.0 ( 3.0%) cum 58.9% user     3.7 sys   0.2 flt     0 iblk     0 oblk 11.5k
+Expand                           wall     4.0 ( 3.0%) cum 61.9% user     3.6 sys   0.4 flt     0 iblk     0 oblk   352
+ReadInputFiles                   wall     3.3 ( 2.4%) cum 64.3% user     3.0 sys   0.2 flt     0 iblk     0 oblk     0
+ComAlloc                         wall     3.1 ( 2.3%) cum 66.6% user     2.7 sys   0.2 flt     0 iblk     0 oblk 10.1k
+Partition.CreateCpHlms           wall     2.7 ( 2.0%) cum 68.6% user     2.4 sys   0.2 flt     0 iblk     0 oblk     0
+ComputeDependenceMasking         wall     2.5 ( 1.8%) cum 70.4% user     2.4 sys   0.0 flt     0 iblk     0 oblk    16
+WriteCanonicalUIDMapFile         wall     2.3 ( 1.7%) cum 72.1% user     2.1 sys   0.1 flt     0 iblk     0 oblk  3.6k
+Externalize                      wall     2.0 ( 1.5%) cum 73.6% user     2.0 sys   0.0 flt     0 iblk     0 oblk     0
+ComputePropagationCycleCount     wall     1.9 ( 1.4%) cum 75.0% user     1.8 sys   0.2 flt     0 iblk     0 oblk     0
+Partition.PartitionDesign.PreclustHlms wall     1.9 ( 1.4%) cum 76.4% user     1.7 sys   0.1 flt     0 iblk     0 oblk     0
+DeadLogic2                       wall     1.6 ( 1.2%) cum 77.6% user     1.6 sys   0.1 flt     0 iblk     0 oblk     0
+ComputeDependenceMasking.MGPDependAnal wall     1.3 ( 0.9%) cum 78.6% user     1.2 sys   0.0 flt     0 iblk     0 oblk     0
+CreateTechSpec                   wall     1.2 ( 0.9%) cum 79.5% user     1.1 sys   0.1 flt     0 iblk     0 oblk     0
+Localize.DependAnal              wall     1.2 ( 0.9%) cum 80.4% user     1.2 sys   0.0 flt     0 iblk     0 oblk     0
+ConvertAllLast                   wall     1.2 ( 0.9%) cum 81.3% user     1.1 sys   0.1 flt     0 iblk     0 oblk   744
+FanoutOptimize.MGPDependAnal     wall     1.2 ( 0.9%) cum 82.2% user     1.1 sys   0.1 flt     0 iblk     0 oblk     0
+DependAnalyze2.MGPDependAnal     wall     1.2 ( 0.9%) cum 83.0% user     1.1 sys   0.0 flt     0 iblk     0 oblk     0
+CompleteFrontEnd                 wall     1.1 ( 0.8%) cum 83.9% user     1.0 sys   0.1 flt     0 iblk     0 oblk     0
+ReadAndAssignUID                 wall     1.1 ( 0.8%) cum 84.7% user     0.9 sys   0.1 flt     0 iblk  4.1k oblk   128
+Partition.FlattenDomains         wall     1.0 ( 0.7%) cum 85.4% user     0.9 sys   0.1 flt     0 iblk     0 oblk     0
+MemoryStats: busy   750M + empty 114M + bigblks  56M + other  13M =   933M
+Task: exited with code: 0

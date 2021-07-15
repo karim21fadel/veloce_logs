@@ -1,0 +1,43 @@
+#CMS_VERSION-1.00
+###############################################
+## Application Name - NXS
+## Application Pid - 26418
+## Log produced on - Thu Jul 15 20:55:20 2021
+###############################################
+Info!      [DMS-9999]: : [2021-07-15 20:55:20:714829] VMW_DMS_START_TASK_ID is
+                       set to 32768
+Info!      [DMS-9999]: : [2021-07-15 20:55:20:798450] Nexus Launched with
+                       -allowOtherUsers option. Auth Key Generated: 1405496650
+Info!      [DMS-9008]: : [2021-07-15 20:58:28:628215] Shutting down all the
+                      
+                       applications.
+
+###################################################################
+##  Application : 'ecf2wave'
+##  Version     : 20.0.3
+##  Host        : egc-med-cairo.egc.mentorg.com
+###################################################################
+/tools/med_tools/software/Veloce_v20.0.3/bin/ecf2wave	-tracedir	/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw	-outdir	/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw/logs/WorkingDirectory_26082_20H55M19S	-enable_file_split	1000	-time_out	2147483647	-TaskId	1048576	-internal_fsdb_mode	-xFsdbFlow	-crdInput	-TaskMemReqmt	2147483647	-merge_fsdbs	-xwave_dump	/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw	-crd	-GenericTaskDistributor	-session	/net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw/logs/WorkingDirectory_26082_20H55M19S/veloce.	-allowOtherUsers	
+
+Info!      [E2W-2501]: : The conversion process starting on Thu Jul 15 20:55:21 2021
+                      
+Info!      [E2W-2574]: : Socket connection set up is done. (Time taken is 0.145000 seconds)
+Info!      [E2W-2599]: : The individual ecf2wave tasks may possess process memory(RAM) image approximately up to '2147483647 MB'.
+Info!     [DTASK-18201]: : Started task: run_ecf2wave_velwaveserver_1 (egc-med-cairo) 2021-07-15 20:55:22.231432
+Info!     [DTASK-18201]: : Started task: run_ecf2wave_raw_xactions_crd_3 (egc-med-cairo) 2021-07-15 20:55:23.362852
+Info!     [DTASK-18231]: : Completed task: run_ecf2wave_raw_xactions_crd_3 (egc-med-cairo) 3 minutes 2021-07-15 20:58:27.256694
+Info!     [DTASK-18231]: : Completed task: run_ecf2wave_velwaveserver_1 (egc-med-cairo) 3 minutes 2021-07-15 20:58:27.335752
+Info!     [DTASK-25218]: : Dtask compile report is saved in /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw/logs/WorkingDirectory_26082_20H55M19S/veloce.out/veloce.report
+                         Each detailed task information is saved in /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.wave/tbx.stw/logs/WorkingDirectory_26082_20H55M19S/veloce.out/veloce.stat
+                        
+Info!     [DTASK-25220]: : Overall Running time: (Thu Jul 15 20:58:27 2021)
+                         3 minutes.
+                        
+                        
+Info!     [DTASK-25219]: : Bad Machines:
+                         None.
+                        
+                        
+Info!     [DTASK-25214]: : Dtask exiting ...
+Info!     [DTASK-25215]: : Compilation finished successfully.
+Info!      [E2W-2501]: : Aborting distributed tasks ...

@@ -1,0 +1,71 @@
+/tools/med_tools/software/Veloce_v20.0.3/bin/velgs  -dti -database_dir ./veloce.med  
+
+
+Executing Command:
+/tools/med_tools/software/Veloce_v20.0.3/bin/velgs  -dti -database_dir ./veloce.med -LicKey $LIC_KEY 
+
+                       Veloce Design Compiler
+             Copyright Mentor Graphics Corporation 2003 - 2020
+                           All Rights Reserved
+                          8005 SW Boeckman Road
+                       Wilsonville, OR, 97070, USA
+
+                            Version 20.0.3
+
+Info!       [velgs-1]: : Platform set from configuration to Veloce2 Quattro
+Info!       [velgs-1]: : Reading clock DB /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dsyn_DomainDB.vdb.0
+Info!       [velgs-1]: : Reading xmem mapping files
+Info!       [velgs-1]: : Reading link DB /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dsyn_LinkDB.vdb.0 & route DB /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dsyn_RouteDB.vdb.0
+Info!       [velgs-1]: : Reading dependence DB /net/svr-egc-net-02/vol/med1/med_vdev/mahmoud/ai_accelerator_block/emulation/veloce.med/design_level/glob_Dsyn_DependDB.vdb.0
+Info!       [velgs-1]: : Expediting cross domain links.
+Info!       [velgs-1]: : Reading velcc mapping
+Info!       [velgs-1]: : Reading velcc delay files
+Info!       [velgs-1]: : Finalize graph
+Info!       [velgs-1]: :
+                       ##############################
+                       API reading REPORT :
+                       Number of links = 14204
+                       Number of Start SE links = 2
+                       Number of End SE links = 2
+                       Number of Macro-Macro links = 12447
+                       Number of ConstToMacro links = 1
+                       Number of CoModel-Macro links = 194
+                       Number of Macro-CoModel links = 1157
+                       Number of Cmem Read links = 173
+                       Number of Cmem Write links = 228
+                      
+                       Number of dependencies = 66062
+                       Number of MacroIn-MacroOut dependencies = 31629
+                       Number of MacroIn-Memory dependencies = 3802
+                       Number of MacroIn-SE dependencies = 11807
+                       Number of SE-MacroOut dependencies = 12242
+                       Number of SE-Memory dependencies = 339
+                       Number of MemoryRead-MacroOut dependencies = 245
+                       Number of MemoryRead-Memory dependencies = 196
+                       Number of MemoryRead-SE dependencies = 172
+                       Number of Match-SE dependencies = 5092
+                       Number of SE-Match dependencies = 538
+                       ##############################
+                      
+Info!       [velgs-1]: : Initialize limit tracker
+Info!       [velgs-1]: : Frequencies for domain domain0 index 0
+Info!       [velgs-1]: : Domain domain0 Clock 1X : Slots {68, 56} Frequency : 3225 kHz
+Info!       [velgs-1]: : Computing link depths
+Info!       [velgs-1]: : Scheduling links using RangeDepthPclk
+Info!       [velgs-1]: : ... domain domain0 clock 1X 1818 kHz
+Info!       [velgs-1]: : Scheduling links using OrderRange
+Info!       [velgs-1]: : ... domain domain0 clock 1X 1754 kHz
+Info!       [velgs-1]: : Scheduling links using Slack
+Info!       [velgs-1]: : ... domain domain0 clock 1X 1785 kHz
+Info!       [velgs-1]: : Writing trace DB
+Info!       [velgs-1]: : Writing program binaries
+Info!       [velgs-1]: : File for loop FF initialization
+Info!       [velgs-1]: : Writing user clock DB
+Info!       [velgs-1]: : Frequencies for domain domain0 index 0
+Info!       [velgs-1]: : Domain domain0 Clock 1X : Slots {116, 104} Frequency : 1818 kHz
+Info!       [velgs-1]: : Checking program binaries
+Info!       [velgs-1]: : Writing trigger DB
+Info!       [velgs-1]: : Writing GSDB
+Info!       [velgs-1]: : Memory size 73 MB
+Info!       [velgs-1]: : Time elapsed 0 min
+Task: exited with code: 0
